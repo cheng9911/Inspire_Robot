@@ -1,0 +1,7 @@
+
+.vscode/
+
+build/
+
+script/__pycache__/SerialCommunication.cpython-310.pyc
+script/.idea/
