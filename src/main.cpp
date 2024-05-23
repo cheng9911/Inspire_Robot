@@ -9,7 +9,7 @@
 int nDeviceType = USBCAN2;
 int nDeviceInd = 0; /* 设备索引号*/
 int nReserved = 0;
-int nCANInd = 0;
+// int nCANInd = 0;
 bool m_connect = false; /*设备启动标致符false：表示设备未启动或者已经关闭 true：表示设备已经启动可以正常收发数据 */
 DWORD dwRel;
 typedef uint8_t Byte;
@@ -71,20 +71,34 @@ int main(int argc, char const *argv[])
     usleep(10000);
 
     CAN_OBJ vco[100];
-    dwRel = Receive(nDeviceType, nDeviceInd, nCANInd, vco, 100, 0); // 单次
-    std::cout << vco->Data[0] << std::endl;
+    dwRel = Receive(nDeviceType, nDeviceInd, CAN1, vco, 100, 0); // 单次
+    std::cout << "dwRel: " << dwRel << std::endl;
+    // 打印收到的数据帧
+    if (dwRel == 0)
+    {
+        for (int i = 0; i < dwRel; i++)
+        {
+            std::cout << "ID: " << vco[i].ID << std::endl;
+            std::cout << "DataLen: " << vco[i].DataLen << std::endl;
+            std::cout << "Data: ";
+            for (int j = 0; j < vco[i].DataLen; j++)
+            {
+                std::cout << vco[i].Data[j] << " ";
+            }
+            std::cout << std::endl;
+        }
+    }
     usleep(1000000);
     INIT_CONFIG vic;
     CAN_STATUS vcs;
-    dwRel = ReadCANStatus(nDeviceType, nDeviceInd, nCANInd, &vcs);
+    dwRel = ReadCANStatus(nDeviceType, nDeviceInd, CAN1, &vcs);
     if (dwRel == STATUS_OK)
     {
         std::cout << "status" << vcs.regStatus << std::endl;
     }
 
     CloseDevice(nDeviceType, nDeviceInd);
-    usleep(2000000);
 
-    std::cout << "00";
+
     return 0;
 }
