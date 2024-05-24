@@ -9,6 +9,7 @@
 #include <bitset>
 #include <sstream>
 #include <iomanip>
+#include <vector>
 #define USBCAN1 3 /* USBCAN-I */
 #define USBCAN2 4 /* USBCAN-II */
 #define CAN1 0
@@ -17,7 +18,15 @@
 #define Reserved 0
 typedef uint8_t Byte;
 
-class Inspire
+// 基类
+class CanWriter
+{
+public:
+    virtual int WriteCan(int address, int value, int handid) = 0;
+    virtual ~CanWriter() = default;
+};
+
+class Inspire : public CanWriter
 {
 private:
     DWORD dwRel;
@@ -25,16 +34,50 @@ private:
     CAN_OBJ frame;
 
 public:
+    /**
+     * 定义手部各个手指的静态常量
+     * 这些常量用于识别和表示人类手部的五个手指：拇指、食指、中指、无名指和小指。
+     * 通过分配唯一的整数值来代表每个手指，使得在程序中可以方便地引用和识别它们。
+     */
+    static const int THUMB_ROT = 1496; // 拇指
+    static const int THUMB = 1494;     // 拇指
+    static const int INDEX = 1492;     // 食指
+    static const int MIDDLE = 1490;    // 中指
+    static const int RING = 1488;      // 无名指
+    static const int PINKY = 1486;     // 小指
+    // 各个手指的速度和力的限制
+    static const int MAX_SPEED = 1000;
+    static const int MIN_SPEED = 0;
+    static const int MAX_FORCE = 1000;
+    static const int MIN_FORCE = 0;
+    // 手指速度对应的寄存器数值
+    static const int SPEED_THUMB_ROT = 1532;
+    static const int SPEED_THUMB = 1530;
+    static const int SPEED_INDEX = 1528;
+    static const int SPEED_MIDDLE = 1526;
+    static const int SPEED_RING = 1524;
+    static const int SPEED_PINKY = 1522;
+    // 手指力对应的寄存器数值
+    static const int FORCE_THUMB_ROT = 1508;
+    static const int FORCE_THUMB = 1506;
+    static const int FORCE_INDEX = 1504;
+    static const int FORCE_MIDDLE = 1502;
+    static const int FORCE_RING = 1500;
+    static const int FORCE_PINKY = 1498;
+
     Inspire(/* args */);
 
     ~Inspire();
+
     int InitCan();
+    // 重载函数
     int WriteCan(int address, int value, int handid);
     std::string GetAddressId(int address);
     std::string GetHandId(int handid);
     std::string GetFlageWriteRead(int flag_write_read);
     std::string GetCanId(int Address, int HandId, int flag_write_read);
     void ConvertValueToHex(int value, Byte data[2]);
+    void InspireCloseDevice();
 };
 
 Inspire::Inspire(/* args */)
@@ -50,13 +93,12 @@ Inspire::Inspire(/* args */)
     frame.SendType = 0;
     frame.RemoteFlag = 0;
     frame.ExternFlag = 1;
-
-    
 }
 
 Inspire::~Inspire()
 {
 }
+
 int Inspire::InitCan()
 {
     dwRel = OpenDevice(USBCAN2, DeviceInd, Reserved);
@@ -75,14 +117,12 @@ int Inspire::InitCan()
     {
         std::cout << "it is error when start can" << std::endl;
         CloseDevice(USBCAN2, DeviceInd);
-        return -1 ;
+        return -1;
     }
     usleep(10000);
     std::cout << "can init success" << std::endl;
     return 0;
 }
-
-
 
 std::string Inspire::GetAddressId(int address)
 {
@@ -194,10 +234,9 @@ int Inspire::WriteCan(int address, int value, int handid)
         std::cout << "canid is error" << std::endl;
         return -1;
     }
-    std::cout << "canid:" << canid << std::endl;
+    // std::cout << "canid:" << canid << std::endl;
     unsigned int Canid = std::bitset<32>(canid).to_ulong();
 
-   
     // frame.ID = 0000 0101 0111 0101 0000 0000 0000 0001
 
     Byte data[2];
@@ -211,9 +250,134 @@ int Inspire::WriteCan(int address, int value, int handid)
         CloseDevice(USBCAN2, DeviceInd);
         return -1;
     }
-    usleep(1);
+    usleep(1000);
     return 0;
-
 }
+void Inspire::InspireCloseDevice()
+
+{
+    CloseDevice(USBCAN2, DeviceInd);
+}
+
+// 接受基类指针，实现多态的动作类
+class InspireAction
+{
+public:
+    InspireAction(CanWriter *canwriter) : action_canwriter(canwriter) {}
+    // 编写动作函数，对应不同的动作，比如五指单独运动，五指同时运动等
+    // 拇指旋转
+    void ThumbRotAction(int value)
+    {
+        action_canwriter->WriteCan(Inspire::THUMB_ROT, value, 1);
+    }
+    // 拇指运动
+    void ThumbAction(int value)
+    {
+        action_canwriter->WriteCan(Inspire::THUMB, value, 1);
+    }
+    // 食指运动
+    void IndexAction(int value)
+    {
+        action_canwriter->WriteCan(Inspire::INDEX, value, 1);
+    }
+    // 中指运动
+    void MiddleAction(int value)
+    {
+        action_canwriter->WriteCan(Inspire::MIDDLE, value, 1);
+    }
+    // 无名指运动
+    void RingAction(int value)
+    {
+        action_canwriter->WriteCan(Inspire::RING, value, 1);
+    }
+    // 小指运动
+    void PinkyAction(int value)
+    {
+        action_canwriter->WriteCan(Inspire::PINKY, value, 1);
+    }
+    // 五指同时运动
+    int FiveFingerAction(std::vector<int> value)
+    {
+        if (value.size() != 6)
+        {
+            std::cout << "The size of value is not 6" << std::endl;
+            return -1;
+        }
+        action_canwriter->WriteCan(Inspire::THUMB_ROT, value[0], 1);
+
+        action_canwriter->WriteCan(Inspire::THUMB, value[0], 1);
+
+        action_canwriter->WriteCan(Inspire::INDEX, value[1], 1);
+
+        action_canwriter->WriteCan(Inspire::MIDDLE, value[2], 1);
+
+        action_canwriter->WriteCan(Inspire::RING, value[3], 1);
+
+        action_canwriter->WriteCan(Inspire::PINKY, value[4], 1);
+
+        return 0;
+    }
+// 设置五指的速度
+void SetFiveFingerSpeed(std::vector<int> value)
+{
+    if (value.size() != 6)
+    {
+        std::cout << "The size of value is not 6" << std::endl;
+        return;
+    }
+    for (int i = 0; i < value.size(); i++)
+    {
+        if (value[i] < Inspire::MIN_SPEED || value[i] > Inspire::MAX_SPEED)
+        {
+            std::cout << "The value is out of range [0, 1000]" << std::endl;
+            return;
+        }
+    }
+    action_canwriter->WriteCan(Inspire::SPEED_THUMB_ROT, value[0], 1);
+
+    action_canwriter->WriteCan(Inspire::SPEED_THUMB, value[0], 1);
+
+    action_canwriter->WriteCan(Inspire::SPEED_INDEX, value[1], 1);
+
+    action_canwriter->WriteCan(Inspire::SPEED_MIDDLE, value[2], 1);
+
+    action_canwriter->WriteCan(Inspire::SPEED_RING, value[3], 1);
+
+    action_canwriter->WriteCan(Inspire::SPEED_PINKY, value[4], 1);
+}
+// 设置五指的力
+void SetFiveFingerForce(std::vector<int> value)
+{
+    if (value.size() != 6)
+    {
+        std::cout << "The size of value is not 6" << std::endl;
+        return;
+    }
+    // 检查value范围是否在0-1000
+    for (int i = 0; i < value.size(); i++)
+    {
+        if (value[i] < Inspire::MIN_FORCE || value[i] > Inspire::MAX_FORCE)
+        {
+            std::cout << "The value is out of range [0, 1000]" << std::endl;
+            return;
+        }
+    }
+    action_canwriter->WriteCan(Inspire::FORCE_THUMB_ROT, value[0], 1);
+
+    action_canwriter->WriteCan(Inspire::FORCE_THUMB, value[0], 1);
+
+    action_canwriter->WriteCan(Inspire::FORCE_INDEX, value[1], 1);
+
+    action_canwriter->WriteCan(Inspire::FORCE_MIDDLE, value[2], 1);
+
+    action_canwriter->WriteCan(Inspire::FORCE_RING, value[3], 1);
+
+    action_canwriter->WriteCan(Inspire::FORCE_PINKY, value[4], 1);
+}
+    ~InspireAction() {}
+
+private:
+    CanWriter *action_canwriter;
+};
 
 #endif
