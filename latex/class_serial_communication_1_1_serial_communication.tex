@@ -1,0 +1,168 @@
+\doxysection{Serial\+Communication.\+Serial\+Communication类 参考}
+\hypertarget{class_serial_communication_1_1_serial_communication}{}\label{class_serial_communication_1_1_serial_communication}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_ad0aae385eb3a164c47da035a71f4b28a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class_serial_communication_1_1_serial_communication_ae0f6cb027bafa33b7317d0d1218e8266}{port}}, \mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a1060743cf0655d9d1f316eecd89235a0}{baudrate}}, \mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a16d08c1b1948bb640defaddae22e4fb6}{bytesize}}=serial.\+EIGHTBITS, \mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a822f0ce9565273c651c9388576b4345b}{stopbits}}=serial.\+STOPBITS\+\_\+\+ONE, \mbox{\hyperlink{class_serial_communication_1_1_serial_communication_af4517a87ad136ac2bfc63acc54a7f57e}{parity}}=serial.\+PARITY\+\_\+\+NONE, \mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a296aa8f44fce40e6f769ab97405d7e16}{timeout}}=1)
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a01055529d35950d5a184d339045adc92}{read}} (self, num\+\_\+bytes)
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a288906c1e3179d4363c4a56a3f14597c}{write}} (self, data)
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a641341d8b1c31e0f03bf158290c508b7}{send\+\_\+and\+\_\+receive}} (self, command, response\+\_\+length)
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a3b6e45d534d9a798a012437f68a26ec0}{close}} (self)
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a7f3b22ef67f98cb1f0d6f25a75533584}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a9c5f4005daa914b2292eb01bbd3e6da2}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+value, traceback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_ae0f6cb027bafa33b7317d0d1218e8266}{port}}
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a1060743cf0655d9d1f316eecd89235a0}{baudrate}}
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a16d08c1b1948bb640defaddae22e4fb6}{bytesize}}
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a822f0ce9565273c651c9388576b4345b}{stopbits}}
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_af4517a87ad136ac2bfc63acc54a7f57e}{parity}}
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a296aa8f44fce40e6f769ab97405d7e16}{timeout}}
+\item 
+\mbox{\hyperlink{class_serial_communication_1_1_serial_communication_a29e1a9b7cd746fd4468d1d066837da3e}{ser}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_serial_communication_1_1_serial_communication_ad0aae385eb3a164c47da035a71f4b28a}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_ad0aae385eb3a164c47da035a71f4b28a} 
+Serial\+Communication.\+Serial\+Communication.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{port}{, }\item[{}]{baudrate}{, }\item[{}]{bytesize}{ = {\ttfamily serial.EIGHTBITS}, }\item[{}]{stopbits}{ = {\ttfamily serial.STOPBITS\+\_\+ONE}, }\item[{}]{parity}{ = {\ttfamily serial.PARITY\+\_\+NONE}, }\item[{}]{timeout}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}初始化串行通信类
+
+参数:
+    port (str): 串行端口号
+    baudrate (int): 波特率
+    bytesize (int): 数据位数，默认为8位（serial.EIGHTBITS）
+    stopbits (int): 停止位数，默认为1位（serial.STOPBITS_ONE）
+    parity (int): 校验位，默认为无校验（serial.PARITY_NONE）
+    timeout (float): 超时时间（秒），默认为1秒
+\end{DoxyVerb}
+ 
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_serial_communication_1_1_serial_communication_a7f3b22ef67f98cb1f0d6f25a75533584}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a7f3b22ef67f98cb1f0d6f25a75533584} 
+Serial\+Communication.\+Serial\+Communication.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_serial_communication_1_1_serial_communication_a9c5f4005daa914b2292eb01bbd3e6da2}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a9c5f4005daa914b2292eb01bbd3e6da2} 
+Serial\+Communication.\+Serial\+Communication.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exc\+\_\+type}{, }\item[{}]{exc\+\_\+value}{, }\item[{}]{traceback}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_serial_communication_1_1_serial_communication_a3b6e45d534d9a798a012437f68a26ec0}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!close@{close}}
+\index{close@{close}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a3b6e45d534d9a798a012437f68a26ec0} 
+Serial\+Communication.\+Serial\+Communication.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}关闭串行通信
+\end{DoxyVerb}
+ \Hypertarget{class_serial_communication_1_1_serial_communication_a01055529d35950d5a184d339045adc92}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!read@{read}}
+\index{read@{read}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a01055529d35950d5a184d339045adc92} 
+Serial\+Communication.\+Serial\+Communication.\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{num\+\_\+bytes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}从串行端口读取指定字节数的数据
+
+参数:
+    num_bytes (int): 需要读取的字节数
+
+返回:
+    bytes: 读取到的数据
+\end{DoxyVerb}
+ \Hypertarget{class_serial_communication_1_1_serial_communication_a641341d8b1c31e0f03bf158290c508b7}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!send\_and\_receive@{send\_and\_receive}}
+\index{send\_and\_receive@{send\_and\_receive}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{send\_and\_receive()}{send\_and\_receive()}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a641341d8b1c31e0f03bf158290c508b7} 
+Serial\+Communication.\+Serial\+Communication.\+send\+\_\+and\+\_\+receive (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{command}{, }\item[{}]{response\+\_\+length}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}发送命令并接收指定长度的响应
+
+参数:
+    command (bytes): 命令数据
+    response_length (int): 预期响应的字节数
+
+返回:
+    bytes: 接收到的响应数据
+\end{DoxyVerb}
+ \Hypertarget{class_serial_communication_1_1_serial_communication_a288906c1e3179d4363c4a56a3f14597c}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!write@{write}}
+\index{write@{write}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a288906c1e3179d4363c4a56a3f14597c} 
+Serial\+Communication.\+Serial\+Communication.\+write (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}向串行端口写入数据
+
+参数:
+    data (bytes): 需要写入的数据
+\end{DoxyVerb}
+ 
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_serial_communication_1_1_serial_communication_a1060743cf0655d9d1f316eecd89235a0}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!baudrate@{baudrate}}
+\index{baudrate@{baudrate}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{baudrate}{baudrate}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a1060743cf0655d9d1f316eecd89235a0} 
+Serial\+Communication.\+Serial\+Communication.\+baudrate}
+
+\Hypertarget{class_serial_communication_1_1_serial_communication_a16d08c1b1948bb640defaddae22e4fb6}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!bytesize@{bytesize}}
+\index{bytesize@{bytesize}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{bytesize}{bytesize}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a16d08c1b1948bb640defaddae22e4fb6} 
+Serial\+Communication.\+Serial\+Communication.\+bytesize}
+
+\Hypertarget{class_serial_communication_1_1_serial_communication_af4517a87ad136ac2bfc63acc54a7f57e}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!parity@{parity}}
+\index{parity@{parity}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{parity}{parity}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_af4517a87ad136ac2bfc63acc54a7f57e} 
+Serial\+Communication.\+Serial\+Communication.\+parity}
+
+\Hypertarget{class_serial_communication_1_1_serial_communication_ae0f6cb027bafa33b7317d0d1218e8266}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!port@{port}}
+\index{port@{port}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_ae0f6cb027bafa33b7317d0d1218e8266} 
+Serial\+Communication.\+Serial\+Communication.\+port}
+
+\Hypertarget{class_serial_communication_1_1_serial_communication_a29e1a9b7cd746fd4468d1d066837da3e}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!ser@{ser}}
+\index{ser@{ser}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{ser}{ser}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a29e1a9b7cd746fd4468d1d066837da3e} 
+Serial\+Communication.\+Serial\+Communication.\+ser}
+
+\Hypertarget{class_serial_communication_1_1_serial_communication_a822f0ce9565273c651c9388576b4345b}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!stopbits@{stopbits}}
+\index{stopbits@{stopbits}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{stopbits}{stopbits}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a822f0ce9565273c651c9388576b4345b} 
+Serial\+Communication.\+Serial\+Communication.\+stopbits}
+
+\Hypertarget{class_serial_communication_1_1_serial_communication_a296aa8f44fce40e6f769ab97405d7e16}\index{SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}!timeout@{timeout}}
+\index{timeout@{timeout}!SerialCommunication.SerialCommunication@{SerialCommunication.SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{timeout}{timeout}}
+{\footnotesize\ttfamily \label{class_serial_communication_1_1_serial_communication_a296aa8f44fce40e6f769ab97405d7e16} 
+Serial\+Communication.\+Serial\+Communication.\+timeout}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+script/\mbox{\hyperlink{_serial_communication_8py}{Serial\+Communication.\+py}}\end{DoxyCompactItemize}

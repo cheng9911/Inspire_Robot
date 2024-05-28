@@ -1,0 +1,1397 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a7f3b22ef67f98cb1f0d6f25a75533584"><param name="Name" value="__enter__(self)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a9c5f4005daa914b2292eb01bbd3e6da2"><param name="Name" value="__exit__(self, exc_type, exc_value, traceback)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html#a960f2d9a32ef9dfeb7324fc1a954a96a"><param name="Name" value="__init__(self, port, baudrate, bytesize=EIGHTBITS, stopbits=STOPBITS_ONE, parity=PARITY_NONE, timeout=1)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#ad0aae385eb3a164c47da035a71f4b28a"><param name="Name" value="__init__(self, port, baudrate, bytesize=serial.EIGHTBITS, stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE, timeout=1)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="Name" value="_BOARD_INFO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="Name" value="_BOARD_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a8ceb9456799beed8106abbe75c337ea7"><param name="Name" value="can_Num"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="Name" value="_BOARD_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#adbaf7274f9735740380f412b787ec23d"><param name="Name" value="dr_Version"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="Name" value="_BOARD_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#aa3f3157f59fb8f74f132e4be57780ab7"><param name="Name" value="fw_Version"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="Name" value="_BOARD_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#ac90dd5e75581e0c4911bb97a96a4f4bf"><param name="Name" value="hw_Version"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="Name" value="_BOARD_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a9a537d37ff2a4d4870a53ad32ad38942"><param name="Name" value="in_Version"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="Name" value="_BOARD_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a04f43132c1ef3d0434daa88c31be7499"><param name="Name" value="irq_Num"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="Name" value="_BOARD_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#ac8b3a86ffd6f196b949699185e7c6140"><param name="Name" value="Reserved[4]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="Name" value="_BOARD_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a9347fed091a22376d9d73a724716283e"><param name="Name" value="str_hw_Type[40]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="Name" value="_BOARD_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a5cb7dfd291c2f1ccf447453c18378d26"><param name="Name" value="str_Serial_Num[20]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html"><param name="Name" value="_CAN_OBJ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html"><param name="Name" value="_CAN_OBJ"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#a970bfebb2e32f2e51c0fc5cf61719ad0"><param name="Name" value="Data[8]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html"><param name="Name" value="_CAN_OBJ"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#aea9524b8a1effa0172d80f9bde8dc0db"><param name="Name" value="DataLen"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html"><param name="Name" value="_CAN_OBJ"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#a6ab2c6f2ca66783216f21e4fea5bbee6"><param name="Name" value="ExternFlag"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html"><param name="Name" value="_CAN_OBJ"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#a466004f2eb7a540b1e3d651e1f82362f"><param name="Name" value="ID"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html"><param name="Name" value="_CAN_OBJ"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#a1883cb75a04f4288041e784c66ad304b"><param name="Name" value="RemoteFlag"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html"><param name="Name" value="_CAN_OBJ"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#abfe065f4488ba2d2bf18e9590af41687"><param name="Name" value="Reserved[3]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html"><param name="Name" value="_CAN_OBJ"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#a041f210bd52d51321f4bf8e92f1337bc"><param name="Name" value="SendType"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html"><param name="Name" value="_CAN_OBJ"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#abdba16cc25d248bdbab9cdbcc3cc8f1e"><param name="Name" value="TimeFlag"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html"><param name="Name" value="_CAN_OBJ"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#ad90568938408e487a52a27e334a6979d"><param name="Name" value="TimeStamp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a89fb78eb4f83e54bac94dbb9a541cba2"><param name="Name" value="ErrInterrupt"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a463a5d025f7c1f09c3387907f5f151d3"><param name="Name" value="regALCapture"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a2599f2dfca8db98d8fdd8d41902e5d36"><param name="Name" value="regECCapture"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#ac8624fff290efd8eca9f9edc82fb1668"><param name="Name" value="regEWLimit"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#ad68e30ad6a586296499cff0cc3aac700"><param name="Name" value="regMode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#ab861c0b7802a704cc0f3d897293a03b5"><param name="Name" value="regRECounter"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#ab09482bf6d7231e30fd5648f86a05c4e"><param name="Name" value="regStatus"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a58c867e23704e44f361cb9f45584985f"><param name="Name" value="regTECounter"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a8425d8c8fd860d8ffea538397ea871bf"><param name="Name" value="Reserved"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___e_r_r___i_n_f_o.html"><param name="Name" value="_ERR_INFO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___e_r_r___i_n_f_o.html"><param name="Name" value="_ERR_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___e_r_r___i_n_f_o.html#a9aa670b4d4614b3f63b718cf0e93e38c"><param name="Name" value="ArLost_ErrData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___e_r_r___i_n_f_o.html"><param name="Name" value="_ERR_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___e_r_r___i_n_f_o.html#a4dee30523deb819a93368349f09e68f0"><param name="Name" value="ErrCode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___e_r_r___i_n_f_o.html"><param name="Name" value="_ERR_INFO"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___e_r_r___i_n_f_o.html#a3b388183297cba7c2fcb5fddbc32eb27"><param name="Name" value="Passive_ErrData[3]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___f_i_l_t_e_r___r_e_c_o_r_d.html"><param name="Name" value="_FILTER_RECORD"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___f_i_l_t_e_r___r_e_c_o_r_d.html"><param name="Name" value="_FILTER_RECORD"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___f_i_l_t_e_r___r_e_c_o_r_d.html#a0aaf9d6ececd520c63ef9f0b84480517"><param name="Name" value="End"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___f_i_l_t_e_r___r_e_c_o_r_d.html"><param name="Name" value="_FILTER_RECORD"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___f_i_l_t_e_r___r_e_c_o_r_d.html#aca8b578dfd36e751f005d85dbc326c81"><param name="Name" value="ExtFrame"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___f_i_l_t_e_r___r_e_c_o_r_d.html"><param name="Name" value="_FILTER_RECORD"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___f_i_l_t_e_r___r_e_c_o_r_d.html#ad2c5f073c6ec634aaad5aa9fc970c8a8"><param name="Name" value="Start"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html"><param name="Name" value="_INIT_CONFIG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html"><param name="Name" value="_INIT_CONFIG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#a141bad0df36ed206f07c2c164e565c51"><param name="Name" value="AccCode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html"><param name="Name" value="_INIT_CONFIG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#ad5517931fd8f05f8d469216b0c18bc34"><param name="Name" value="AccMask"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html"><param name="Name" value="_INIT_CONFIG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#af33b702a0ab75e94ae6cebc8fa62e3ed"><param name="Name" value="Filter"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html"><param name="Name" value="_INIT_CONFIG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#ad267988dd3a22f9b7c7aabde6c1c29f8"><param name="Name" value="Mode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html"><param name="Name" value="_INIT_CONFIG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#ac64b2de3e97692c47e0a6ee8cf74ac73"><param name="Name" value="Reserved"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html"><param name="Name" value="_INIT_CONFIG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#ac8eba19e4d98325b91926cbcd338f80d"><param name="Name" value="Timing0"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html"><param name="Name" value="_INIT_CONFIG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#a8b2d6c47806094d4a032a8daa8c575bd"><param name="Name" value="Timing1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#a141bad0df36ed206f07c2c164e565c51"><param name="Name" value="AccCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#ad5517931fd8f05f8d469216b0c18bc34"><param name="Name" value="AccMask"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#ae6ca1732e75756071bd14bbceb71c356"><param name="Name" value="action_canwriter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___e_r_r___i_n_f_o.html#a9aa670b4d4614b3f63b718cf0e93e38c"><param name="Name" value="ArLost_ErrData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a1060743cf0655d9d1f316eecd89235a0"><param name="Name" value="baudrate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#af5ed855cec8a0d2b9934e3c2501b1594"><param name="Name" value="BOARD_INFO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa"><param name="Name" value="BOOL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aec93e83855ac17c3c25c55c37ca186dd"><param name="Name" value="BYTE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a7ae8f3766c8853286755f4ec0903c6f0"><param name="Name" value="Byte"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a7ae8f3766c8853286755f4ec0903c6f0"><param name="Name" value="Inspire.hpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a7ae8f3766c8853286755f4ec0903c6f0"><param name="Name" value="Byte"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a7ae8f3766c8853286755f4ec0903c6f0"><param name="Name" value="main.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a16d08c1b1948bb640defaddae22e4fb6"><param name="Name" value="bytesize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#a570e0694aa01e4bdf4849846880e1ad1"><param name="Name" value="c[8]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a4964ecb6a5c689aaf8ee2832b8093aac"><param name="Name" value="CAN1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a4964ecb6a5c689aaf8ee2832b8093aac"><param name="Name" value="Inspire.hpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a4964ecb6a5c689aaf8ee2832b8093aac"><param name="Name" value="CAN1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a4964ecb6a5c689aaf8ee2832b8093aac"><param name="Name" value="main.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#ac5e4c86ed487dc91418b156e24808033"><param name="Name" value="CAN2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#ac5e4c86ed487dc91418b156e24808033"><param name="Name" value="Inspire.hpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#ac5e4c86ed487dc91418b156e24808033"><param name="Name" value="CAN2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#ac5e4c86ed487dc91418b156e24808033"><param name="Name" value="main.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a2575d7e9267258b433fe100128765e31"><param name="Name" value="CAN_id"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a8ceb9456799beed8106abbe75c337ea7"><param name="Name" value="can_Num"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a1297583dce0f039cad8e7da69cee9ab6"><param name="Name" value="CAN_OBJ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a191c6ed925eaf3cf2070f8cd36abca29"><param name="Name" value="CAN_STATUS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ab4623d041d648370a73206564de10445"><param name="Name" value="canid"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_can_writer.html"><param name="Name" value="CanWriter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_can_writer.html"><param name="Name" value="CanWriter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_can_writer.html#a32d89e15b9752e98489d3fec84f38ae0"><param name="Name" value="WriteCan(int address, int value, int handid)=0"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_can_writer.html"><param name="Name" value="CanWriter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_can_writer.html#ab830e1f5632bac4afdcf1e40a6409fb5"><param name="Name" value="~CanWriter()=default"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html#a8e3e4d0914966d20fbd8bc3b0a69a61d"><param name="Name" value="channel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a35cd67ba7bb0db8105eb6267467535d7"><param name="Name" value="CHAR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a619d97bcebac72ae85378dda955978f6"><param name="Name" value="CHECK_POINT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a4e60fc535b4d4263594cc9a17d1b1c46"><param name="Name" value="ClearBuffer(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a3b6e45d534d9a798a012437f68a26ec0"><param name="Name" value="close(self)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#accb9eba67a87e313507d88a3b554bd72"><param name="Name" value="CloseDevice(DWORD DeviceType, DWORD DeviceInd)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html"><param name="Name" value="CMSG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html"><param name="Name" value="CMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#af77d96d461d6cff9674786dea7bf9ab6"><param name="Name" value="data[8]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html"><param name="Name" value="CMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#a41ce456fe8864c9e0912297db83259ef"><param name="Name" value="id"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html"><param name="Name" value="CMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#afd16fa0d689b662403e7a2617914d693"><param name="Name" value="len"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html"><param name="Name" value="CMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#a036c7d8b2ca29bf8a12db4a432889985"><param name="Name" value="msg_lost"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html"><param name="Name" value="CMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#ada7643183095972cc2841dcff1a8b576"><param name="Name" value="reserved[2]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html"><param name="Name" value="CMSG_T"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html"><param name="Name" value="CMSG_T"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#ae5ecb0285a4d75d0c984b853ed8ec9da"><param name="Name" value="data[8]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html"><param name="Name" value="CMSG_T"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#ac5ae050ed2744842e879f66233be1277"><param name="Name" value="id"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html"><param name="Name" value="CMSG_T"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#a4e6cf4848b910f997b35308fa48f11d4"><param name="Name" value="len"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html"><param name="Name" value="CMSG_T"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#ae03a9c5c92d7d6b91450a847312f3919"><param name="Name" value="msg_lost"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html"><param name="Name" value="CMSG_T"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#a3655004d2d2ab74a635c4b5a5e4dbd0b"><param name="Name" value="reserved[2]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html"><param name="Name" value="CMSG_T"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#a393062cb291e150aae46e3e5e30fd7db"><param name="Name" value="timestamp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aee50591238bbf691bc9ea3ac23b2ae01"><param name="Name" value="ConvertValueToHex(int value, Byte data[2])"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#a970bfebb2e32f2e51c0fc5cf61719ad0"><param name="Name" value="Data[8]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#af77d96d461d6cff9674786dea7bf9ab6"><param name="Name" value="data[8]"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#af77d96d461d6cff9674786dea7bf9ab6"><param name="Name" value="CMSG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#ae5ecb0285a4d75d0c984b853ed8ec9da"><param name="Name" value="data[8]"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#ae5ecb0285a4d75d0c984b853ed8ec9da"><param name="Name" value="CMSG_T"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#aea9524b8a1effa0172d80f9bde8dc0db"><param name="Name" value="DataLen"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a1d3e638d499a621cec1f0a6c6487f994"><param name="Name" value="DeviceInd"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#adbaf7274f9735740380f412b787ec23d"><param name="Name" value="dr_Version"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aa39b39d94407451a6ec0226479db68cf"><param name="Name" value="DWORD"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a0794616ed24d55dcec49da6cc160c7dd"><param name="Name" value="dwRel"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a0794616ed24d55dcec49da6cc160c7dd"><param name="Name" value="Inspire"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#ade42cec8888fceecaeeb1d6cd077ddf9"><param name="Name" value="dwRel"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#ade42cec8888fceecaeeb1d6cd077ddf9"><param name="Name" value="main.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a81a1fe3aff5794b728fd11294841319b"><param name="Name" value="ECAN_ERR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#adafbce86fbef0645c2740df845ce9494"><param name="Name" value="ECAN_EV_ADD_ID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a7b2fc07004b09aa28b1ed2500932cf1c"><param name="Name" value="ECAN_EV_ADD_ID_RANG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a8b66e800d4c958709de1d8f4eb7d2186"><param name="Name" value="ECAN_EV_ADD_ID_SA"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a66f75991e1f5cf7f228c85d2d425795e"><param name="Name" value="ECAN_EV_ADD_ID_ZERO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ae4831cabbf861b78d15fa5bc9b79c767"><param name="Name" value="ECAN_EV_ADD_MASK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a11f773439acbd9956fb0f3aee02ef6db"><param name="Name" value="ECAN_EV_BASE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#af4453fc88d0d2a6ee45b40e3d09f97aa"><param name="Name" value="ECAN_EV_BAUD_CHANGE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a1728d3f0b755d99bbbc13fa38679119a"><param name="Name" value="ECAN_EV_CAN_ERROR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a0edcfcb8c58f0ba84744ba0dd1568bf7"><param name="Name" value="ECAN_EV_LAST"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a876a239bdde48db1a8ea99d99f263675"><param name="Name" value="ECAN_EV_Mode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a5a5a0c4ef729b3b94e146abb26f80b2a"><param name="Name" value="ECAN_EV_RESET"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#af59ac1f92b7d6c721c241b6e6c3c0588"><param name="Name" value="ECAN_EV_USER"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aa12843bdec30715577ad31385f0e1a81"><param name="Name" value="ECAN_HANDLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a4dbdfbea94e8816ddf72082ad10ee581"><param name="Name" value="ECAN_IOCTL_GET_TIMESTAMP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a26b027f6c021e8c0d8c8874fb373a3b9"><param name="Name" value="ECAN_IOCTL_GET_TIMESTAMP_FREQ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a29b6316be96b07864c6a7b77994fa810"><param name="Name" value="ECAN_RESULT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#afe6f152cf8801e45eb2085e66d23a56c"><param name="Name" value="ECAN_RX_TIMEOUT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a6091245e4217332ebbe61065b7c2b894"><param name="Name" value="ECAN_SUCCESS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a14079d15f50d287ea6fc11ea7869ddd7"><param name="Name" value="ECAN_TX_ERROR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a0b6698518357ad64f189c9a1bcba4c61"><param name="Name" value="ECAN_TX_TIMEOUT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#af5ed855cec8a0d2b9934e3c2501b1594"><param name="Name" value="BOARD_INFO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa"><param name="Name" value="BOOL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aec93e83855ac17c3c25c55c37ca186dd"><param name="Name" value="BYTE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a1297583dce0f039cad8e7da69cee9ab6"><param name="Name" value="CAN_OBJ"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a191c6ed925eaf3cf2070f8cd36abca29"><param name="Name" value="CAN_STATUS"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a35cd67ba7bb0db8105eb6267467535d7"><param name="Name" value="CHAR"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a4e60fc535b4d4263594cc9a17d1b1c46"><param name="Name" value="ClearBuffer(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#accb9eba67a87e313507d88a3b554bd72"><param name="Name" value="CloseDevice(DWORD DeviceType, DWORD DeviceInd)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aa39b39d94407451a6ec0226479db68cf"><param name="Name" value="DWORD"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a81a1fe3aff5794b728fd11294841319b"><param name="Name" value="ECAN_ERR"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#adafbce86fbef0645c2740df845ce9494"><param name="Name" value="ECAN_EV_ADD_ID"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a7b2fc07004b09aa28b1ed2500932cf1c"><param name="Name" value="ECAN_EV_ADD_ID_RANG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a8b66e800d4c958709de1d8f4eb7d2186"><param name="Name" value="ECAN_EV_ADD_ID_SA"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a66f75991e1f5cf7f228c85d2d425795e"><param name="Name" value="ECAN_EV_ADD_ID_ZERO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ae4831cabbf861b78d15fa5bc9b79c767"><param name="Name" value="ECAN_EV_ADD_MASK"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a11f773439acbd9956fb0f3aee02ef6db"><param name="Name" value="ECAN_EV_BASE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#af4453fc88d0d2a6ee45b40e3d09f97aa"><param name="Name" value="ECAN_EV_BAUD_CHANGE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a1728d3f0b755d99bbbc13fa38679119a"><param name="Name" value="ECAN_EV_CAN_ERROR"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a0edcfcb8c58f0ba84744ba0dd1568bf7"><param name="Name" value="ECAN_EV_LAST"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a876a239bdde48db1a8ea99d99f263675"><param name="Name" value="ECAN_EV_Mode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a5a5a0c4ef729b3b94e146abb26f80b2a"><param name="Name" value="ECAN_EV_RESET"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#af59ac1f92b7d6c721c241b6e6c3c0588"><param name="Name" value="ECAN_EV_USER"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aa12843bdec30715577ad31385f0e1a81"><param name="Name" value="ECAN_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a4dbdfbea94e8816ddf72082ad10ee581"><param name="Name" value="ECAN_IOCTL_GET_TIMESTAMP"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a26b027f6c021e8c0d8c8874fb373a3b9"><param name="Name" value="ECAN_IOCTL_GET_TIMESTAMP_FREQ"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a29b6316be96b07864c6a7b77994fa810"><param name="Name" value="ECAN_RESULT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#afe6f152cf8801e45eb2085e66d23a56c"><param name="Name" value="ECAN_RX_TIMEOUT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a6091245e4217332ebbe61065b7c2b894"><param name="Name" value="ECAN_SUCCESS"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a14079d15f50d287ea6fc11ea7869ddd7"><param name="Name" value="ECAN_TX_ERROR"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a0b6698518357ad64f189c9a1bcba4c61"><param name="Name" value="ECAN_TX_TIMEOUT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#abb3df667f9d9dc43b26e29ce4c24f92f"><param name="Name" value="ERR_BUFFEROVERFLOW"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a440dd9e4bd59aa6492f391cf2e54e9cb"><param name="Name" value="ERR_CAN_BUSERR"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ac399bcea13103e0c8ddca869364fa0a1"><param name="Name" value="ERR_CAN_ERRALARM"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ad43a6aadfe92f0e89b89417ccd02eece"><param name="Name" value="ERR_CAN_LOSE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a96d40de9ea57d6a8755654d829c13167"><param name="Name" value="ERR_CAN_OVERFLOW"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ab5338e8125403d8afba124a82ad05033"><param name="Name" value="ERR_CAN_PASSIVE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ab943e1812c81c60dcef8953faa55b560"><param name="Name" value="ERR_CAN_REG_FULL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a44cc4785c8ed110866feff913eda4aab"><param name="Name" value="ERR_CAN_REG_OVER"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a9a662a433d4dd9aa14c8e3175b77a169"><param name="Name" value="ERR_CAN_ZHUDONG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a8a7712decf2ec4d71c6b2bd64739bb45"><param name="Name" value="ERR_CMDFAILED"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a35d3c668af4f4c4222a89bdc724a4d3c"><param name="Name" value="ERR_DEVICENOTEXIST"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#af6da5e5ff9df06fddec068766f9d21d3"><param name="Name" value="ERR_DEVICENOTOPEN"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a095c1049e96bab986fce7c216b4eb991"><param name="Name" value="ERR_DEVICEOPEN"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a298696a46039a86c645512b333ce0207"><param name="Name" value="ERR_DEVICEOPENED"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ab7e49d5b4a2afae054c8d0a65c337872"><param name="Name" value="ERR_INFO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a434646138b406a076f0803402971857a"><param name="Name" value="ERR_LOADKERNELDLL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a445d8fda4979a8fcfaa6cad050b5e3a8"><param name="Name" value="FILTER_RECORD"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#af4d90859b6bd9c551750c8b294ae976a"><param name="Name" value="GetReceiveNum(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a59e960288f67bbdcda1c328fce218abb"><param name="Name" value="GetReference(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, DWORD RefType, PVOID pData)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ab521aa5010fb1afb801a899a55569e03"><param name="Name" value="HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a97d5dab778fb21834da32140b5bb8996"><param name="Name" value="INIT_CONFIG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aa2e7908f574ea5d75ab10218016b2e16"><param name="Name" value="InitCAN(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, P_INIT_CONFIG pInitConfig)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#afeeffe52c8fd59db7c61cf8b02042dbf"><param name="Name" value="INT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a085f5f68a0ee4ab24d9f3954a78e8063"><param name="Name" value="LPVOID"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a9022c5b045e725e2cce127412e1ce765"><param name="Name" value="OpenDevice(DWORD DeviceType, DWORD DeviceInd, DWORD Reserved)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a98f30ef1f2d26c50df1e5cb3cf6e6040"><param name="Name" value="P_BOARD_INFO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aae31f3d5e8f7005c0f40e97bdd4e5bb0"><param name="Name" value="P_CAN_OBJ"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a4ba38802e100554e8ad30ecdeb36723b"><param name="Name" value="P_CAN_STATUS"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a919c52a69a6ccbf3e765d8409a07def5"><param name="Name" value="P_ERR_INFO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aaaa64b8ae4a266f47c03dc079de65e2f"><param name="Name" value="P_FILTER_RECORD"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a754d13cd67b3a4486b18878a5265bf06"><param name="Name" value="P_INIT_CONFIG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a03f3290757a46f2993802ffc9750d347"><param name="Name" value="PVOID"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ab38f194d5d8368a9d55642ffb928275d"><param name="Name" value="ReadBoardInfo(DWORD DeviceType, DWORD DeviceInd, P_BOARD_INFO pInfo)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a0c03b6dc3f62a16037309c443295b8c7"><param name="Name" value="ReadCANStatus(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, P_CAN_STATUS pCANStatus)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aea1dd3a7c5bc0846207410fdf330a702"><param name="Name" value="ReadErrInfo(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, P_ERR_INFO pErrInfo)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a1a4bcc31fafacbfcd5f0ec84c7ddfd8c"><param name="Name" value="Receive(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, P_CAN_OBJ pReceive, ULONG Len, INT WaitTime)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a6bae3cb7a83a0f8379cf78d39da60072"><param name="Name" value="ResetCAN(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a1ef960b1aecede17b109272da1040467"><param name="Name" value="SetReference(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, DWORD RefType, PVOID pData)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a7098cb9ca9f4ee3dadee3896c9d5df8b"><param name="Name" value="StartCAN(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a23205a6a97096d57a247794f5e250963"><param name="Name" value="STATUS_ERR"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a2403320c41f08e7567cb169de5db66b3"><param name="Name" value="STATUS_OK"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a828a26f60aac5411280f2ca4f277eb95"><param name="Name" value="Transmit(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, P_CAN_OBJ pSend, ULONG Len)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a9a1dc6d243c6f75bb42f87e3f69649e4"><param name="Name" value="UCHAR"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a45c20c14d3d8790a22153d08ab2eb2ff"><param name="Name" value="UINT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a13503cb3b34d9eb71eda8ff4065e80ff"><param name="Name" value="ULONG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html"><param name="Name" value="ECanVci.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aea50feaf24fd53b7ffab0e9b62ff30a6"><param name="Name" value="USHORT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___f_i_l_t_e_r___r_e_c_o_r_d.html#a0aaf9d6ececd520c63ef9f0b84480517"><param name="Name" value="End"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#abb3df667f9d9dc43b26e29ce4c24f92f"><param name="Name" value="ERR_BUFFEROVERFLOW"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a440dd9e4bd59aa6492f391cf2e54e9cb"><param name="Name" value="ERR_CAN_BUSERR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ac399bcea13103e0c8ddca869364fa0a1"><param name="Name" value="ERR_CAN_ERRALARM"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ad43a6aadfe92f0e89b89417ccd02eece"><param name="Name" value="ERR_CAN_LOSE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a96d40de9ea57d6a8755654d829c13167"><param name="Name" value="ERR_CAN_OVERFLOW"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ab5338e8125403d8afba124a82ad05033"><param name="Name" value="ERR_CAN_PASSIVE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ab943e1812c81c60dcef8953faa55b560"><param name="Name" value="ERR_CAN_REG_FULL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a44cc4785c8ed110866feff913eda4aab"><param name="Name" value="ERR_CAN_REG_OVER"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a9a662a433d4dd9aa14c8e3175b77a169"><param name="Name" value="ERR_CAN_ZHUDONG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a8a7712decf2ec4d71c6b2bd64739bb45"><param name="Name" value="ERR_CMDFAILED"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a35d3c668af4f4c4222a89bdc724a4d3c"><param name="Name" value="ERR_DEVICENOTEXIST"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#af6da5e5ff9df06fddec068766f9d21d3"><param name="Name" value="ERR_DEVICENOTOPEN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a095c1049e96bab986fce7c216b4eb991"><param name="Name" value="ERR_DEVICEOPEN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a298696a46039a86c645512b333ce0207"><param name="Name" value="ERR_DEVICEOPENED"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ab7e49d5b4a2afae054c8d0a65c337872"><param name="Name" value="ERR_INFO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a434646138b406a076f0803402971857a"><param name="Name" value="ERR_LOADKERNELDLL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___e_r_r___i_n_f_o.html#a4dee30523deb819a93368349f09e68f0"><param name="Name" value="ErrCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a89fb78eb4f83e54bac94dbb9a541cba2"><param name="Name" value="ErrInterrupt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html#a6ebc86a9b0025e01ccf6fc45df6ea6f3"><param name="Name" value="error"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#a9791f3fe55d37c85107cc6d6ae82b68f"><param name="Name" value="evdata"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#ad5796bdc48e3dda85da9443718ec0cbe"><param name="Name" value="evid"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html"><param name="Name" value="EVMSG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html"><param name="Name" value="EVMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#a570e0694aa01e4bdf4849846880e1ad1"><param name="Name" value="c[8]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html"><param name="Name" value="EVMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#a9791f3fe55d37c85107cc6d6ae82b68f"><param name="Name" value="evdata"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html"><param name="Name" value="EVMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#ad5796bdc48e3dda85da9443718ec0cbe"><param name="Name" value="evid"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html"><param name="Name" value="EVMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#a132ebc4d6c56427448b05596b5af2a90"><param name="Name" value="l[2]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html"><param name="Name" value="EVMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#aa557132d2f78b1a1036120a1cd043ddf"><param name="Name" value="len"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html"><param name="Name" value="EVMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#a9a81987b279ebe2a8048bf24017f9eed"><param name="Name" value="reserved[3]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html"><param name="Name" value="EVMSG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#a0164fdd175b6553edca72fd57b80284b"><param name="Name" value="s[4]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#a6ab2c6f2ca66783216f21e4fea5bbee6"><param name="Name" value="ExternFlag"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___f_i_l_t_e_r___r_e_c_o_r_d.html#aca8b578dfd36e751f005d85dbc326c81"><param name="Name" value="ExtFrame"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#af33b702a0ab75e94ae6cebc8fa62e3ed"><param name="Name" value="Filter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a445d8fda4979a8fcfaa6cad050b5e3a8"><param name="Name" value="FILTER_RECORD"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#ab46012053379df10d72bb4adc34b876b"><param name="Name" value="FiveFingerAction(std::vector&lt; int &gt; value)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aad4311dc16d1d01ddb22668ea0427acc"><param name="Name" value="FORCE_INDEX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ac4a02eb82949f24fcaec29a99735ae7d"><param name="Name" value="FORCE_MIDDLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a97ec345e59478bc88a236ec2c3e923ef"><param name="Name" value="FORCE_PINKY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a7e0886f77b56821222eec1033e7f5565"><param name="Name" value="FORCE_RING"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ac8d4b2dd80fe4236c162f1bd66bc9a80"><param name="Name" value="FORCE_THUMB"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aecdbc31afc8a4d8e74b90ec77680c09c"><param name="Name" value="FORCE_THUMB_ROT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#acfa6a401c500b3eaae3765125017a3f6"><param name="Name" value="frame"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#aa3f3157f59fb8f74f132e4be57780ab7"><param name="Name" value="fw_Version"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a563e4b3527b6e6cb8a8fae32796571b0"><param name="Name" value="gBaud"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#aa7ced24463c3050ae6bed9065ee27a60"><param name="Name" value="gChMask"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a708bd14ffebc4d5ec0594120aa0e6e60"><param name="Name" value="gDevIdx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a38a6572ed3af5b7e2c7670f74ebb457b"><param name="Name" value="gDevType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a96f0d36d6fc2f6a0122109d902fff61c"><param name="Name" value="gen_CAN_id(handid, reg, rorw)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_inspire.html#a05f4629e192eb42312ae79db5a58c87d"><param name="Name" value="gen_Can_id(handid, reg, rorw)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_inspire.html#a05f4629e192eb42312ae79db5a58c87d"><param name="Name" value="Inspire"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html#aaa2d74525344b1cd0332c6cea7d526a1"><param name="Name" value="gen_Can_id(handid, reg, rorw)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html#aaa2d74525344b1cd0332c6cea7d526a1"><param name="Name" value="Inspire::Inspire"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a60475535f785e78b50a6ac20d1d133d4"><param name="Name" value="generate_frame(CAN_OBJ *can)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a4e6bc517c81ca1612d130966b9ca1f4e"><param name="Name" value="GetAddressId(int address)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a4f20f1644ac1c4095091fd9d543d64f0"><param name="Name" value="GetCanId(int Address, int HandId, int flag_write_read)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ab99caa974bbb3232a69b6970acc03d6a"><param name="Name" value="GetFlageWriteRead(int flag_write_read)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a3648a2e634bc3e9ba24603bdcdec34ff"><param name="Name" value="GetHandId(int handid)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#af4d90859b6bd9c551750c8b294ae976a"><param name="Name" value="GetReceiveNum(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a59e960288f67bbdcda1c328fce218abb"><param name="Name" value="GetReference(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, DWORD RefType, PVOID pData)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#ac4f7124ae2c1197e84e44f3ca74380e2"><param name="Name" value="gTxFrames"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a4506bcdb2f074621e67cf28440e4ce21"><param name="Name" value="gTxSleep"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a46c42280ddeb91f1eee82f387fdcdba3"><param name="Name" value="gTxType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html"><param name="Name" value="Hand_demo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html"><param name="Name" value="Hand_demo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a2575d7e9267258b433fe100128765e31"><param name="Name" value="CAN_id"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html"><param name="Name" value="Hand_demo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a96f0d36d6fc2f6a0122109d902fff61c"><param name="Name" value="gen_CAN_id(handid, reg, rorw)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html"><param name="Name" value="Hand_demo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#ad7470cae6300351356fca12e5cc73a7c"><param name="Name" value="openSerial(port, baudrate)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html"><param name="Name" value="Hand_demo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a0a675ea666e1e54620e8c3b0c5ba43b1"><param name="Name" value="read6(ser, id, str)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html"><param name="Name" value="Hand_demo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#ae1b922d2ba6bd76c0dd9ea929e7621ac"><param name="Name" value="readRegister(ser, id, add, num, mute=False)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html"><param name="Name" value="Hand_demo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a7c9bec4ae302ed6c91fb17045183f449"><param name="Name" value="regdict"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html"><param name="Name" value="Hand_demo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a680cb2e5e04f3c87d0daa8511326612c"><param name="Name" value="write6(ser, id, str, val)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html"><param name="Name" value="Hand_demo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a9c8c5f6cd9de41df4f86cd13473fd60b"><param name="Name" value="writeRegister(ser, id, add, num, val)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ab521aa5010fb1afb801a899a55569e03"><param name="Name" value="HANDLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#ac90dd5e75581e0c4911bb97a96a4f4bf"><param name="Name" value="hw_Version"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#a466004f2eb7a540b1e3d651e1f82362f"><param name="Name" value="ID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#a41ce456fe8864c9e0912297db83259ef"><param name="Name" value="id"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#a41ce456fe8864c9e0912297db83259ef"><param name="Name" value="CMSG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#ac5ae050ed2744842e879f66233be1277"><param name="Name" value="id"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#ac5ae050ed2744842e879f66233be1277"><param name="Name" value="CMSG_T"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a9a537d37ff2a4d4870a53ad32ad38942"><param name="Name" value="in_Version"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a47b56b70916fbc368d521a1ef504309b"><param name="Name" value="INDEX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#a47e6b9701012dbf5f5d1c733192abf74"><param name="Name" value="IndexAction(int value)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a97d5dab778fb21834da32140b5bb8996"><param name="Name" value="INIT_CONFIG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ad8332d5b0b3e09cab64902d11311c30e"><param name="Name" value="init_config"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a1b0320ebe9e2c027883141339c761aff"><param name="Name" value="InitCan()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aa2e7908f574ea5d75ab10218016b2e16"><param name="Name" value="InitCAN(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, P_INIT_CONFIG pInitConfig)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a0e49c924f27bf27c04ae0a668ea25b51"><param name="Name" value="Inspire()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html"><param name="Name" value="Inspire.hpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a7ae8f3766c8853286755f4ec0903c6f0"><param name="Name" value="Byte"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html"><param name="Name" value="Inspire.hpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a4964ecb6a5c689aaf8ee2832b8093aac"><param name="Name" value="CAN1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html"><param name="Name" value="Inspire.hpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#ac5e4c86ed487dc91418b156e24808033"><param name="Name" value="CAN2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html"><param name="Name" value="Inspire.hpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a1d3e638d499a621cec1f0a6c6487f994"><param name="Name" value="DeviceInd"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html"><param name="Name" value="Inspire.hpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#af53e51380ab436fa1e76323e9ea0ed91"><param name="Name" value="Reserved"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html"><param name="Name" value="Inspire.hpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a44b3632a8ee3c1251a50b8d92442dfdf"><param name="Name" value="USBCAN1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html"><param name="Name" value="Inspire.hpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a58de6b40df25056c6f8db282fe1c5e66"><param name="Name" value="USBCAN2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html"><param name="Name" value="Inspire::Inspire"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html"><param name="Name" value="Inspire::Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html#a960f2d9a32ef9dfeb7324fc1a954a96a"><param name="Name" value="__init__(self, port, baudrate, bytesize=EIGHTBITS, stopbits=STOPBITS_ONE, parity=PARITY_NONE, timeout=1)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html"><param name="Name" value="Inspire::Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html#aaa2d74525344b1cd0332c6cea7d526a1"><param name="Name" value="gen_Can_id(handid, reg, rorw)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html"><param name="Name" value="Inspire::Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html#ae3c30e2369ad6d6ea512749cb59358b8"><param name="Name" value="sc_comm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html"><param name="Name" value="Inspire::Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html#ac59e914084725d3936cf09f56c2fd7eb"><param name="Name" value="writeRegister(ser, id, address, num, val)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ab4623d041d648370a73206564de10445"><param name="Name" value="canid"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aee50591238bbf691bc9ea3ac23b2ae01"><param name="Name" value="ConvertValueToHex(int value, Byte data[2])"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a0794616ed24d55dcec49da6cc160c7dd"><param name="Name" value="dwRel"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aad4311dc16d1d01ddb22668ea0427acc"><param name="Name" value="FORCE_INDEX"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ac4a02eb82949f24fcaec29a99735ae7d"><param name="Name" value="FORCE_MIDDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a97ec345e59478bc88a236ec2c3e923ef"><param name="Name" value="FORCE_PINKY"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a7e0886f77b56821222eec1033e7f5565"><param name="Name" value="FORCE_RING"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ac8d4b2dd80fe4236c162f1bd66bc9a80"><param name="Name" value="FORCE_THUMB"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aecdbc31afc8a4d8e74b90ec77680c09c"><param name="Name" value="FORCE_THUMB_ROT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#acfa6a401c500b3eaae3765125017a3f6"><param name="Name" value="frame"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_inspire.html#a05f4629e192eb42312ae79db5a58c87d"><param name="Name" value="gen_Can_id(handid, reg, rorw)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a4e6bc517c81ca1612d130966b9ca1f4e"><param name="Name" value="GetAddressId(int address)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a4f20f1644ac1c4095091fd9d543d64f0"><param name="Name" value="GetCanId(int Address, int HandId, int flag_write_read)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ab99caa974bbb3232a69b6970acc03d6a"><param name="Name" value="GetFlageWriteRead(int flag_write_read)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a3648a2e634bc3e9ba24603bdcdec34ff"><param name="Name" value="GetHandId(int handid)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a47b56b70916fbc368d521a1ef504309b"><param name="Name" value="INDEX"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ad8332d5b0b3e09cab64902d11311c30e"><param name="Name" value="init_config"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a1b0320ebe9e2c027883141339c761aff"><param name="Name" value="InitCan()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a0e49c924f27bf27c04ae0a668ea25b51"><param name="Name" value="Inspire()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aee36ef89ab25c53e0c3bb6beb4335f26"><param name="Name" value="InspireCloseDevice()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#af8c3a7b007d7b4bfb97b6441aa2722b5"><param name="Name" value="MAX_FORCE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ad78cd5c3643a61707462e44d3c8de345"><param name="Name" value="MAX_SPEED"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ad12424f5daceddd9feb6b5d0d6669c3d"><param name="Name" value="MIDDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ab6a4a482fe57c9fb2d9617b34be7e0bc"><param name="Name" value="MIN_FORCE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a90c7c06ec63c78c7533eec0c08f436fc"><param name="Name" value="MIN_SPEED"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aa982dc804f7dbae1f9546bdddaf78a89"><param name="Name" value="PINKY"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a04fb5f5ef72b3dd5fa8e14f0ced43573"><param name="Name" value="RING"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a10d5f9244d20f48cb836a3e70010dd3c"><param name="Name" value="SPEED_INDEX"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a7c8806fff20936baf41ee3deb7e7895f"><param name="Name" value="SPEED_MIDDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ae470035250fcd5f3a46fa34a2e22773b"><param name="Name" value="SPEED_PINKY"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a65e27ccd89571b12c3316a4717eddbf9"><param name="Name" value="SPEED_RING"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a02725c0be942d6a663db7a38019c7f4e"><param name="Name" value="SPEED_THUMB"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a01b56e692e416927bb609cae8783eab4"><param name="Name" value="SPEED_THUMB_ROT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ac4112d6cf9bc2529af9f279f2c7845d8"><param name="Name" value="THUMB"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aa90a22d171948f10e4bcadda299abfd1"><param name="Name" value="THUMB_ROT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ad256c421e10abc35cd6ff8f48143b00f"><param name="Name" value="WriteCan(int address, int value, int handid)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_inspire.html#a97eedac315f0f9df50208c214d36ca0c"><param name="Name" value="writeRegister(id, address, num, val)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html"><param name="Name" value="Inspire"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a0be6f1f8d731fae7b667a4f0d71ced30"><param name="Name" value="~Inspire()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="md__r_e_a_d_m_e.html"><param name="Name" value="Inspire_Robot"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#a6d1de00a69d869d166ec9996cfe6eee2"><param name="Name" value="InspireAction(CanWriter *canwriter)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#ae6ca1732e75756071bd14bbceb71c356"><param name="Name" value="action_canwriter"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#ab46012053379df10d72bb4adc34b876b"><param name="Name" value="FiveFingerAction(std::vector&lt; int &gt; value)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#a47e6b9701012dbf5f5d1c733192abf74"><param name="Name" value="IndexAction(int value)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#a6d1de00a69d869d166ec9996cfe6eee2"><param name="Name" value="InspireAction(CanWriter *canwriter)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#aec8cdb922fb787a0dd420641240011bb"><param name="Name" value="MiddleAction(int value)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#ab2fcbc47eb7d677c790fe2138c1c4d0f"><param name="Name" value="PinkyAction(int value)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#af27e4c658cdaa83b6cac23a951d53b37"><param name="Name" value="RingAction(int value)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#ae324c8c5ab2ce1748de3ab49b7a05d4d"><param name="Name" value="SetFiveFingerForce(std::vector&lt; int &gt; value)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#a6aa9260030cce586590c90ec3122a866"><param name="Name" value="SetFiveFingerSpeed(std::vector&lt; int &gt; value)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#aec2ad3e90c32c46d6286902b5407c429"><param name="Name" value="ThumbAction(int value)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#a0f950a3a5b3bfb355581a3088527c183"><param name="Name" value="ThumbRotAction(int value)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html"><param name="Name" value="InspireAction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#abd5f0c0b2257114fe35561b9b21c50a7"><param name="Name" value="~InspireAction()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aee36ef89ab25c53e0c3bb6beb4335f26"><param name="Name" value="InspireCloseDevice()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#afeeffe52c8fd59db7c61cf8b02042dbf"><param name="Name" value="INT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a04f43132c1ef3d0434daa88c31be7499"><param name="Name" value="irq_Num"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cpp.html#a4c7a634496f075c2bdf2b25aa2aa110f"><param name="Name" value="Isrunning"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#a132ebc4d6c56427448b05596b5af2a90"><param name="Name" value="l[2]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#afd16fa0d689b662403e7a2617914d693"><param name="Name" value="len"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#afd16fa0d689b662403e7a2617914d693"><param name="Name" value="CMSG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#a4e6cf4848b910f997b35308fa48f11d4"><param name="Name" value="len"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#a4e6cf4848b910f997b35308fa48f11d4"><param name="Name" value="CMSG_T"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#aa557132d2f78b1a1036120a1cd043ddf"><param name="Name" value="len"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#aa557132d2f78b1a1036120a1cd043ddf"><param name="Name" value="EVMSG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a085f5f68a0ee4ab24d9f3954a78e8063"><param name="Name" value="LPVOID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#abfa6c30acca5f81d23fda2d59c4026c6"><param name="Name" value="m_connect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a0ddf1224851353fc92bfbff6f499fa97"><param name="Name" value="main(int argc, char *argv[])"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089"><param name="Name" value="main(int argc, char const *argv[])"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089"><param name="Name" value="main.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089"><param name="Name" value="main(int argc, char const *argv[])"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089"><param name="Name" value="test.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a7ae8f3766c8853286755f4ec0903c6f0"><param name="Name" value="Byte"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a4964ecb6a5c689aaf8ee2832b8093aac"><param name="Name" value="CAN1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#ac5e4c86ed487dc91418b156e24808033"><param name="Name" value="CAN2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#ade42cec8888fceecaeeb1d6cd077ddf9"><param name="Name" value="dwRel"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#abfa6c30acca5f81d23fda2d59c4026c6"><param name="Name" value="m_connect"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089"><param name="Name" value="main(int argc, char const *argv[])"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a10e3fa177e516dc0e17f304f39be0f52"><param name="Name" value="nDeviceInd"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#ace319858d666525a15db2783f701d9bb"><param name="Name" value="nDeviceType"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a839b04b616eba69d1adf8d59359df7d9"><param name="Name" value="nReserved"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a44b3632a8ee3c1251a50b8d92442dfdf"><param name="Name" value="USBCAN1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a58de6b40df25056c6f8db282fe1c5e66"><param name="Name" value="USBCAN2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#ac69ee46f4a51ed14f0d68628c2dec71d"><param name="Name" value="MAX_CHANNELS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#af8c3a7b007d7b4bfb97b6441aa2722b5"><param name="Name" value="MAX_FORCE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ad78cd5c3643a61707462e44d3c8de345"><param name="Name" value="MAX_SPEED"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ad12424f5daceddd9feb6b5d0d6669c3d"><param name="Name" value="MIDDLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#aec8cdb922fb787a0dd420641240011bb"><param name="Name" value="MiddleAction(int value)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#ac6afabdc09a49a433ee19d8a9486056d"><param name="Name" value="min(a, b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ab6a4a482fe57c9fb2d9617b34be7e0bc"><param name="Name" value="MIN_FORCE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a90c7c06ec63c78c7533eec0c08f436fc"><param name="Name" value="MIN_SPEED"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#ad267988dd3a22f9b7c7aabde6c1c29f8"><param name="Name" value="Mode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#a036c7d8b2ca29bf8a12db4a432889985"><param name="Name" value="msg_lost"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#a036c7d8b2ca29bf8a12db4a432889985"><param name="Name" value="CMSG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#ae03a9c5c92d7d6b91450a847312f3919"><param name="Name" value="msg_lost"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#ae03a9c5c92d7d6b91450a847312f3919"><param name="Name" value="CMSG_T"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#aa4eab42491cbc9e2a9d18c6c67dc5533"><param name="Name" value="msleep(ms)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a10e3fa177e516dc0e17f304f39be0f52"><param name="Name" value="nDeviceInd"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#ace319858d666525a15db2783f701d9bb"><param name="Name" value="nDeviceType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a839b04b616eba69d1adf8d59359df7d9"><param name="Name" value="nReserved"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a9022c5b045e725e2cce127412e1ce765"><param name="Name" value="OpenDevice(DWORD DeviceType, DWORD DeviceInd, DWORD Reserved)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#ad7470cae6300351356fca12e5cc73a7c"><param name="Name" value="openSerial(port, baudrate)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a98f30ef1f2d26c50df1e5cb3cf6e6040"><param name="Name" value="P_BOARD_INFO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aae31f3d5e8f7005c0f40e97bdd4e5bb0"><param name="Name" value="P_CAN_OBJ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a4ba38802e100554e8ad30ecdeb36723b"><param name="Name" value="P_CAN_STATUS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a919c52a69a6ccbf3e765d8409a07def5"><param name="Name" value="P_ERR_INFO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aaaa64b8ae4a266f47c03dc079de65e2f"><param name="Name" value="P_FILTER_RECORD"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a754d13cd67b3a4486b18878a5265bf06"><param name="Name" value="P_INIT_CONFIG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#af4517a87ad136ac2bfc63acc54a7f57e"><param name="Name" value="parity"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___e_r_r___i_n_f_o.html#a3b388183297cba7c2fcb5fddbc32eb27"><param name="Name" value="Passive_ErrData[3]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aa982dc804f7dbae1f9546bdddaf78a89"><param name="Name" value="PINKY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#ab2fcbc47eb7d677c790fe2138c1c4d0f"><param name="Name" value="PinkyAction(int value)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#ae0f6cb027bafa33b7317d0d1218e8266"><param name="Name" value="port"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a03f3290757a46f2993802ffc9750d347"><param name="Name" value="PVOID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a01055529d35950d5a184d339045adc92"><param name="Name" value="read(self, num_bytes)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a0a675ea666e1e54620e8c3b0c5ba43b1"><param name="Name" value="read6(ser, id, str)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#ab38f194d5d8368a9d55642ffb928275d"><param name="Name" value="ReadBoardInfo(DWORD DeviceType, DWORD DeviceInd, P_BOARD_INFO pInfo)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a0c03b6dc3f62a16037309c443295b8c7"><param name="Name" value="ReadCANStatus(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, P_CAN_STATUS pCANStatus)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aea1dd3a7c5bc0846207410fdf330a702"><param name="Name" value="ReadErrInfo(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, P_ERR_INFO pErrInfo)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#ae1b922d2ba6bd76c0dd9ea929e7621ac"><param name="Name" value="readRegister(ser, id, add, num, mute=False)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a1a4bcc31fafacbfcd5f0ec84c7ddfd8c"><param name="Name" value="Receive(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, P_CAN_OBJ pReceive, ULONG Len, INT WaitTime)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a463a5d025f7c1f09c3387907f5f151d3"><param name="Name" value="regALCapture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a7c9bec4ae302ed6c91fb17045183f449"><param name="Name" value="regdict"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a2599f2dfca8db98d8fdd8d41902e5d36"><param name="Name" value="regECCapture"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#ac8624fff290efd8eca9f9edc82fb1668"><param name="Name" value="regEWLimit"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#ad68e30ad6a586296499cff0cc3aac700"><param name="Name" value="regMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#ab861c0b7802a704cc0f3d897293a03b5"><param name="Name" value="regRECounter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#ab09482bf6d7231e30fd5648f86a05c4e"><param name="Name" value="regStatus"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a58c867e23704e44f361cb9f45584985f"><param name="Name" value="regTECounter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#a1883cb75a04f4288041e784c66ad304b"><param name="Name" value="RemoteFlag"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a8425d8c8fd860d8ffea538397ea871bf"><param name="Name" value="Reserved"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___s_t_a_t_u_s.html#a8425d8c8fd860d8ffea538397ea871bf"><param name="Name" value="_CAN_STATUS"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#ac64b2de3e97692c47e0a6ee8cf74ac73"><param name="Name" value="Reserved"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#ac64b2de3e97692c47e0a6ee8cf74ac73"><param name="Name" value="_INIT_CONFIG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#af53e51380ab436fa1e76323e9ea0ed91"><param name="Name" value="Reserved"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#af53e51380ab436fa1e76323e9ea0ed91"><param name="Name" value="Inspire.hpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#ada7643183095972cc2841dcff1a8b576"><param name="Name" value="reserved[2]"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g.html#ada7643183095972cc2841dcff1a8b576"><param name="Name" value="CMSG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#a3655004d2d2ab74a635c4b5a5e4dbd0b"><param name="Name" value="reserved[2]"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#a3655004d2d2ab74a635c4b5a5e4dbd0b"><param name="Name" value="CMSG_T"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#abfe065f4488ba2d2bf18e9590af41687"><param name="Name" value="Reserved[3]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#a9a81987b279ebe2a8048bf24017f9eed"><param name="Name" value="reserved[3]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#ac8b3a86ffd6f196b949699185e7c6140"><param name="Name" value="Reserved[4]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a6bae3cb7a83a0f8379cf78d39da60072"><param name="Name" value="ResetCAN(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a04fb5f5ef72b3dd5fa8e14f0ced43573"><param name="Name" value="RING"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#af27e4c658cdaa83b6cac23a951d53b37"><param name="Name" value="RingAction(int value)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a9ffd460647ecd927786c7d3db9297e05"><param name="Name" value="RX_BUFF_SIZE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html"><param name="Name" value="RX_CTX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html"><param name="Name" value="RX_CTX"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html#a8e3e4d0914966d20fbd8bc3b0a69a61d"><param name="Name" value="channel"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html"><param name="Name" value="RX_CTX"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html#a6ebc86a9b0025e01ccf6fc45df6ea6f3"><param name="Name" value="error"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html"><param name="Name" value="RX_CTX"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html#affc1217c707ba62b9f708b00ef53eeee"><param name="Name" value="stop"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html"><param name="Name" value="RX_CTX"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html#ab0a3e2a7587c02d031e3574955e11056"><param name="Name" value="total"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#aee68f2669f944607cb4fd65c81f5b36a"><param name="Name" value="rx_thread(void *data)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#ac9859a205301a696a033a4bd29a6d9cc"><param name="Name" value="RX_WAIT_TIME"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a00d4c94405373df6182bb7153e8ba882"><param name="Name" value="s2n(const char *s)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_e_v_m_s_g.html#a0164fdd175b6553edca72fd57b80284b"><param name="Name" value="s[4]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html#ae3c30e2369ad6d6ea512749cb59358b8"><param name="Name" value="sc_comm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a641341d8b1c31e0f03bf158290c508b7"><param name="Name" value="send_and_receive(self, command, response_length)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#a041f210bd52d51321f4bf8e92f1337bc"><param name="Name" value="SendType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a29e1a9b7cd746fd4468d1d066837da3e"><param name="Name" value="ser"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_serial_communication.html"><param name="Name" value="SerialCommunication"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a7f3b22ef67f98cb1f0d6f25a75533584"><param name="Name" value="__enter__(self)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a9c5f4005daa914b2292eb01bbd3e6da2"><param name="Name" value="__exit__(self, exc_type, exc_value, traceback)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#ad0aae385eb3a164c47da035a71f4b28a"><param name="Name" value="__init__(self, port, baudrate, bytesize=serial.EIGHTBITS, stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE, timeout=1)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a1060743cf0655d9d1f316eecd89235a0"><param name="Name" value="baudrate"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a16d08c1b1948bb640defaddae22e4fb6"><param name="Name" value="bytesize"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a3b6e45d534d9a798a012437f68a26ec0"><param name="Name" value="close(self)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#af4517a87ad136ac2bfc63acc54a7f57e"><param name="Name" value="parity"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#ae0f6cb027bafa33b7317d0d1218e8266"><param name="Name" value="port"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a01055529d35950d5a184d339045adc92"><param name="Name" value="read(self, num_bytes)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a641341d8b1c31e0f03bf158290c508b7"><param name="Name" value="send_and_receive(self, command, response_length)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a29e1a9b7cd746fd4468d1d066837da3e"><param name="Name" value="ser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a822f0ce9565273c651c9388576b4345b"><param name="Name" value="stopbits"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a296aa8f44fce40e6f769ab97405d7e16"><param name="Name" value="timeout"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="Name" value="SerialCommunication::SerialCommunication"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a288906c1e3179d4363c4a56a3f14597c"><param name="Name" value="write(self, data)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#ae324c8c5ab2ce1748de3ab49b7a05d4d"><param name="Name" value="SetFiveFingerForce(std::vector&lt; int &gt; value)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#a6aa9260030cce586590c90ec3122a866"><param name="Name" value="SetFiveFingerSpeed(std::vector&lt; int &gt; value)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a1ef960b1aecede17b109272da1040467"><param name="Name" value="SetReference(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, DWORD RefType, PVOID pData)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cpp.html#a138f2c50e10d96e95ce6ea4281777227"><param name="Name" value="signalHandler(int signo)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a10d5f9244d20f48cb836a3e70010dd3c"><param name="Name" value="SPEED_INDEX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a7c8806fff20936baf41ee3deb7e7895f"><param name="Name" value="SPEED_MIDDLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ae470035250fcd5f3a46fa34a2e22773b"><param name="Name" value="SPEED_PINKY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a65e27ccd89571b12c3316a4717eddbf9"><param name="Name" value="SPEED_RING"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a02725c0be942d6a663db7a38019c7f4e"><param name="Name" value="SPEED_THUMB"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a01b56e692e416927bb609cae8783eab4"><param name="Name" value="SPEED_THUMB_ROT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___f_i_l_t_e_r___r_e_c_o_r_d.html#ad2c5f073c6ec634aaad5aa9fc970c8a8"><param name="Name" value="Start"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a7098cb9ca9f4ee3dadee3896c9d5df8b"><param name="Name" value="StartCAN(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a23205a6a97096d57a247794f5e250963"><param name="Name" value="STATUS_ERR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a2403320c41f08e7567cb169de5db66b3"><param name="Name" value="STATUS_OK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html#affc1217c707ba62b9f708b00ef53eeee"><param name="Name" value="stop"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a822f0ce9565273c651c9388576b4345b"><param name="Name" value="stopbits"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a9347fed091a22376d9d73a724716283e"><param name="Name" value="str_hw_Type[40]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a5cb7dfd291c2f1ccf447453c18378d26"><param name="Name" value="str_Serial_Num[20]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#ac8da963855e09bf929c085486f4a3b47"><param name="Name" value="test()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a619d97bcebac72ae85378dda955978f6"><param name="Name" value="CHECK_POINT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a563e4b3527b6e6cb8a8fae32796571b0"><param name="Name" value="gBaud"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#aa7ced24463c3050ae6bed9065ee27a60"><param name="Name" value="gChMask"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a708bd14ffebc4d5ec0594120aa0e6e60"><param name="Name" value="gDevIdx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a38a6572ed3af5b7e2c7670f74ebb457b"><param name="Name" value="gDevType"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a60475535f785e78b50a6ac20d1d133d4"><param name="Name" value="generate_frame(CAN_OBJ *can)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#ac4f7124ae2c1197e84e44f3ca74380e2"><param name="Name" value="gTxFrames"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a4506bcdb2f074621e67cf28440e4ce21"><param name="Name" value="gTxSleep"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a46c42280ddeb91f1eee82f387fdcdba3"><param name="Name" value="gTxType"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a0ddf1224851353fc92bfbff6f499fa97"><param name="Name" value="main(int argc, char *argv[])"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#ac69ee46f4a51ed14f0d68628c2dec71d"><param name="Name" value="MAX_CHANNELS"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#ac6afabdc09a49a433ee19d8a9486056d"><param name="Name" value="min(a, b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#aa4eab42491cbc9e2a9d18c6c67dc5533"><param name="Name" value="msleep(ms)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a9ffd460647ecd927786c7d3db9297e05"><param name="Name" value="RX_BUFF_SIZE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#aee68f2669f944607cb4fd65c81f5b36a"><param name="Name" value="rx_thread(void *data)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#ac9859a205301a696a033a4bd29a6d9cc"><param name="Name" value="RX_WAIT_TIME"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#a00d4c94405373df6182bb7153e8ba882"><param name="Name" value="s2n(const char *s)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#ac8da963855e09bf929c085486f4a3b47"><param name="Name" value="test()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html"><param name="Name" value="test.cc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#aa221774323ec1d9c86cfd36247213dfa"><param name="Name" value="verify_frame(CAN_OBJ *can)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cpp.html"><param name="Name" value="test.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cpp.html#a4c7a634496f075c2bdf2b25aa2aa110f"><param name="Name" value="Isrunning"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cpp.html"><param name="Name" value="test.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089"><param name="Name" value="main(int argc, char const *argv[])"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cpp.html"><param name="Name" value="test.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cpp.html#a138f2c50e10d96e95ce6ea4281777227"><param name="Name" value="signalHandler(int signo)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ac4112d6cf9bc2529af9f279f2c7845d8"><param name="Name" value="THUMB"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#aa90a22d171948f10e4bcadda299abfd1"><param name="Name" value="THUMB_ROT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#aec2ad3e90c32c46d6286902b5407c429"><param name="Name" value="ThumbAction(int value)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#a0f950a3a5b3bfb355581a3088527c183"><param name="Name" value="ThumbRotAction(int value)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#abdba16cc25d248bdbab9cdbcc3cc8f1e"><param name="Name" value="TimeFlag"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a296aa8f44fce40e6f769ab97405d7e16"><param name="Name" value="timeout"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___c_a_n___o_b_j.html#ad90568938408e487a52a27e334a6979d"><param name="Name" value="TimeStamp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_c_m_s_g___t.html#a393062cb291e150aae46e3e5e30fd7db"><param name="Name" value="timestamp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#ac8eba19e4d98325b91926cbcd338f80d"><param name="Name" value="Timing0"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___i_n_i_t___c_o_n_f_i_g.html#a8b2d6c47806094d4a032a8daa8c575bd"><param name="Name" value="Timing1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_r_x___c_t_x.html#ab0a3e2a7587c02d031e3574955e11056"><param name="Name" value="total"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a828a26f60aac5411280f2ca4f277eb95"><param name="Name" value="Transmit(DWORD DeviceType, DWORD DeviceInd, DWORD CANInd, P_CAN_OBJ pSend, ULONG Len)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a9a1dc6d243c6f75bb42f87e3f69649e4"><param name="Name" value="UCHAR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a45c20c14d3d8790a22153d08ab2eb2ff"><param name="Name" value="UINT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#a13503cb3b34d9eb71eda8ff4065e80ff"><param name="Name" value="ULONG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a44b3632a8ee3c1251a50b8d92442dfdf"><param name="Name" value="USBCAN1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a44b3632a8ee3c1251a50b8d92442dfdf"><param name="Name" value="Inspire.hpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a44b3632a8ee3c1251a50b8d92442dfdf"><param name="Name" value="USBCAN1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a44b3632a8ee3c1251a50b8d92442dfdf"><param name="Name" value="main.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a58de6b40df25056c6f8db282fe1c5e66"><param name="Name" value="USBCAN2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_inspire_8hpp.html#a58de6b40df25056c6f8db282fe1c5e66"><param name="Name" value="Inspire.hpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a58de6b40df25056c6f8db282fe1c5e66"><param name="Name" value="USBCAN2"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a58de6b40df25056c6f8db282fe1c5e66"><param name="Name" value="main.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_e_can_vci_8h.html#aea50feaf24fd53b7ffab0e9b62ff30a6"><param name="Name" value="USHORT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="test_8cc.html#aa221774323ec1d9c86cfd36247213dfa"><param name="Name" value="verify_frame(CAN_OBJ *can)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a288906c1e3179d4363c4a56a3f14597c"><param name="Name" value="write(self, data)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a680cb2e5e04f3c87d0daa8511326612c"><param name="Name" value="write6(ser, id, str, val)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_can_writer.html#a32d89e15b9752e98489d3fec84f38ae0"><param name="Name" value="WriteCan(int address, int value, int handid)=0"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#ad256c421e10abc35cd6ff8f48143b00f"><param name="Name" value="WriteCan(int address, int value, int handid)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_inspire.html#a97eedac315f0f9df50208c214d36ca0c"><param name="Name" value="writeRegister(id, address, num, val)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_hand__demo.html#a9c8c5f6cd9de41df4f86cd13473fd60b"><param name="Name" value="writeRegister(ser, id, add, num, val)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_1_1_inspire.html#ac59e914084725d3936cf09f56c2fd7eb"><param name="Name" value="writeRegister(ser, id, address, num, val)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_can_writer.html#ab830e1f5632bac4afdcf1e40a6409fb5"><param name="Name" value="~CanWriter()=default"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire.html#a0be6f1f8d731fae7b667a4f0d71ced30"><param name="Name" value="~Inspire()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_inspire_action.html#abd5f0c0b2257114fe35561b9b21c50a7"><param name="Name" value="~InspireAction()"></OBJECT>
+</UL>
+</BODY>
+</HTML>

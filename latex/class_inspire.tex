@@ -1,0 +1,338 @@
+\doxysection{Inspire类 参考}
+\hypertarget{class_inspire}{}\label{class_inspire}\index{Inspire@{Inspire}}
+
+
+{\ttfamily \#include $<$Inspire.\+hpp$>$}
+
+
+
+类 Inspire 继承关系图\+:
+% FIG 0
+
+
+Inspire 的协作图\+:
+% FIG 1
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inspire_a0e49c924f27bf27c04ae0a668ea25b51}{Inspire}} ()
+\item 
+\mbox{\hyperlink{class_inspire_a0be6f1f8d731fae7b667a4f0d71ced30}{\texorpdfstring{$\sim$}{\string~}\+Inspire}} ()
+\item 
+int \mbox{\hyperlink{class_inspire_a1b0320ebe9e2c027883141339c761aff}{Init\+Can}} ()
+\item 
+int \mbox{\hyperlink{class_inspire_ad256c421e10abc35cd6ff8f48143b00f}{Write\+Can}} (int address, int value, int handid)
+\item 
+std\+::string \mbox{\hyperlink{class_inspire_a4e6bc517c81ca1612d130966b9ca1f4e}{Get\+Address\+Id}} (int address)
+\item 
+std\+::string \mbox{\hyperlink{class_inspire_a3648a2e634bc3e9ba24603bdcdec34ff}{Get\+Hand\+Id}} (int handid)
+\item 
+std\+::string \mbox{\hyperlink{class_inspire_ab99caa974bbb3232a69b6970acc03d6a}{Get\+Flage\+Write\+Read}} (int flag\+\_\+write\+\_\+read)
+\item 
+std\+::string \mbox{\hyperlink{class_inspire_a4f20f1644ac1c4095091fd9d543d64f0}{Get\+Can\+Id}} (int Address, int Hand\+Id, int flag\+\_\+write\+\_\+read)
+\item 
+void \mbox{\hyperlink{class_inspire_aee50591238bbf691bc9ea3ac23b2ae01}{Convert\+Value\+To\+Hex}} (int value, \mbox{\hyperlink{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0}{Byte}} data\mbox{[}2\mbox{]})
+\item 
+void \mbox{\hyperlink{class_inspire_aee36ef89ab25c53e0c3bb6beb4335f26}{Inspire\+Close\+Device}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_can_writer}{Can\+Writer}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_can_writer_ab830e1f5632bac4afdcf1e40a6409fb5}{\texorpdfstring{$\sim$}{\string~}\+Can\+Writer}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inspire_ab4623d041d648370a73206564de10445}{canid}} = \mbox{\hyperlink{namespace_inspire_a05f4629e192eb42312ae79db5a58c87d}{gen\+\_\+\+Can\+\_\+id}}(0x01, 0x05\+D4, 1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_inspire_aa90a22d171948f10e4bcadda299abfd1}{THUMB\+\_\+\+ROT}} = 1496
+\item 
+static const int \mbox{\hyperlink{class_inspire_ac4112d6cf9bc2529af9f279f2c7845d8}{THUMB}} = 1494
+\item 
+static const int \mbox{\hyperlink{class_inspire_a47b56b70916fbc368d521a1ef504309b}{INDEX}} = 1492
+\item 
+static const int \mbox{\hyperlink{class_inspire_ad12424f5daceddd9feb6b5d0d6669c3d}{MIDDLE}} = 1490
+\item 
+static const int \mbox{\hyperlink{class_inspire_a04fb5f5ef72b3dd5fa8e14f0ced43573}{RING}} = 1488
+\item 
+static const int \mbox{\hyperlink{class_inspire_aa982dc804f7dbae1f9546bdddaf78a89}{PINKY}} = 1486
+\item 
+static const int \mbox{\hyperlink{class_inspire_ad78cd5c3643a61707462e44d3c8de345}{MAX\+\_\+\+SPEED}} = 1000
+\item 
+static const int \mbox{\hyperlink{class_inspire_a90c7c06ec63c78c7533eec0c08f436fc}{MIN\+\_\+\+SPEED}} = 0
+\item 
+static const int \mbox{\hyperlink{class_inspire_af8c3a7b007d7b4bfb97b6441aa2722b5}{MAX\+\_\+\+FORCE}} = 1000
+\item 
+static const int \mbox{\hyperlink{class_inspire_ab6a4a482fe57c9fb2d9617b34be7e0bc}{MIN\+\_\+\+FORCE}} = 0
+\item 
+static const int \mbox{\hyperlink{class_inspire_a01b56e692e416927bb609cae8783eab4}{SPEED\+\_\+\+THUMB\+\_\+\+ROT}} = 1532
+\item 
+static const int \mbox{\hyperlink{class_inspire_a02725c0be942d6a663db7a38019c7f4e}{SPEED\+\_\+\+THUMB}} = 1530
+\item 
+static const int \mbox{\hyperlink{class_inspire_a10d5f9244d20f48cb836a3e70010dd3c}{SPEED\+\_\+\+INDEX}} = 1528
+\item 
+static const int \mbox{\hyperlink{class_inspire_a7c8806fff20936baf41ee3deb7e7895f}{SPEED\+\_\+\+MIDDLE}} = 1526
+\item 
+static const int \mbox{\hyperlink{class_inspire_a65e27ccd89571b12c3316a4717eddbf9}{SPEED\+\_\+\+RING}} = 1524
+\item 
+static const int \mbox{\hyperlink{class_inspire_ae470035250fcd5f3a46fa34a2e22773b}{SPEED\+\_\+\+PINKY}} = 1522
+\item 
+static const int \mbox{\hyperlink{class_inspire_aecdbc31afc8a4d8e74b90ec77680c09c}{FORCE\+\_\+\+THUMB\+\_\+\+ROT}} = 1508
+\item 
+static const int \mbox{\hyperlink{class_inspire_ac8d4b2dd80fe4236c162f1bd66bc9a80}{FORCE\+\_\+\+THUMB}} = 1506
+\item 
+static const int \mbox{\hyperlink{class_inspire_aad4311dc16d1d01ddb22668ea0427acc}{FORCE\+\_\+\+INDEX}} = 1504
+\item 
+static const int \mbox{\hyperlink{class_inspire_ac4a02eb82949f24fcaec29a99735ae7d}{FORCE\+\_\+\+MIDDLE}} = 1502
+\item 
+static const int \mbox{\hyperlink{class_inspire_a7e0886f77b56821222eec1033e7f5565}{FORCE\+\_\+\+RING}} = 1500
+\item 
+static const int \mbox{\hyperlink{class_inspire_a97ec345e59478bc88a236ec2c3e923ef}{FORCE\+\_\+\+PINKY}} = 1498
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{class_inspire_a0794616ed24d55dcec49da6cc160c7dd}{dw\+Rel}}
+\item 
+\mbox{\hyperlink{_e_can_vci_8h_a97d5dab778fb21834da32140b5bb8996}{INIT\+\_\+\+CONFIG}} \mbox{\hyperlink{class_inspire_ad8332d5b0b3e09cab64902d11311c30e}{init\+\_\+config}}
+\item 
+\mbox{\hyperlink{_e_can_vci_8h_a1297583dce0f039cad8e7da69cee9ab6}{CAN\+\_\+\+OBJ}} \mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_inspire_a0e49c924f27bf27c04ae0a668ea25b51}\index{Inspire@{Inspire}!Inspire@{Inspire}}
+\index{Inspire@{Inspire}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{Inspire()}{Inspire()}}
+{\footnotesize\ttfamily \label{class_inspire_a0e49c924f27bf27c04ae0a668ea25b51} 
+\mbox{\hyperlink{class_inspire_1_1_inspire}{Inspire\+::\+Inspire}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inspire_a0be6f1f8d731fae7b667a4f0d71ced30}\index{Inspire@{Inspire}!````~Inspire@{\texorpdfstring{$\sim$}{\string~}Inspire}}
+\index{````~Inspire@{\texorpdfstring{$\sim$}{\string~}Inspire}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Inspire()}{\string~Inspire()}}
+{\footnotesize\ttfamily \label{class_inspire_a0be6f1f8d731fae7b667a4f0d71ced30} 
+Inspire\+::\texorpdfstring{$\sim$}{\string~}\+Inspire (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_inspire_aee50591238bbf691bc9ea3ac23b2ae01}\index{Inspire@{Inspire}!ConvertValueToHex@{ConvertValueToHex}}
+\index{ConvertValueToHex@{ConvertValueToHex}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{ConvertValueToHex()}{ConvertValueToHex()}}
+{\footnotesize\ttfamily \label{class_inspire_aee50591238bbf691bc9ea3ac23b2ae01} 
+void Inspire\+::\+Convert\+Value\+To\+Hex (\begin{DoxyParamCaption}\item[{int}]{value}{, }\item[{\mbox{\hyperlink{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0}{Byte}}}]{data}{\mbox{[}2\mbox{]}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inspire_a4e6bc517c81ca1612d130966b9ca1f4e}\index{Inspire@{Inspire}!GetAddressId@{GetAddressId}}
+\index{GetAddressId@{GetAddressId}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{GetAddressId()}{GetAddressId()}}
+{\footnotesize\ttfamily \label{class_inspire_a4e6bc517c81ca1612d130966b9ca1f4e} 
+std\+::string Inspire\+::\+Get\+Address\+Id (\begin{DoxyParamCaption}\item[{int}]{address}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inspire_a4f20f1644ac1c4095091fd9d543d64f0}\index{Inspire@{Inspire}!GetCanId@{GetCanId}}
+\index{GetCanId@{GetCanId}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{GetCanId()}{GetCanId()}}
+{\footnotesize\ttfamily \label{class_inspire_a4f20f1644ac1c4095091fd9d543d64f0} 
+std\+::string Inspire\+::\+Get\+Can\+Id (\begin{DoxyParamCaption}\item[{int}]{Address}{, }\item[{int}]{Hand\+Id}{, }\item[{int}]{flag\+\_\+write\+\_\+read}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inspire_ab99caa974bbb3232a69b6970acc03d6a}\index{Inspire@{Inspire}!GetFlageWriteRead@{GetFlageWriteRead}}
+\index{GetFlageWriteRead@{GetFlageWriteRead}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{GetFlageWriteRead()}{GetFlageWriteRead()}}
+{\footnotesize\ttfamily \label{class_inspire_ab99caa974bbb3232a69b6970acc03d6a} 
+std\+::string Inspire\+::\+Get\+Flage\+Write\+Read (\begin{DoxyParamCaption}\item[{int}]{flag\+\_\+write\+\_\+read}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inspire_a3648a2e634bc3e9ba24603bdcdec34ff}\index{Inspire@{Inspire}!GetHandId@{GetHandId}}
+\index{GetHandId@{GetHandId}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{GetHandId()}{GetHandId()}}
+{\footnotesize\ttfamily \label{class_inspire_a3648a2e634bc3e9ba24603bdcdec34ff} 
+std\+::string Inspire\+::\+Get\+Hand\+Id (\begin{DoxyParamCaption}\item[{int}]{handid}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inspire_a1b0320ebe9e2c027883141339c761aff}\index{Inspire@{Inspire}!InitCan@{InitCan}}
+\index{InitCan@{InitCan}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{InitCan()}{InitCan()}}
+{\footnotesize\ttfamily \label{class_inspire_a1b0320ebe9e2c027883141339c761aff} 
+int Inspire\+::\+Init\+Can (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inspire_aee36ef89ab25c53e0c3bb6beb4335f26}\index{Inspire@{Inspire}!InspireCloseDevice@{InspireCloseDevice}}
+\index{InspireCloseDevice@{InspireCloseDevice}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{InspireCloseDevice()}{InspireCloseDevice()}}
+{\footnotesize\ttfamily \label{class_inspire_aee36ef89ab25c53e0c3bb6beb4335f26} 
+void Inspire\+::\+Inspire\+Close\+Device (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_inspire_ad256c421e10abc35cd6ff8f48143b00f}\index{Inspire@{Inspire}!WriteCan@{WriteCan}}
+\index{WriteCan@{WriteCan}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{WriteCan()}{WriteCan()}}
+{\footnotesize\ttfamily \label{class_inspire_ad256c421e10abc35cd6ff8f48143b00f} 
+int Inspire\+::\+Write\+Can (\begin{DoxyParamCaption}\item[{int}]{address}{, }\item[{int}]{value}{, }\item[{int}]{handid}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{Can\+Writer}}.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_inspire_ab4623d041d648370a73206564de10445}\index{Inspire@{Inspire}!canid@{canid}}
+\index{canid@{canid}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{canid}{canid}}
+{\footnotesize\ttfamily \label{class_inspire_ab4623d041d648370a73206564de10445} 
+Inspire.\+canid = \mbox{\hyperlink{namespace_inspire_a05f4629e192eb42312ae79db5a58c87d}{gen\+\_\+\+Can\+\_\+id}}(0x01, 0x05\+D4, 1)}
+
+\Hypertarget{class_inspire_a0794616ed24d55dcec49da6cc160c7dd}\index{Inspire@{Inspire}!dwRel@{dwRel}}
+\index{dwRel@{dwRel}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{dwRel}{dwRel}}
+{\footnotesize\ttfamily \label{class_inspire_a0794616ed24d55dcec49da6cc160c7dd} 
+\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Inspire\+::dw\+Rel\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inspire_aad4311dc16d1d01ddb22668ea0427acc}\index{Inspire@{Inspire}!FORCE\_INDEX@{FORCE\_INDEX}}
+\index{FORCE\_INDEX@{FORCE\_INDEX}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{FORCE\_INDEX}{FORCE\_INDEX}}
+{\footnotesize\ttfamily \label{class_inspire_aad4311dc16d1d01ddb22668ea0427acc} 
+const int Inspire\+::\+FORCE\+\_\+\+INDEX = 1504\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_ac4a02eb82949f24fcaec29a99735ae7d}\index{Inspire@{Inspire}!FORCE\_MIDDLE@{FORCE\_MIDDLE}}
+\index{FORCE\_MIDDLE@{FORCE\_MIDDLE}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{FORCE\_MIDDLE}{FORCE\_MIDDLE}}
+{\footnotesize\ttfamily \label{class_inspire_ac4a02eb82949f24fcaec29a99735ae7d} 
+const int Inspire\+::\+FORCE\+\_\+\+MIDDLE = 1502\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_a97ec345e59478bc88a236ec2c3e923ef}\index{Inspire@{Inspire}!FORCE\_PINKY@{FORCE\_PINKY}}
+\index{FORCE\_PINKY@{FORCE\_PINKY}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{FORCE\_PINKY}{FORCE\_PINKY}}
+{\footnotesize\ttfamily \label{class_inspire_a97ec345e59478bc88a236ec2c3e923ef} 
+const int Inspire\+::\+FORCE\+\_\+\+PINKY = 1498\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_a7e0886f77b56821222eec1033e7f5565}\index{Inspire@{Inspire}!FORCE\_RING@{FORCE\_RING}}
+\index{FORCE\_RING@{FORCE\_RING}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{FORCE\_RING}{FORCE\_RING}}
+{\footnotesize\ttfamily \label{class_inspire_a7e0886f77b56821222eec1033e7f5565} 
+const int Inspire\+::\+FORCE\+\_\+\+RING = 1500\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_ac8d4b2dd80fe4236c162f1bd66bc9a80}\index{Inspire@{Inspire}!FORCE\_THUMB@{FORCE\_THUMB}}
+\index{FORCE\_THUMB@{FORCE\_THUMB}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{FORCE\_THUMB}{FORCE\_THUMB}}
+{\footnotesize\ttfamily \label{class_inspire_ac8d4b2dd80fe4236c162f1bd66bc9a80} 
+const int Inspire\+::\+FORCE\+\_\+\+THUMB = 1506\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_aecdbc31afc8a4d8e74b90ec77680c09c}\index{Inspire@{Inspire}!FORCE\_THUMB\_ROT@{FORCE\_THUMB\_ROT}}
+\index{FORCE\_THUMB\_ROT@{FORCE\_THUMB\_ROT}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{FORCE\_THUMB\_ROT}{FORCE\_THUMB\_ROT}}
+{\footnotesize\ttfamily \label{class_inspire_aecdbc31afc8a4d8e74b90ec77680c09c} 
+const int Inspire\+::\+FORCE\+\_\+\+THUMB\+\_\+\+ROT = 1508\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_acfa6a401c500b3eaae3765125017a3f6}\index{Inspire@{Inspire}!frame@{frame}}
+\index{frame@{frame}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily \label{class_inspire_acfa6a401c500b3eaae3765125017a3f6} 
+\mbox{\hyperlink{_e_can_vci_8h_a1297583dce0f039cad8e7da69cee9ab6}{CAN\+\_\+\+OBJ}} Inspire\+::frame\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inspire_a47b56b70916fbc368d521a1ef504309b}\index{Inspire@{Inspire}!INDEX@{INDEX}}
+\index{INDEX@{INDEX}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{INDEX}{INDEX}}
+{\footnotesize\ttfamily \label{class_inspire_a47b56b70916fbc368d521a1ef504309b} 
+const int Inspire\+::\+INDEX = 1492\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_ad8332d5b0b3e09cab64902d11311c30e}\index{Inspire@{Inspire}!init\_config@{init\_config}}
+\index{init\_config@{init\_config}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{init\_config}{init\_config}}
+{\footnotesize\ttfamily \label{class_inspire_ad8332d5b0b3e09cab64902d11311c30e} 
+\mbox{\hyperlink{_e_can_vci_8h_a97d5dab778fb21834da32140b5bb8996}{INIT\+\_\+\+CONFIG}} Inspire\+::init\+\_\+config\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_inspire_af8c3a7b007d7b4bfb97b6441aa2722b5}\index{Inspire@{Inspire}!MAX\_FORCE@{MAX\_FORCE}}
+\index{MAX\_FORCE@{MAX\_FORCE}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{MAX\_FORCE}{MAX\_FORCE}}
+{\footnotesize\ttfamily \label{class_inspire_af8c3a7b007d7b4bfb97b6441aa2722b5} 
+const int Inspire\+::\+MAX\+\_\+\+FORCE = 1000\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_ad78cd5c3643a61707462e44d3c8de345}\index{Inspire@{Inspire}!MAX\_SPEED@{MAX\_SPEED}}
+\index{MAX\_SPEED@{MAX\_SPEED}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{MAX\_SPEED}{MAX\_SPEED}}
+{\footnotesize\ttfamily \label{class_inspire_ad78cd5c3643a61707462e44d3c8de345} 
+const int Inspire\+::\+MAX\+\_\+\+SPEED = 1000\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_ad12424f5daceddd9feb6b5d0d6669c3d}\index{Inspire@{Inspire}!MIDDLE@{MIDDLE}}
+\index{MIDDLE@{MIDDLE}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{MIDDLE}{MIDDLE}}
+{\footnotesize\ttfamily \label{class_inspire_ad12424f5daceddd9feb6b5d0d6669c3d} 
+const int Inspire\+::\+MIDDLE = 1490\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_ab6a4a482fe57c9fb2d9617b34be7e0bc}\index{Inspire@{Inspire}!MIN\_FORCE@{MIN\_FORCE}}
+\index{MIN\_FORCE@{MIN\_FORCE}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{MIN\_FORCE}{MIN\_FORCE}}
+{\footnotesize\ttfamily \label{class_inspire_ab6a4a482fe57c9fb2d9617b34be7e0bc} 
+const int Inspire\+::\+MIN\+\_\+\+FORCE = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_a90c7c06ec63c78c7533eec0c08f436fc}\index{Inspire@{Inspire}!MIN\_SPEED@{MIN\_SPEED}}
+\index{MIN\_SPEED@{MIN\_SPEED}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{MIN\_SPEED}{MIN\_SPEED}}
+{\footnotesize\ttfamily \label{class_inspire_a90c7c06ec63c78c7533eec0c08f436fc} 
+const int Inspire\+::\+MIN\+\_\+\+SPEED = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_aa982dc804f7dbae1f9546bdddaf78a89}\index{Inspire@{Inspire}!PINKY@{PINKY}}
+\index{PINKY@{PINKY}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{PINKY}{PINKY}}
+{\footnotesize\ttfamily \label{class_inspire_aa982dc804f7dbae1f9546bdddaf78a89} 
+const int Inspire\+::\+PINKY = 1486\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_a04fb5f5ef72b3dd5fa8e14f0ced43573}\index{Inspire@{Inspire}!RING@{RING}}
+\index{RING@{RING}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{RING}{RING}}
+{\footnotesize\ttfamily \label{class_inspire_a04fb5f5ef72b3dd5fa8e14f0ced43573} 
+const int Inspire\+::\+RING = 1488\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_a10d5f9244d20f48cb836a3e70010dd3c}\index{Inspire@{Inspire}!SPEED\_INDEX@{SPEED\_INDEX}}
+\index{SPEED\_INDEX@{SPEED\_INDEX}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{SPEED\_INDEX}{SPEED\_INDEX}}
+{\footnotesize\ttfamily \label{class_inspire_a10d5f9244d20f48cb836a3e70010dd3c} 
+const int Inspire\+::\+SPEED\+\_\+\+INDEX = 1528\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_a7c8806fff20936baf41ee3deb7e7895f}\index{Inspire@{Inspire}!SPEED\_MIDDLE@{SPEED\_MIDDLE}}
+\index{SPEED\_MIDDLE@{SPEED\_MIDDLE}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{SPEED\_MIDDLE}{SPEED\_MIDDLE}}
+{\footnotesize\ttfamily \label{class_inspire_a7c8806fff20936baf41ee3deb7e7895f} 
+const int Inspire\+::\+SPEED\+\_\+\+MIDDLE = 1526\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_ae470035250fcd5f3a46fa34a2e22773b}\index{Inspire@{Inspire}!SPEED\_PINKY@{SPEED\_PINKY}}
+\index{SPEED\_PINKY@{SPEED\_PINKY}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{SPEED\_PINKY}{SPEED\_PINKY}}
+{\footnotesize\ttfamily \label{class_inspire_ae470035250fcd5f3a46fa34a2e22773b} 
+const int Inspire\+::\+SPEED\+\_\+\+PINKY = 1522\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_a65e27ccd89571b12c3316a4717eddbf9}\index{Inspire@{Inspire}!SPEED\_RING@{SPEED\_RING}}
+\index{SPEED\_RING@{SPEED\_RING}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{SPEED\_RING}{SPEED\_RING}}
+{\footnotesize\ttfamily \label{class_inspire_a65e27ccd89571b12c3316a4717eddbf9} 
+const int Inspire\+::\+SPEED\+\_\+\+RING = 1524\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_a02725c0be942d6a663db7a38019c7f4e}\index{Inspire@{Inspire}!SPEED\_THUMB@{SPEED\_THUMB}}
+\index{SPEED\_THUMB@{SPEED\_THUMB}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{SPEED\_THUMB}{SPEED\_THUMB}}
+{\footnotesize\ttfamily \label{class_inspire_a02725c0be942d6a663db7a38019c7f4e} 
+const int Inspire\+::\+SPEED\+\_\+\+THUMB = 1530\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_a01b56e692e416927bb609cae8783eab4}\index{Inspire@{Inspire}!SPEED\_THUMB\_ROT@{SPEED\_THUMB\_ROT}}
+\index{SPEED\_THUMB\_ROT@{SPEED\_THUMB\_ROT}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{SPEED\_THUMB\_ROT}{SPEED\_THUMB\_ROT}}
+{\footnotesize\ttfamily \label{class_inspire_a01b56e692e416927bb609cae8783eab4} 
+const int Inspire\+::\+SPEED\+\_\+\+THUMB\+\_\+\+ROT = 1532\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_ac4112d6cf9bc2529af9f279f2c7845d8}\index{Inspire@{Inspire}!THUMB@{THUMB}}
+\index{THUMB@{THUMB}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{THUMB}{THUMB}}
+{\footnotesize\ttfamily \label{class_inspire_ac4112d6cf9bc2529af9f279f2c7845d8} 
+const int Inspire\+::\+THUMB = 1494\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_inspire_aa90a22d171948f10e4bcadda299abfd1}\index{Inspire@{Inspire}!THUMB\_ROT@{THUMB\_ROT}}
+\index{THUMB\_ROT@{THUMB\_ROT}!Inspire@{Inspire}}
+\doxysubsubsection{\texorpdfstring{THUMB\_ROT}{THUMB\_ROT}}
+{\footnotesize\ttfamily \label{class_inspire_aa90a22d171948f10e4bcadda299abfd1} 
+const int Inspire\+::\+THUMB\+\_\+\+ROT = 1496\hspace{0.3cm}{\ttfamily [static]}}
+
+定义手部各个手指的静态常量 这些常量用于识别和表示人类手部的五个手指：拇指、食指、中指、无名指和小指。 通过分配唯一的整数值来代表每个手指，使得在程序中可以方便地引用和识别它们。 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_inspire_8hpp}{Inspire.\+hpp}}\item 
+script/\mbox{\hyperlink{_inspire_8py}{Inspire.\+py}}\end{DoxyCompactItemize}

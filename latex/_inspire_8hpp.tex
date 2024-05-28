@@ -1,0 +1,91 @@
+\doxysection{src/\+Inspire.hpp 文件参考}
+\hypertarget{_inspire_8hpp}{}\label{_inspire_8hpp}\index{src/Inspire.hpp@{src/Inspire.hpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$ECan\+Vci.\+h$>$}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Inspire.\+hpp 的引用(Include)关系图\+:
+% FIG 0
+此图展示该文件被哪些文件直接或间接地引用了\+:
+% FIG 1
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_can_writer}{Can\+Writer}}
+\item 
+class \mbox{\hyperlink{class_inspire}{Inspire}}
+\item 
+class \mbox{\hyperlink{class_inspire_action}{Inspire\+Action}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_inspire_8hpp_a44b3632a8ee3c1251a50b8d92442dfdf}{USBCAN1}}~3 /\texorpdfstring{$\ast$}{*} USBCAN-\/I \texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}}~4 /\texorpdfstring{$\ast$}{*} USBCAN-\/II \texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{_inspire_8hpp_a4964ecb6a5c689aaf8ee2832b8093aac}{CAN1}}~0
+\item 
+\#define \mbox{\hyperlink{_inspire_8hpp_ac5e4c86ed487dc91418b156e24808033}{CAN2}}~1
+\item 
+\#define \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}~0
+\item 
+\#define \mbox{\hyperlink{_inspire_8hpp_af53e51380ab436fa1e76323e9ea0ed91}{Reserved}}~0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8\+\_\+t \mbox{\hyperlink{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0}{Byte}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{_inspire_8hpp_a4964ecb6a5c689aaf8ee2832b8093aac}\index{Inspire.hpp@{Inspire.hpp}!CAN1@{CAN1}}
+\index{CAN1@{CAN1}!Inspire.hpp@{Inspire.hpp}}
+\doxysubsubsection{\texorpdfstring{CAN1}{CAN1}}
+{\footnotesize\ttfamily \label{_inspire_8hpp_a4964ecb6a5c689aaf8ee2832b8093aac} 
+\#define CAN1~0}
+
+\Hypertarget{_inspire_8hpp_ac5e4c86ed487dc91418b156e24808033}\index{Inspire.hpp@{Inspire.hpp}!CAN2@{CAN2}}
+\index{CAN2@{CAN2}!Inspire.hpp@{Inspire.hpp}}
+\doxysubsubsection{\texorpdfstring{CAN2}{CAN2}}
+{\footnotesize\ttfamily \label{_inspire_8hpp_ac5e4c86ed487dc91418b156e24808033} 
+\#define CAN2~1}
+
+\Hypertarget{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}\index{Inspire.hpp@{Inspire.hpp}!DeviceInd@{DeviceInd}}
+\index{DeviceInd@{DeviceInd}!Inspire.hpp@{Inspire.hpp}}
+\doxysubsubsection{\texorpdfstring{DeviceInd}{DeviceInd}}
+{\footnotesize\ttfamily \label{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994} 
+\#define Device\+Ind~0}
+
+\Hypertarget{_inspire_8hpp_af53e51380ab436fa1e76323e9ea0ed91}\index{Inspire.hpp@{Inspire.hpp}!Reserved@{Reserved}}
+\index{Reserved@{Reserved}!Inspire.hpp@{Inspire.hpp}}
+\doxysubsubsection{\texorpdfstring{Reserved}{Reserved}}
+{\footnotesize\ttfamily \label{_inspire_8hpp_af53e51380ab436fa1e76323e9ea0ed91} 
+\#define Reserved~0}
+
+\Hypertarget{_inspire_8hpp_a44b3632a8ee3c1251a50b8d92442dfdf}\index{Inspire.hpp@{Inspire.hpp}!USBCAN1@{USBCAN1}}
+\index{USBCAN1@{USBCAN1}!Inspire.hpp@{Inspire.hpp}}
+\doxysubsubsection{\texorpdfstring{USBCAN1}{USBCAN1}}
+{\footnotesize\ttfamily \label{_inspire_8hpp_a44b3632a8ee3c1251a50b8d92442dfdf} 
+\#define USBCAN1~3 /\texorpdfstring{$\ast$}{*} USBCAN-\/I \texorpdfstring{$\ast$}{*}/}
+
+\Hypertarget{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}\index{Inspire.hpp@{Inspire.hpp}!USBCAN2@{USBCAN2}}
+\index{USBCAN2@{USBCAN2}!Inspire.hpp@{Inspire.hpp}}
+\doxysubsubsection{\texorpdfstring{USBCAN2}{USBCAN2}}
+{\footnotesize\ttfamily \label{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66} 
+\#define USBCAN2~4 /\texorpdfstring{$\ast$}{*} USBCAN-\/II \texorpdfstring{$\ast$}{*}/}
+
+
+
+\doxysubsection{类型定义说明}
+\Hypertarget{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0}\index{Inspire.hpp@{Inspire.hpp}!Byte@{Byte}}
+\index{Byte@{Byte}!Inspire.hpp@{Inspire.hpp}}
+\doxysubsubsection{\texorpdfstring{Byte}{Byte}}
+{\footnotesize\ttfamily \label{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0} 
+typedef uint8\+\_\+t \mbox{\hyperlink{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0}{Byte}}}
+

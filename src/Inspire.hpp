@@ -305,15 +305,15 @@ public:
         }
         action_canwriter->WriteCan(Inspire::THUMB_ROT, value[0], 1);
 
-        action_canwriter->WriteCan(Inspire::THUMB, value[0], 1);
+        action_canwriter->WriteCan(Inspire::THUMB, value[1], 1);
 
-        action_canwriter->WriteCan(Inspire::INDEX, value[1], 1);
+        action_canwriter->WriteCan(Inspire::INDEX, value[2], 1);
 
-        action_canwriter->WriteCan(Inspire::MIDDLE, value[2], 1);
+        action_canwriter->WriteCan(Inspire::MIDDLE, value[3], 1);
 
-        action_canwriter->WriteCan(Inspire::RING, value[3], 1);
+        action_canwriter->WriteCan(Inspire::RING, value[4], 1);
 
-        action_canwriter->WriteCan(Inspire::PINKY, value[4], 1);
+        action_canwriter->WriteCan(Inspire::PINKY, value[5], 1);
 
         return 0;
     }
@@ -335,15 +335,15 @@ void SetFiveFingerSpeed(std::vector<int> value)
     }
     action_canwriter->WriteCan(Inspire::SPEED_THUMB_ROT, value[0], 1);
 
-    action_canwriter->WriteCan(Inspire::SPEED_THUMB, value[0], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_THUMB, value[1], 1);
 
-    action_canwriter->WriteCan(Inspire::SPEED_INDEX, value[1], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_INDEX, value[2], 1);
 
-    action_canwriter->WriteCan(Inspire::SPEED_MIDDLE, value[2], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_MIDDLE, value[3], 1);
 
-    action_canwriter->WriteCan(Inspire::SPEED_RING, value[3], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_RING, value[4], 1);
 
-    action_canwriter->WriteCan(Inspire::SPEED_PINKY, value[4], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_PINKY, value[5], 1);
 }
 // 设置五指的力
 void SetFiveFingerForce(std::vector<int> value)
@@ -364,15 +364,15 @@ void SetFiveFingerForce(std::vector<int> value)
     }
     action_canwriter->WriteCan(Inspire::FORCE_THUMB_ROT, value[0], 1);
 
-    action_canwriter->WriteCan(Inspire::FORCE_THUMB, value[0], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_THUMB, value[1], 1);
 
-    action_canwriter->WriteCan(Inspire::FORCE_INDEX, value[1], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_INDEX, value[2], 1);
 
-    action_canwriter->WriteCan(Inspire::FORCE_MIDDLE, value[2], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_MIDDLE, value[3], 1);
 
-    action_canwriter->WriteCan(Inspire::FORCE_RING, value[3], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_RING, value[4], 1);
 
-    action_canwriter->WriteCan(Inspire::FORCE_PINKY, value[4], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_PINKY, value[5], 1);
 }
     ~InspireAction() {}
 

@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/main.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">main.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_e_can_vci_8h_source.html">ECanVci.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+main.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#asrc_2main_8cpp" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a44b3632a8ee3c1251a50b8d92442dfdf" id="r_a44b3632a8ee3c1251a50b8d92442dfdf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44b3632a8ee3c1251a50b8d92442dfdf">USBCAN1</a>&#160;&#160;&#160;3 /* USBCAN-I */</td></tr>
+<tr class="separator:a44b3632a8ee3c1251a50b8d92442dfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58de6b40df25056c6f8db282fe1c5e66" id="r_a58de6b40df25056c6f8db282fe1c5e66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58de6b40df25056c6f8db282fe1c5e66">USBCAN2</a>&#160;&#160;&#160;4 /* USBCAN-II */</td></tr>
+<tr class="separator:a58de6b40df25056c6f8db282fe1c5e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4964ecb6a5c689aaf8ee2832b8093aac" id="r_a4964ecb6a5c689aaf8ee2832b8093aac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4964ecb6a5c689aaf8ee2832b8093aac">CAN1</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a4964ecb6a5c689aaf8ee2832b8093aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e4c86ed487dc91418b156e24808033" id="r_ac5e4c86ed487dc91418b156e24808033"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5e4c86ed487dc91418b156e24808033">CAN2</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ac5e4c86ed487dc91418b156e24808033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a7ae8f3766c8853286755f4ec0903c6f0" id="r_a7ae8f3766c8853286755f4ec0903c6f0"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ae8f3766c8853286755f4ec0903c6f0">Byte</a></td></tr>
+<tr class="separator:a7ae8f3766c8853286755f4ec0903c6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:abf9e6b7e6f15df4b525a2e7705ba3089" id="r_abf9e6b7e6f15df4b525a2e7705ba3089"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf9e6b7e6f15df4b525a2e7705ba3089">main</a> (int argc, char const *argv[])</td></tr>
+<tr class="separator:abf9e6b7e6f15df4b525a2e7705ba3089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ace319858d666525a15db2783f701d9bb" id="r_ace319858d666525a15db2783f701d9bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace319858d666525a15db2783f701d9bb">nDeviceType</a> = <a class="el" href="_inspire_8hpp.html#a58de6b40df25056c6f8db282fe1c5e66">USBCAN2</a></td></tr>
+<tr class="separator:ace319858d666525a15db2783f701d9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e3fa177e516dc0e17f304f39be0f52" id="r_a10e3fa177e516dc0e17f304f39be0f52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10e3fa177e516dc0e17f304f39be0f52">nDeviceInd</a> = 0</td></tr>
+<tr class="separator:a10e3fa177e516dc0e17f304f39be0f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839b04b616eba69d1adf8d59359df7d9" id="r_a839b04b616eba69d1adf8d59359df7d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a839b04b616eba69d1adf8d59359df7d9">nReserved</a> = 0</td></tr>
+<tr class="separator:a839b04b616eba69d1adf8d59359df7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa6c30acca5f81d23fda2d59c4026c6" id="r_abfa6c30acca5f81d23fda2d59c4026c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfa6c30acca5f81d23fda2d59c4026c6">m_connect</a> = false</td></tr>
+<tr class="separator:abfa6c30acca5f81d23fda2d59c4026c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade42cec8888fceecaeeb1d6cd077ddf9" id="r_ade42cec8888fceecaeeb1d6cd077ddf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_can_vci_8h.html#aa39b39d94407451a6ec0226479db68cf">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade42cec8888fceecaeeb1d6cd077ddf9">dwRel</a></td></tr>
+<tr class="separator:ade42cec8888fceecaeeb1d6cd077ddf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="a4964ecb6a5c689aaf8ee2832b8093aac" name="a4964ecb6a5c689aaf8ee2832b8093aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4964ecb6a5c689aaf8ee2832b8093aac">&#9670;&#160;</a></span>CAN1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN1&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5e4c86ed487dc91418b156e24808033" name="ac5e4c86ed487dc91418b156e24808033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e4c86ed487dc91418b156e24808033">&#9670;&#160;</a></span>CAN2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN2&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44b3632a8ee3c1251a50b8d92442dfdf" name="a44b3632a8ee3c1251a50b8d92442dfdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b3632a8ee3c1251a50b8d92442dfdf">&#9670;&#160;</a></span>USBCAN1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USBCAN1&#160;&#160;&#160;3 /* USBCAN-I */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58de6b40df25056c6f8db282fe1c5e66" name="a58de6b40df25056c6f8db282fe1c5e66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58de6b40df25056c6f8db282fe1c5e66">&#9670;&#160;</a></span>USBCAN2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USBCAN2&#160;&#160;&#160;4 /* USBCAN-II */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="a7ae8f3766c8853286755f4ec0903c6f0" name="a7ae8f3766c8853286755f4ec0903c6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ae8f3766c8853286755f4ec0903c6f0">&#9670;&#160;</a></span>Byte</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint8_t <a class="el" href="_inspire_8hpp.html#a7ae8f3766c8853286755f4ec0903c6f0">Byte</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="abf9e6b7e6f15df4b525a2e7705ba3089" name="abf9e6b7e6f15df4b525a2e7705ba3089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9e6b7e6f15df4b525a2e7705ba3089">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>[]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="ade42cec8888fceecaeeb1d6cd077ddf9" name="ade42cec8888fceecaeeb1d6cd077ddf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade42cec8888fceecaeeb1d6cd077ddf9">&#9670;&#160;</a></span>dwRel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_can_vci_8h.html#aa39b39d94407451a6ec0226479db68cf">DWORD</a> dwRel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfa6c30acca5f81d23fda2d59c4026c6" name="abfa6c30acca5f81d23fda2d59c4026c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa6c30acca5f81d23fda2d59c4026c6">&#9670;&#160;</a></span>m_connect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool m_connect = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10e3fa177e516dc0e17f304f39be0f52" name="a10e3fa177e516dc0e17f304f39be0f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10e3fa177e516dc0e17f304f39be0f52">&#9670;&#160;</a></span>nDeviceInd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nDeviceInd = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace319858d666525a15db2783f701d9bb" name="ace319858d666525a15db2783f701d9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace319858d666525a15db2783f701d9bb">&#9670;&#160;</a></span>nDeviceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nDeviceType = <a class="el" href="_inspire_8hpp.html#a58de6b40df25056c6f8db282fe1c5e66">USBCAN2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a839b04b616eba69d1adf8d59359df7d9" name="a839b04b616eba69d1adf8d59359df7d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a839b04b616eba69d1adf8d59359df7d9">&#9670;&#160;</a></span>nReserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nReserved = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

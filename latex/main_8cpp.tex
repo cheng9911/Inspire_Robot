@@ -1,0 +1,120 @@
+\doxysection{src/main.cpp 文件参考}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include "{}ECan\+Vci.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+main.\+cpp 的引用(Include)关系图\+:
+% FIG 0
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a44b3632a8ee3c1251a50b8d92442dfdf}{USBCAN1}}~3 /\texorpdfstring{$\ast$}{*} USBCAN-\/I \texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}}~4 /\texorpdfstring{$\ast$}{*} USBCAN-\/II \texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a4964ecb6a5c689aaf8ee2832b8093aac}{CAN1}}~0
+\item 
+\#define \mbox{\hyperlink{main_8cpp_ac5e4c86ed487dc91418b156e24808033}{CAN2}}~1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8\+\_\+t \mbox{\hyperlink{main_8cpp_a7ae8f3766c8853286755f4ec0903c6f0}{Byte}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}} (int argc, char const \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ace319858d666525a15db2783f701d9bb}{n\+Device\+Type}} = \mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}}
+\item 
+int \mbox{\hyperlink{main_8cpp_a10e3fa177e516dc0e17f304f39be0f52}{n\+Device\+Ind}} = 0
+\item 
+int \mbox{\hyperlink{main_8cpp_a839b04b616eba69d1adf8d59359df7d9}{n\+Reserved}} = 0
+\item 
+bool \mbox{\hyperlink{main_8cpp_abfa6c30acca5f81d23fda2d59c4026c6}{m\+\_\+connect}} = false
+\item 
+\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{main_8cpp_ade42cec8888fceecaeeb1d6cd077ddf9}{dw\+Rel}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{main_8cpp_a4964ecb6a5c689aaf8ee2832b8093aac}\index{main.cpp@{main.cpp}!CAN1@{CAN1}}
+\index{CAN1@{CAN1}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{CAN1}{CAN1}}
+{\footnotesize\ttfamily \label{main_8cpp_a4964ecb6a5c689aaf8ee2832b8093aac} 
+\#define CAN1~0}
+
+\Hypertarget{main_8cpp_ac5e4c86ed487dc91418b156e24808033}\index{main.cpp@{main.cpp}!CAN2@{CAN2}}
+\index{CAN2@{CAN2}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{CAN2}{CAN2}}
+{\footnotesize\ttfamily \label{main_8cpp_ac5e4c86ed487dc91418b156e24808033} 
+\#define CAN2~1}
+
+\Hypertarget{main_8cpp_a44b3632a8ee3c1251a50b8d92442dfdf}\index{main.cpp@{main.cpp}!USBCAN1@{USBCAN1}}
+\index{USBCAN1@{USBCAN1}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{USBCAN1}{USBCAN1}}
+{\footnotesize\ttfamily \label{main_8cpp_a44b3632a8ee3c1251a50b8d92442dfdf} 
+\#define USBCAN1~3 /\texorpdfstring{$\ast$}{*} USBCAN-\/I \texorpdfstring{$\ast$}{*}/}
+
+\Hypertarget{main_8cpp_a58de6b40df25056c6f8db282fe1c5e66}\index{main.cpp@{main.cpp}!USBCAN2@{USBCAN2}}
+\index{USBCAN2@{USBCAN2}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{USBCAN2}{USBCAN2}}
+{\footnotesize\ttfamily \label{main_8cpp_a58de6b40df25056c6f8db282fe1c5e66} 
+\#define USBCAN2~4 /\texorpdfstring{$\ast$}{*} USBCAN-\/II \texorpdfstring{$\ast$}{*}/}
+
+
+
+\doxysubsection{类型定义说明}
+\Hypertarget{main_8cpp_a7ae8f3766c8853286755f4ec0903c6f0}\index{main.cpp@{main.cpp}!Byte@{Byte}}
+\index{Byte@{Byte}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{Byte}{Byte}}
+{\footnotesize\ttfamily \label{main_8cpp_a7ae8f3766c8853286755f4ec0903c6f0} 
+typedef uint8\+\_\+t \mbox{\hyperlink{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0}{Byte}}}
+
+
+
+\doxysubsection{函数说明}
+\Hypertarget{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{变量说明}
+\Hypertarget{main_8cpp_ade42cec8888fceecaeeb1d6cd077ddf9}\index{main.cpp@{main.cpp}!dwRel@{dwRel}}
+\index{dwRel@{dwRel}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{dwRel}{dwRel}}
+{\footnotesize\ttfamily \label{main_8cpp_ade42cec8888fceecaeeb1d6cd077ddf9} 
+\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} dw\+Rel}
+
+\Hypertarget{main_8cpp_abfa6c30acca5f81d23fda2d59c4026c6}\index{main.cpp@{main.cpp}!m\_connect@{m\_connect}}
+\index{m\_connect@{m\_connect}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_connect}{m\_connect}}
+{\footnotesize\ttfamily \label{main_8cpp_abfa6c30acca5f81d23fda2d59c4026c6} 
+bool m\+\_\+connect = false}
+
+\Hypertarget{main_8cpp_a10e3fa177e516dc0e17f304f39be0f52}\index{main.cpp@{main.cpp}!nDeviceInd@{nDeviceInd}}
+\index{nDeviceInd@{nDeviceInd}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{nDeviceInd}{nDeviceInd}}
+{\footnotesize\ttfamily \label{main_8cpp_a10e3fa177e516dc0e17f304f39be0f52} 
+int n\+Device\+Ind = 0}
+
+\Hypertarget{main_8cpp_ace319858d666525a15db2783f701d9bb}\index{main.cpp@{main.cpp}!nDeviceType@{nDeviceType}}
+\index{nDeviceType@{nDeviceType}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{nDeviceType}{nDeviceType}}
+{\footnotesize\ttfamily \label{main_8cpp_ace319858d666525a15db2783f701d9bb} 
+int n\+Device\+Type = \mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}}}
+
+\Hypertarget{main_8cpp_a839b04b616eba69d1adf8d59359df7d9}\index{main.cpp@{main.cpp}!nReserved@{nReserved}}
+\index{nReserved@{nReserved}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{nReserved}{nReserved}}
+{\footnotesize\ttfamily \label{main_8cpp_a839b04b616eba69d1adf8d59359df7d9} 
+int n\+Reserved = 0}
+
