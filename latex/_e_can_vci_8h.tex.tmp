@@ -1,5 +1,5 @@
 \doxysection{src/\+ECan\+Vci.h 文件参考}
-\hypertarget{_e_can_vci_8h}{}\label{_e_can_vci_8h}\index{src/ECanVci.h@{src/ECanVci.h}}
+\label{_e_can_vci_8h}\index{src/ECanVci.h@{src/ECanVci.h}}
 {\ttfamily \#include $<$stdint.\+h$>$}\newline
 ECan\+Vci.\+h 的引用(Include)关系图\+:
 % FIG 0
@@ -8,647 +8,647 @@ ECan\+Vci.\+h 的引用(Include)关系图\+:
 \doxysubsubsection*{类}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{struct_c_m_s_g}{CMSG}}
+struct \textbf{ CMSG}
 \item 
-struct \mbox{\hyperlink{struct_e_v_m_s_g}{EVMSG}}
+struct \textbf{ EVMSG}
 \item 
-struct \mbox{\hyperlink{struct_c_m_s_g___t}{CMSG\+\_\+T}}
+struct \textbf{ CMSG\+\_\+T}
 \item 
-struct \mbox{\hyperlink{struct___b_o_a_r_d___i_n_f_o}{\+\_\+\+BOARD\+\_\+\+INFO}}
+struct \textbf{ \+\_\+\+BOARD\+\_\+\+INFO}
 \item 
-struct \mbox{\hyperlink{struct___c_a_n___o_b_j}{\+\_\+\+CAN\+\_\+\+OBJ}}
+struct \textbf{ \+\_\+\+CAN\+\_\+\+OBJ}
 \item 
-struct \mbox{\hyperlink{struct___c_a_n___s_t_a_t_u_s}{\+\_\+\+CAN\+\_\+\+STATUS}}
+struct \textbf{ \+\_\+\+CAN\+\_\+\+STATUS}
 \item 
-struct \mbox{\hyperlink{struct___e_r_r___i_n_f_o}{\+\_\+\+ERR\+\_\+\+INFO}}
+struct \textbf{ \+\_\+\+ERR\+\_\+\+INFO}
 \item 
-struct \mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g}{\+\_\+\+INIT\+\_\+\+CONFIG}}
+struct \textbf{ \+\_\+\+INIT\+\_\+\+CONFIG}
 \item 
-struct \mbox{\hyperlink{struct___f_i_l_t_e_r___r_e_c_o_r_d}{\+\_\+\+FILTER\+\_\+\+RECORD}}
+struct \textbf{ \+\_\+\+FILTER\+\_\+\+RECORD}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{宏定义}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}~unsigned int
+\#define \textbf{ DWORD}~unsigned int
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a45c20c14d3d8790a22153d08ab2eb2ff}{UINT}}~unsigned int
+\#define \textbf{ UINT}~unsigned int
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_aea50feaf24fd53b7ffab0e9b62ff30a6}{USHORT}}~unsigned short int
+\#define \textbf{ USHORT}~unsigned short int
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a35cd67ba7bb0db8105eb6267467535d7}{CHAR}}~signed char
+\#define \textbf{ CHAR}~signed char
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a9a1dc6d243c6f75bb42f87e3f69649e4}{UCHAR}}~unsigned char
+\#define \textbf{ UCHAR}~unsigned char
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_aec93e83855ac17c3c25c55c37ca186dd}{BYTE}}~unsigned char
+\#define \textbf{ BYTE}~unsigned char
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a13503cb3b34d9eb71eda8ff4065e80ff}{ULONG}}~unsigned int
+\#define \textbf{ ULONG}~unsigned int
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_afeeffe52c8fd59db7c61cf8b02042dbf}{INT}}~signed int
+\#define \textbf{ INT}~signed int
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a03f3290757a46f2993802ffc9750d347}{PVOID}}~void\texorpdfstring{$\ast$}{*}
+\#define \textbf{ PVOID}~void$\ast$
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a085f5f68a0ee4ab24d9f3954a78e8063}{LPVOID}}~void\texorpdfstring{$\ast$}{*}
+\#define \textbf{ LPVOID}~void$\ast$
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_ab521aa5010fb1afb801a899a55569e03}{HANDLE}}~void\texorpdfstring{$\ast$}{*}
+\#define \textbf{ HANDLE}~void$\ast$
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}}~\mbox{\hyperlink{_e_can_vci_8h_aec93e83855ac17c3c25c55c37ca186dd}{BYTE}}
+\#define \textbf{ BOOL}~\textbf{ BYTE}
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a2403320c41f08e7567cb169de5db66b3}{STATUS\+\_\+\+OK}}~1
+\#define \textbf{ STATUS\+\_\+\+OK}~1
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a23205a6a97096d57a247794f5e250963}{STATUS\+\_\+\+ERR}}~0
+\#define \textbf{ STATUS\+\_\+\+ERR}~0
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a81a1fe3aff5794b728fd11294841319b}{ECAN\+\_\+\+ERR}}~0
+\#define \textbf{ ECAN\+\_\+\+ERR}~0
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a6091245e4217332ebbe61065b7c2b894}{ECAN\+\_\+\+SUCCESS}}~1
+\#define \textbf{ ECAN\+\_\+\+SUCCESS}~1
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a96d40de9ea57d6a8755654d829c13167}{ERR\+\_\+\+CAN\+\_\+\+OVERFLOW}}~0x0001
+\#define \textbf{ ERR\+\_\+\+CAN\+\_\+\+OVERFLOW}~0x0001
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_ac399bcea13103e0c8ddca869364fa0a1}{ERR\+\_\+\+CAN\+\_\+\+ERRALARM}}~0x0002
+\#define \textbf{ ERR\+\_\+\+CAN\+\_\+\+ERRALARM}~0x0002
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_ab5338e8125403d8afba124a82ad05033}{ERR\+\_\+\+CAN\+\_\+\+PASSIVE}}~0x0004
+\#define \textbf{ ERR\+\_\+\+CAN\+\_\+\+PASSIVE}~0x0004
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_ad43a6aadfe92f0e89b89417ccd02eece}{ERR\+\_\+\+CAN\+\_\+\+LOSE}}~0x0008
+\#define \textbf{ ERR\+\_\+\+CAN\+\_\+\+LOSE}~0x0008
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a440dd9e4bd59aa6492f391cf2e54e9cb}{ERR\+\_\+\+CAN\+\_\+\+BUSERR}}~0x0010
+\#define \textbf{ ERR\+\_\+\+CAN\+\_\+\+BUSERR}~0x0010
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_ab943e1812c81c60dcef8953faa55b560}{ERR\+\_\+\+CAN\+\_\+\+REG\+\_\+\+FULL}}~0x0020
+\#define \textbf{ ERR\+\_\+\+CAN\+\_\+\+REG\+\_\+\+FULL}~0x0020
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a44cc4785c8ed110866feff913eda4aab}{ERR\+\_\+\+CAN\+\_\+\+REG\+\_\+\+OVER}}~0x0040
+\#define \textbf{ ERR\+\_\+\+CAN\+\_\+\+REG\+\_\+\+OVER}~0x0040
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a9a662a433d4dd9aa14c8e3175b77a169}{ERR\+\_\+\+CAN\+\_\+\+ZHUDONG}}~0x0080
+\#define \textbf{ ERR\+\_\+\+CAN\+\_\+\+ZHUDONG}~0x0080
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a298696a46039a86c645512b333ce0207}{ERR\+\_\+\+DEVICEOPENED}}~0x0100
+\#define \textbf{ ERR\+\_\+\+DEVICEOPENED}~0x0100
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a095c1049e96bab986fce7c216b4eb991}{ERR\+\_\+\+DEVICEOPEN}}~0x0200
+\#define \textbf{ ERR\+\_\+\+DEVICEOPEN}~0x0200
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_af6da5e5ff9df06fddec068766f9d21d3}{ERR\+\_\+\+DEVICENOTOPEN}}~0x0400
+\#define \textbf{ ERR\+\_\+\+DEVICENOTOPEN}~0x0400
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_abb3df667f9d9dc43b26e29ce4c24f92f}{ERR\+\_\+\+BUFFEROVERFLOW}}~0x0800
+\#define \textbf{ ERR\+\_\+\+BUFFEROVERFLOW}~0x0800
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a35d3c668af4f4c4222a89bdc724a4d3c}{ERR\+\_\+\+DEVICENOTEXIST}}~0x1000
+\#define \textbf{ ERR\+\_\+\+DEVICENOTEXIST}~0x1000
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a434646138b406a076f0803402971857a}{ERR\+\_\+\+LOADKERNELDLL}}~0x2000
+\#define \textbf{ ERR\+\_\+\+LOADKERNELDLL}~0x2000
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a8a7712decf2ec4d71c6b2bd64739bb45}{ERR\+\_\+\+CMDFAILED}}~0x4000
+\#define \textbf{ ERR\+\_\+\+CMDFAILED}~0x4000
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_afe6f152cf8801e45eb2085e66d23a56c}{ECAN\+\_\+\+RX\+\_\+\+TIMEOUT}}~0x\+E0000001
+\#define \textbf{ ECAN\+\_\+\+RX\+\_\+\+TIMEOUT}~0x\+E0000001
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a0b6698518357ad64f189c9a1bcba4c61}{ECAN\+\_\+\+TX\+\_\+\+TIMEOUT}}~0x\+E0000002
+\#define \textbf{ ECAN\+\_\+\+TX\+\_\+\+TIMEOUT}~0x\+E0000002
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a14079d15f50d287ea6fc11ea7869ddd7}{ECAN\+\_\+\+TX\+\_\+\+ERROR}}~0x\+E0000004
+\#define \textbf{ ECAN\+\_\+\+TX\+\_\+\+ERROR}~0x\+E0000004
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}}~0x40000000
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE}~0x40000000
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_af59ac1f92b7d6c721c241b6e6c3c0588}{ECAN\+\_\+\+EV\+\_\+\+USER}}~0x40000080
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+USER}~0x40000080
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a0edcfcb8c58f0ba84744ba0dd1568bf7}{ECAN\+\_\+\+EV\+\_\+\+LAST}}~0x400000\+FF
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+LAST}~0x400000\+FF
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a1728d3f0b755d99bbbc13fa38679119a}{ECAN\+\_\+\+EV\+\_\+\+CAN\+\_\+\+ERROR}}~\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}}
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+CAN\+\_\+\+ERROR}~\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE}
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_af4453fc88d0d2a6ee45b40e3d09f97aa}{ECAN\+\_\+\+EV\+\_\+\+BAUD\+\_\+\+CHANGE}}~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x1)
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+BAUD\+\_\+\+CHANGE}~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x1)
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a66f75991e1f5cf7f228c85d2d425795e}{ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+ZERO}}~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x2)
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+ZERO}~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x2)
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_adafbce86fbef0645c2740df845ce9494}{ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID}}~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x3)
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID}~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x3)
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a8b66e800d4c958709de1d8f4eb7d2186}{ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+SA}}~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x4)
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+SA}~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x4)
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a7b2fc07004b09aa28b1ed2500932cf1c}{ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+RANG}}~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x5)
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+RANG}~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x5)
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a5a5a0c4ef729b3b94e146abb26f80b2a}{ECAN\+\_\+\+EV\+\_\+\+RESET}}~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x6)
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+RESET}~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x6)
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_ae4831cabbf861b78d15fa5bc9b79c767}{ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+MASK}}~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x7)
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+MASK}~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x7)
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a876a239bdde48db1a8ea99d99f263675}{ECAN\+\_\+\+EV\+\_\+\+Mode}}~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0xc)
+\#define \textbf{ ECAN\+\_\+\+EV\+\_\+\+Mode}~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0xc)
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a26b027f6c021e8c0d8c8874fb373a3b9}{ECAN\+\_\+\+IOCTL\+\_\+\+GET\+\_\+\+TIMESTAMP\+\_\+\+FREQ}}~0x0007   /\texorpdfstring{$\ast$}{*} Get timestamp frequency in Hz  \texorpdfstring{$\ast$}{*}/
+\#define \textbf{ ECAN\+\_\+\+IOCTL\+\_\+\+GET\+\_\+\+TIMESTAMP\+\_\+\+FREQ}~0x0007   /$\ast$ Get timestamp frequency in Hz  $\ast$/
 \item 
-\#define \mbox{\hyperlink{_e_can_vci_8h_a4dbdfbea94e8816ddf72082ad10ee581}{ECAN\+\_\+\+IOCTL\+\_\+\+GET\+\_\+\+TIMESTAMP}}~0x0008   /\texorpdfstring{$\ast$}{*} Get timestamp counter   \texorpdfstring{$\ast$}{*}/
+\#define \textbf{ ECAN\+\_\+\+IOCTL\+\_\+\+GET\+\_\+\+TIMESTAMP}~0x0008   /$\ast$ Get timestamp counter   $\ast$/
 \end{DoxyCompactItemize}
 \doxysubsubsection*{类型定义}
 \begin{DoxyCompactItemize}
 \item 
-typedef \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a29b6316be96b07864c6a7b77994fa810}{ECAN\+\_\+\+RESULT}}
+typedef \textbf{ DWORD} \textbf{ ECAN\+\_\+\+RESULT}
 \item 
-typedef \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_aa12843bdec30715577ad31385f0e1a81}{ECAN\+\_\+\+HANDLE}}
+typedef \textbf{ DWORD} \textbf{ ECAN\+\_\+\+HANDLE}
 \item 
-typedef struct \mbox{\hyperlink{struct___b_o_a_r_d___i_n_f_o}{\+\_\+\+BOARD\+\_\+\+INFO}} \mbox{\hyperlink{_e_can_vci_8h_af5ed855cec8a0d2b9934e3c2501b1594}{BOARD\+\_\+\+INFO}}
+typedef struct \textbf{ \+\_\+\+BOARD\+\_\+\+INFO} \textbf{ BOARD\+\_\+\+INFO}
 \item 
-typedef struct \mbox{\hyperlink{struct___b_o_a_r_d___i_n_f_o}{\+\_\+\+BOARD\+\_\+\+INFO}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_a98f30ef1f2d26c50df1e5cb3cf6e6040}{P\+\_\+\+BOARD\+\_\+\+INFO}}
+typedef struct \textbf{ \+\_\+\+BOARD\+\_\+\+INFO} $\ast$ \textbf{ P\+\_\+\+BOARD\+\_\+\+INFO}
 \item 
-typedef struct \mbox{\hyperlink{struct___c_a_n___o_b_j}{\+\_\+\+CAN\+\_\+\+OBJ}} \mbox{\hyperlink{_e_can_vci_8h_a1297583dce0f039cad8e7da69cee9ab6}{CAN\+\_\+\+OBJ}}
+typedef struct \textbf{ \+\_\+\+CAN\+\_\+\+OBJ} \textbf{ CAN\+\_\+\+OBJ}
 \item 
-typedef struct \mbox{\hyperlink{struct___c_a_n___o_b_j}{\+\_\+\+CAN\+\_\+\+OBJ}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_aae31f3d5e8f7005c0f40e97bdd4e5bb0}{P\+\_\+\+CAN\+\_\+\+OBJ}}
+typedef struct \textbf{ \+\_\+\+CAN\+\_\+\+OBJ} $\ast$ \textbf{ P\+\_\+\+CAN\+\_\+\+OBJ}
 \item 
-typedef struct \mbox{\hyperlink{struct___c_a_n___s_t_a_t_u_s}{\+\_\+\+CAN\+\_\+\+STATUS}} \mbox{\hyperlink{_e_can_vci_8h_a191c6ed925eaf3cf2070f8cd36abca29}{CAN\+\_\+\+STATUS}}
+typedef struct \textbf{ \+\_\+\+CAN\+\_\+\+STATUS} \textbf{ CAN\+\_\+\+STATUS}
 \item 
-typedef struct \mbox{\hyperlink{struct___c_a_n___s_t_a_t_u_s}{\+\_\+\+CAN\+\_\+\+STATUS}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_a4ba38802e100554e8ad30ecdeb36723b}{P\+\_\+\+CAN\+\_\+\+STATUS}}
+typedef struct \textbf{ \+\_\+\+CAN\+\_\+\+STATUS} $\ast$ \textbf{ P\+\_\+\+CAN\+\_\+\+STATUS}
 \item 
-typedef struct \mbox{\hyperlink{struct___e_r_r___i_n_f_o}{\+\_\+\+ERR\+\_\+\+INFO}} \mbox{\hyperlink{_e_can_vci_8h_ab7e49d5b4a2afae054c8d0a65c337872}{ERR\+\_\+\+INFO}}
+typedef struct \textbf{ \+\_\+\+ERR\+\_\+\+INFO} \textbf{ ERR\+\_\+\+INFO}
 \item 
-typedef struct \mbox{\hyperlink{struct___e_r_r___i_n_f_o}{\+\_\+\+ERR\+\_\+\+INFO}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_a919c52a69a6ccbf3e765d8409a07def5}{P\+\_\+\+ERR\+\_\+\+INFO}}
+typedef struct \textbf{ \+\_\+\+ERR\+\_\+\+INFO} $\ast$ \textbf{ P\+\_\+\+ERR\+\_\+\+INFO}
 \item 
-typedef struct \mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g}{\+\_\+\+INIT\+\_\+\+CONFIG}} \mbox{\hyperlink{_e_can_vci_8h_a97d5dab778fb21834da32140b5bb8996}{INIT\+\_\+\+CONFIG}}
+typedef struct \textbf{ \+\_\+\+INIT\+\_\+\+CONFIG} \textbf{ INIT\+\_\+\+CONFIG}
 \item 
-typedef struct \mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g}{\+\_\+\+INIT\+\_\+\+CONFIG}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_a754d13cd67b3a4486b18878a5265bf06}{P\+\_\+\+INIT\+\_\+\+CONFIG}}
+typedef struct \textbf{ \+\_\+\+INIT\+\_\+\+CONFIG} $\ast$ \textbf{ P\+\_\+\+INIT\+\_\+\+CONFIG}
 \item 
-typedef struct \mbox{\hyperlink{struct___f_i_l_t_e_r___r_e_c_o_r_d}{\+\_\+\+FILTER\+\_\+\+RECORD}} \mbox{\hyperlink{_e_can_vci_8h_a445d8fda4979a8fcfaa6cad050b5e3a8}{FILTER\+\_\+\+RECORD}}
+typedef struct \textbf{ \+\_\+\+FILTER\+\_\+\+RECORD} \textbf{ FILTER\+\_\+\+RECORD}
 \item 
-typedef struct \mbox{\hyperlink{struct___f_i_l_t_e_r___r_e_c_o_r_d}{\+\_\+\+FILTER\+\_\+\+RECORD}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_aaaa64b8ae4a266f47c03dc079de65e2f}{P\+\_\+\+FILTER\+\_\+\+RECORD}}
+typedef struct \textbf{ \+\_\+\+FILTER\+\_\+\+RECORD} $\ast$ \textbf{ P\+\_\+\+FILTER\+\_\+\+RECORD}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{函数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a9022c5b045e725e2cce127412e1ce765}{Open\+Device}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_af53e51380ab436fa1e76323e9ea0ed91}{Reserved}})
+\textbf{ DWORD} \textbf{ Open\+Device} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} \textbf{ Reserved})
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_accb9eba67a87e313507d88a3b554bd72}{Close\+Device}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}})
+\textbf{ DWORD} \textbf{ Close\+Device} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind})
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_aa2e7908f574ea5d75ab10218016b2e16}{Init\+CAN}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd, \mbox{\hyperlink{_e_can_vci_8h_a754d13cd67b3a4486b18878a5265bf06}{P\+\_\+\+INIT\+\_\+\+CONFIG}} p\+Init\+Config)
+\textbf{ DWORD} \textbf{ Init\+CAN} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd, \textbf{ P\+\_\+\+INIT\+\_\+\+CONFIG} p\+Init\+Config)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_ab38f194d5d8368a9d55642ffb928275d}{Read\+Board\+Info}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_a98f30ef1f2d26c50df1e5cb3cf6e6040}{P\+\_\+\+BOARD\+\_\+\+INFO}} p\+Info)
+\textbf{ DWORD} \textbf{ Read\+Board\+Info} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ P\+\_\+\+BOARD\+\_\+\+INFO} p\+Info)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_aea1dd3a7c5bc0846207410fdf330a702}{Read\+Err\+Info}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd, \mbox{\hyperlink{_e_can_vci_8h_a919c52a69a6ccbf3e765d8409a07def5}{P\+\_\+\+ERR\+\_\+\+INFO}} p\+Err\+Info)
+\textbf{ DWORD} \textbf{ Read\+Err\+Info} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd, \textbf{ P\+\_\+\+ERR\+\_\+\+INFO} p\+Err\+Info)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a0c03b6dc3f62a16037309c443295b8c7}{Read\+CANStatus}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd, \mbox{\hyperlink{_e_can_vci_8h_a4ba38802e100554e8ad30ecdeb36723b}{P\+\_\+\+CAN\+\_\+\+STATUS}} p\+CANStatus)
+\textbf{ DWORD} \textbf{ Read\+CANStatus} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd, \textbf{ P\+\_\+\+CAN\+\_\+\+STATUS} p\+CANStatus)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a59e960288f67bbdcda1c328fce218abb}{Get\+Reference}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Ref\+Type, \mbox{\hyperlink{_e_can_vci_8h_a03f3290757a46f2993802ffc9750d347}{PVOID}} p\+Data)
+\textbf{ DWORD} \textbf{ Get\+Reference} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd, \textbf{ DWORD} Ref\+Type, \textbf{ PVOID} p\+Data)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a1ef960b1aecede17b109272da1040467}{Set\+Reference}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Ref\+Type, \mbox{\hyperlink{_e_can_vci_8h_a03f3290757a46f2993802ffc9750d347}{PVOID}} p\+Data)
+\textbf{ DWORD} \textbf{ Set\+Reference} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd, \textbf{ DWORD} Ref\+Type, \textbf{ PVOID} p\+Data)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_af4d90859b6bd9c551750c8b294ae976a}{Get\+Receive\+Num}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd)
+\textbf{ DWORD} \textbf{ Get\+Receive\+Num} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a4e60fc535b4d4263594cc9a17d1b1c46}{Clear\+Buffer}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd)
+\textbf{ DWORD} \textbf{ Clear\+Buffer} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a7098cb9ca9f4ee3dadee3896c9d5df8b}{Start\+CAN}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd)
+\textbf{ DWORD} \textbf{ Start\+CAN} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a6bae3cb7a83a0f8379cf78d39da60072}{Reset\+CAN}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd)
+\textbf{ DWORD} \textbf{ Reset\+CAN} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a828a26f60aac5411280f2ca4f277eb95}{Transmit}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd, \mbox{\hyperlink{_e_can_vci_8h_aae31f3d5e8f7005c0f40e97bdd4e5bb0}{P\+\_\+\+CAN\+\_\+\+OBJ}} p\+Send, \mbox{\hyperlink{_e_can_vci_8h_a13503cb3b34d9eb71eda8ff4065e80ff}{ULONG}} Len)
+\textbf{ DWORD} \textbf{ Transmit} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd, \textbf{ P\+\_\+\+CAN\+\_\+\+OBJ} p\+Send, \textbf{ ULONG} Len)
 \item 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a1a4bcc31fafacbfcd5f0ec84c7ddfd8c}{Receive}} (\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Device\+Type, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{Device\+Ind}}, \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} CANInd, \mbox{\hyperlink{_e_can_vci_8h_aae31f3d5e8f7005c0f40e97bdd4e5bb0}{P\+\_\+\+CAN\+\_\+\+OBJ}} p\+Receive, \mbox{\hyperlink{_e_can_vci_8h_a13503cb3b34d9eb71eda8ff4065e80ff}{ULONG}} Len, \mbox{\hyperlink{_e_can_vci_8h_afeeffe52c8fd59db7c61cf8b02042dbf}{INT}} Wait\+Time)
+\textbf{ DWORD} \textbf{ Receive} (\textbf{ DWORD} Device\+Type, \textbf{ DWORD} \textbf{ Device\+Ind}, \textbf{ DWORD} CANInd, \textbf{ P\+\_\+\+CAN\+\_\+\+OBJ} p\+Receive, \textbf{ ULONG} Len, \textbf{ INT} Wait\+Time)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{宏定义说明}
-\Hypertarget{_e_can_vci_8h_ae4cc35dcc70810fa972cc8a5185a28fa}\index{ECanVci.h@{ECanVci.h}!BOOL@{BOOL}}
+\index{ECanVci.h@{ECanVci.h}!BOOL@{BOOL}}
 \index{BOOL@{BOOL}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{BOOL}{BOOL}}
+\doxysubsubsection{BOOL}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_ae4cc35dcc70810fa972cc8a5185a28fa} 
-\#define BOOL~\mbox{\hyperlink{_e_can_vci_8h_aec93e83855ac17c3c25c55c37ca186dd}{BYTE}}}
+\#define BOOL~\textbf{ BYTE}}
 
-\Hypertarget{_e_can_vci_8h_aec93e83855ac17c3c25c55c37ca186dd}\index{ECanVci.h@{ECanVci.h}!BYTE@{BYTE}}
+\index{ECanVci.h@{ECanVci.h}!BYTE@{BYTE}}
 \index{BYTE@{BYTE}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{BYTE}{BYTE}}
+\doxysubsubsection{BYTE}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_aec93e83855ac17c3c25c55c37ca186dd} 
 \#define BYTE~unsigned char}
 
-\Hypertarget{_e_can_vci_8h_a35cd67ba7bb0db8105eb6267467535d7}\index{ECanVci.h@{ECanVci.h}!CHAR@{CHAR}}
+\index{ECanVci.h@{ECanVci.h}!CHAR@{CHAR}}
 \index{CHAR@{CHAR}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{CHAR}{CHAR}}
+\doxysubsubsection{CHAR}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a35cd67ba7bb0db8105eb6267467535d7} 
 \#define CHAR~signed char}
 
-\Hypertarget{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}\index{ECanVci.h@{ECanVci.h}!DWORD@{DWORD}}
+\index{ECanVci.h@{ECanVci.h}!DWORD@{DWORD}}
 \index{DWORD@{DWORD}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{DWORD}{DWORD}}
+\doxysubsubsection{DWORD}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf} 
 \#define DWORD~unsigned int}
 
-\Hypertarget{_e_can_vci_8h_a81a1fe3aff5794b728fd11294841319b}\index{ECanVci.h@{ECanVci.h}!ECAN\_ERR@{ECAN\_ERR}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_ERR@{ECAN\_ERR}}
 \index{ECAN\_ERR@{ECAN\_ERR}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_ERR}{ECAN\_ERR}}
+\doxysubsubsection{ECAN\_ERR}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a81a1fe3aff5794b728fd11294841319b} 
 \#define ECAN\+\_\+\+ERR~0}
 
-\Hypertarget{_e_can_vci_8h_adafbce86fbef0645c2740df845ce9494}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_ADD\_ID@{ECAN\_EV\_ADD\_ID}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_ADD\_ID@{ECAN\_EV\_ADD\_ID}}
 \index{ECAN\_EV\_ADD\_ID@{ECAN\_EV\_ADD\_ID}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_ADD\_ID}{ECAN\_EV\_ADD\_ID}}
+\doxysubsubsection{ECAN\_EV\_ADD\_ID}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_adafbce86fbef0645c2740df845ce9494} 
-\#define ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x3)}
+\#define ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x3)}
 
-\Hypertarget{_e_can_vci_8h_a7b2fc07004b09aa28b1ed2500932cf1c}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_ADD\_ID\_RANG@{ECAN\_EV\_ADD\_ID\_RANG}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_ADD\_ID\_RANG@{ECAN\_EV\_ADD\_ID\_RANG}}
 \index{ECAN\_EV\_ADD\_ID\_RANG@{ECAN\_EV\_ADD\_ID\_RANG}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_ADD\_ID\_RANG}{ECAN\_EV\_ADD\_ID\_RANG}}
+\doxysubsubsection{ECAN\_EV\_ADD\_ID\_RANG}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a7b2fc07004b09aa28b1ed2500932cf1c} 
-\#define ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+RANG~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x5)}
+\#define ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+RANG~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x5)}
 
-\Hypertarget{_e_can_vci_8h_a8b66e800d4c958709de1d8f4eb7d2186}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_ADD\_ID\_SA@{ECAN\_EV\_ADD\_ID\_SA}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_ADD\_ID\_SA@{ECAN\_EV\_ADD\_ID\_SA}}
 \index{ECAN\_EV\_ADD\_ID\_SA@{ECAN\_EV\_ADD\_ID\_SA}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_ADD\_ID\_SA}{ECAN\_EV\_ADD\_ID\_SA}}
+\doxysubsubsection{ECAN\_EV\_ADD\_ID\_SA}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a8b66e800d4c958709de1d8f4eb7d2186} 
-\#define ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+SA~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x4)}
+\#define ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+SA~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x4)}
 
-\Hypertarget{_e_can_vci_8h_a66f75991e1f5cf7f228c85d2d425795e}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_ADD\_ID\_ZERO@{ECAN\_EV\_ADD\_ID\_ZERO}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_ADD\_ID\_ZERO@{ECAN\_EV\_ADD\_ID\_ZERO}}
 \index{ECAN\_EV\_ADD\_ID\_ZERO@{ECAN\_EV\_ADD\_ID\_ZERO}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_ADD\_ID\_ZERO}{ECAN\_EV\_ADD\_ID\_ZERO}}
+\doxysubsubsection{ECAN\_EV\_ADD\_ID\_ZERO}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a66f75991e1f5cf7f228c85d2d425795e} 
-\#define ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+ZERO~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x2)}
+\#define ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+ID\+\_\+\+ZERO~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x2)}
 
-\Hypertarget{_e_can_vci_8h_ae4831cabbf861b78d15fa5bc9b79c767}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_ADD\_MASK@{ECAN\_EV\_ADD\_MASK}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_ADD\_MASK@{ECAN\_EV\_ADD\_MASK}}
 \index{ECAN\_EV\_ADD\_MASK@{ECAN\_EV\_ADD\_MASK}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_ADD\_MASK}{ECAN\_EV\_ADD\_MASK}}
+\doxysubsubsection{ECAN\_EV\_ADD\_MASK}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_ae4831cabbf861b78d15fa5bc9b79c767} 
-\#define ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+MASK~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x7)}
+\#define ECAN\+\_\+\+EV\+\_\+\+ADD\+\_\+\+MASK~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x7)}
 
-\Hypertarget{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_BASE@{ECAN\_EV\_BASE}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_BASE@{ECAN\_EV\_BASE}}
 \index{ECAN\_EV\_BASE@{ECAN\_EV\_BASE}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_BASE}{ECAN\_EV\_BASE}}
+\doxysubsubsection{ECAN\_EV\_BASE}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db} 
 \#define ECAN\+\_\+\+EV\+\_\+\+BASE~0x40000000}
 
-\Hypertarget{_e_can_vci_8h_af4453fc88d0d2a6ee45b40e3d09f97aa}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_BAUD\_CHANGE@{ECAN\_EV\_BAUD\_CHANGE}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_BAUD\_CHANGE@{ECAN\_EV\_BAUD\_CHANGE}}
 \index{ECAN\_EV\_BAUD\_CHANGE@{ECAN\_EV\_BAUD\_CHANGE}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_BAUD\_CHANGE}{ECAN\_EV\_BAUD\_CHANGE}}
+\doxysubsubsection{ECAN\_EV\_BAUD\_CHANGE}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_af4453fc88d0d2a6ee45b40e3d09f97aa} 
-\#define ECAN\+\_\+\+EV\+\_\+\+BAUD\+\_\+\+CHANGE~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x1)}
+\#define ECAN\+\_\+\+EV\+\_\+\+BAUD\+\_\+\+CHANGE~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x1)}
 
-\Hypertarget{_e_can_vci_8h_a1728d3f0b755d99bbbc13fa38679119a}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_CAN\_ERROR@{ECAN\_EV\_CAN\_ERROR}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_CAN\_ERROR@{ECAN\_EV\_CAN\_ERROR}}
 \index{ECAN\_EV\_CAN\_ERROR@{ECAN\_EV\_CAN\_ERROR}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_CAN\_ERROR}{ECAN\_EV\_CAN\_ERROR}}
+\doxysubsubsection{ECAN\_EV\_CAN\_ERROR}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a1728d3f0b755d99bbbc13fa38679119a} 
-\#define ECAN\+\_\+\+EV\+\_\+\+CAN\+\_\+\+ERROR~\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}}}
+\#define ECAN\+\_\+\+EV\+\_\+\+CAN\+\_\+\+ERROR~\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE}}
 
-\Hypertarget{_e_can_vci_8h_a0edcfcb8c58f0ba84744ba0dd1568bf7}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_LAST@{ECAN\_EV\_LAST}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_LAST@{ECAN\_EV\_LAST}}
 \index{ECAN\_EV\_LAST@{ECAN\_EV\_LAST}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_LAST}{ECAN\_EV\_LAST}}
+\doxysubsubsection{ECAN\_EV\_LAST}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a0edcfcb8c58f0ba84744ba0dd1568bf7} 
 \#define ECAN\+\_\+\+EV\+\_\+\+LAST~0x400000\+FF}
 
-\Hypertarget{_e_can_vci_8h_a876a239bdde48db1a8ea99d99f263675}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_Mode@{ECAN\_EV\_Mode}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_Mode@{ECAN\_EV\_Mode}}
 \index{ECAN\_EV\_Mode@{ECAN\_EV\_Mode}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_Mode}{ECAN\_EV\_Mode}}
+\doxysubsubsection{ECAN\_EV\_Mode}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a876a239bdde48db1a8ea99d99f263675} 
-\#define ECAN\+\_\+\+EV\+\_\+\+Mode~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0xc)}
+\#define ECAN\+\_\+\+EV\+\_\+\+Mode~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0xc)}
 
-\Hypertarget{_e_can_vci_8h_a5a5a0c4ef729b3b94e146abb26f80b2a}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_RESET@{ECAN\_EV\_RESET}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_RESET@{ECAN\_EV\_RESET}}
 \index{ECAN\_EV\_RESET@{ECAN\_EV\_RESET}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_RESET}{ECAN\_EV\_RESET}}
+\doxysubsubsection{ECAN\_EV\_RESET}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a5a5a0c4ef729b3b94e146abb26f80b2a} 
-\#define ECAN\+\_\+\+EV\+\_\+\+RESET~(\mbox{\hyperlink{_e_can_vci_8h_a11f773439acbd9956fb0f3aee02ef6db}{ECAN\+\_\+\+EV\+\_\+\+BASE}} + 0x6)}
+\#define ECAN\+\_\+\+EV\+\_\+\+RESET~(\textbf{ ECAN\+\_\+\+EV\+\_\+\+BASE} + 0x6)}
 
-\Hypertarget{_e_can_vci_8h_af59ac1f92b7d6c721c241b6e6c3c0588}\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_USER@{ECAN\_EV\_USER}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_EV\_USER@{ECAN\_EV\_USER}}
 \index{ECAN\_EV\_USER@{ECAN\_EV\_USER}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_EV\_USER}{ECAN\_EV\_USER}}
+\doxysubsubsection{ECAN\_EV\_USER}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_af59ac1f92b7d6c721c241b6e6c3c0588} 
 \#define ECAN\+\_\+\+EV\+\_\+\+USER~0x40000080}
 
-\Hypertarget{_e_can_vci_8h_a4dbdfbea94e8816ddf72082ad10ee581}\index{ECanVci.h@{ECanVci.h}!ECAN\_IOCTL\_GET\_TIMESTAMP@{ECAN\_IOCTL\_GET\_TIMESTAMP}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_IOCTL\_GET\_TIMESTAMP@{ECAN\_IOCTL\_GET\_TIMESTAMP}}
 \index{ECAN\_IOCTL\_GET\_TIMESTAMP@{ECAN\_IOCTL\_GET\_TIMESTAMP}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_IOCTL\_GET\_TIMESTAMP}{ECAN\_IOCTL\_GET\_TIMESTAMP}}
+\doxysubsubsection{ECAN\_IOCTL\_GET\_TIMESTAMP}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a4dbdfbea94e8816ddf72082ad10ee581} 
-\#define ECAN\+\_\+\+IOCTL\+\_\+\+GET\+\_\+\+TIMESTAMP~0x0008   /\texorpdfstring{$\ast$}{*} Get timestamp counter   \texorpdfstring{$\ast$}{*}/}
+\#define ECAN\+\_\+\+IOCTL\+\_\+\+GET\+\_\+\+TIMESTAMP~0x0008   /$\ast$ Get timestamp counter   $\ast$/}
 
-\Hypertarget{_e_can_vci_8h_a26b027f6c021e8c0d8c8874fb373a3b9}\index{ECanVci.h@{ECanVci.h}!ECAN\_IOCTL\_GET\_TIMESTAMP\_FREQ@{ECAN\_IOCTL\_GET\_TIMESTAMP\_FREQ}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_IOCTL\_GET\_TIMESTAMP\_FREQ@{ECAN\_IOCTL\_GET\_TIMESTAMP\_FREQ}}
 \index{ECAN\_IOCTL\_GET\_TIMESTAMP\_FREQ@{ECAN\_IOCTL\_GET\_TIMESTAMP\_FREQ}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_IOCTL\_GET\_TIMESTAMP\_FREQ}{ECAN\_IOCTL\_GET\_TIMESTAMP\_FREQ}}
+\doxysubsubsection{ECAN\_IOCTL\_GET\_TIMESTAMP\_FREQ}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a26b027f6c021e8c0d8c8874fb373a3b9} 
-\#define ECAN\+\_\+\+IOCTL\+\_\+\+GET\+\_\+\+TIMESTAMP\+\_\+\+FREQ~0x0007   /\texorpdfstring{$\ast$}{*} Get timestamp frequency in Hz  \texorpdfstring{$\ast$}{*}/}
+\#define ECAN\+\_\+\+IOCTL\+\_\+\+GET\+\_\+\+TIMESTAMP\+\_\+\+FREQ~0x0007   /$\ast$ Get timestamp frequency in Hz  $\ast$/}
 
-\Hypertarget{_e_can_vci_8h_afe6f152cf8801e45eb2085e66d23a56c}\index{ECanVci.h@{ECanVci.h}!ECAN\_RX\_TIMEOUT@{ECAN\_RX\_TIMEOUT}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_RX\_TIMEOUT@{ECAN\_RX\_TIMEOUT}}
 \index{ECAN\_RX\_TIMEOUT@{ECAN\_RX\_TIMEOUT}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_RX\_TIMEOUT}{ECAN\_RX\_TIMEOUT}}
+\doxysubsubsection{ECAN\_RX\_TIMEOUT}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_afe6f152cf8801e45eb2085e66d23a56c} 
 \#define ECAN\+\_\+\+RX\+\_\+\+TIMEOUT~0x\+E0000001}
 
-\Hypertarget{_e_can_vci_8h_a6091245e4217332ebbe61065b7c2b894}\index{ECanVci.h@{ECanVci.h}!ECAN\_SUCCESS@{ECAN\_SUCCESS}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_SUCCESS@{ECAN\_SUCCESS}}
 \index{ECAN\_SUCCESS@{ECAN\_SUCCESS}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_SUCCESS}{ECAN\_SUCCESS}}
+\doxysubsubsection{ECAN\_SUCCESS}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a6091245e4217332ebbe61065b7c2b894} 
 \#define ECAN\+\_\+\+SUCCESS~1}
 
-\Hypertarget{_e_can_vci_8h_a14079d15f50d287ea6fc11ea7869ddd7}\index{ECanVci.h@{ECanVci.h}!ECAN\_TX\_ERROR@{ECAN\_TX\_ERROR}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_TX\_ERROR@{ECAN\_TX\_ERROR}}
 \index{ECAN\_TX\_ERROR@{ECAN\_TX\_ERROR}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_TX\_ERROR}{ECAN\_TX\_ERROR}}
+\doxysubsubsection{ECAN\_TX\_ERROR}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a14079d15f50d287ea6fc11ea7869ddd7} 
 \#define ECAN\+\_\+\+TX\+\_\+\+ERROR~0x\+E0000004}
 
-\Hypertarget{_e_can_vci_8h_a0b6698518357ad64f189c9a1bcba4c61}\index{ECanVci.h@{ECanVci.h}!ECAN\_TX\_TIMEOUT@{ECAN\_TX\_TIMEOUT}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_TX\_TIMEOUT@{ECAN\_TX\_TIMEOUT}}
 \index{ECAN\_TX\_TIMEOUT@{ECAN\_TX\_TIMEOUT}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_TX\_TIMEOUT}{ECAN\_TX\_TIMEOUT}}
+\doxysubsubsection{ECAN\_TX\_TIMEOUT}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a0b6698518357ad64f189c9a1bcba4c61} 
 \#define ECAN\+\_\+\+TX\+\_\+\+TIMEOUT~0x\+E0000002}
 
-\Hypertarget{_e_can_vci_8h_abb3df667f9d9dc43b26e29ce4c24f92f}\index{ECanVci.h@{ECanVci.h}!ERR\_BUFFEROVERFLOW@{ERR\_BUFFEROVERFLOW}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_BUFFEROVERFLOW@{ERR\_BUFFEROVERFLOW}}
 \index{ERR\_BUFFEROVERFLOW@{ERR\_BUFFEROVERFLOW}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_BUFFEROVERFLOW}{ERR\_BUFFEROVERFLOW}}
+\doxysubsubsection{ERR\_BUFFEROVERFLOW}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_abb3df667f9d9dc43b26e29ce4c24f92f} 
 \#define ERR\+\_\+\+BUFFEROVERFLOW~0x0800}
 
-\Hypertarget{_e_can_vci_8h_a440dd9e4bd59aa6492f391cf2e54e9cb}\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_BUSERR@{ERR\_CAN\_BUSERR}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_BUSERR@{ERR\_CAN\_BUSERR}}
 \index{ERR\_CAN\_BUSERR@{ERR\_CAN\_BUSERR}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_CAN\_BUSERR}{ERR\_CAN\_BUSERR}}
+\doxysubsubsection{ERR\_CAN\_BUSERR}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a440dd9e4bd59aa6492f391cf2e54e9cb} 
 \#define ERR\+\_\+\+CAN\+\_\+\+BUSERR~0x0010}
 
-\Hypertarget{_e_can_vci_8h_ac399bcea13103e0c8ddca869364fa0a1}\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_ERRALARM@{ERR\_CAN\_ERRALARM}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_ERRALARM@{ERR\_CAN\_ERRALARM}}
 \index{ERR\_CAN\_ERRALARM@{ERR\_CAN\_ERRALARM}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_CAN\_ERRALARM}{ERR\_CAN\_ERRALARM}}
+\doxysubsubsection{ERR\_CAN\_ERRALARM}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_ac399bcea13103e0c8ddca869364fa0a1} 
 \#define ERR\+\_\+\+CAN\+\_\+\+ERRALARM~0x0002}
 
-\Hypertarget{_e_can_vci_8h_ad43a6aadfe92f0e89b89417ccd02eece}\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_LOSE@{ERR\_CAN\_LOSE}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_LOSE@{ERR\_CAN\_LOSE}}
 \index{ERR\_CAN\_LOSE@{ERR\_CAN\_LOSE}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_CAN\_LOSE}{ERR\_CAN\_LOSE}}
+\doxysubsubsection{ERR\_CAN\_LOSE}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_ad43a6aadfe92f0e89b89417ccd02eece} 
 \#define ERR\+\_\+\+CAN\+\_\+\+LOSE~0x0008}
 
-\Hypertarget{_e_can_vci_8h_a96d40de9ea57d6a8755654d829c13167}\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_OVERFLOW@{ERR\_CAN\_OVERFLOW}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_OVERFLOW@{ERR\_CAN\_OVERFLOW}}
 \index{ERR\_CAN\_OVERFLOW@{ERR\_CAN\_OVERFLOW}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_CAN\_OVERFLOW}{ERR\_CAN\_OVERFLOW}}
+\doxysubsubsection{ERR\_CAN\_OVERFLOW}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a96d40de9ea57d6a8755654d829c13167} 
 \#define ERR\+\_\+\+CAN\+\_\+\+OVERFLOW~0x0001}
 
-\Hypertarget{_e_can_vci_8h_ab5338e8125403d8afba124a82ad05033}\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_PASSIVE@{ERR\_CAN\_PASSIVE}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_PASSIVE@{ERR\_CAN\_PASSIVE}}
 \index{ERR\_CAN\_PASSIVE@{ERR\_CAN\_PASSIVE}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_CAN\_PASSIVE}{ERR\_CAN\_PASSIVE}}
+\doxysubsubsection{ERR\_CAN\_PASSIVE}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_ab5338e8125403d8afba124a82ad05033} 
 \#define ERR\+\_\+\+CAN\+\_\+\+PASSIVE~0x0004}
 
-\Hypertarget{_e_can_vci_8h_ab943e1812c81c60dcef8953faa55b560}\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_REG\_FULL@{ERR\_CAN\_REG\_FULL}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_REG\_FULL@{ERR\_CAN\_REG\_FULL}}
 \index{ERR\_CAN\_REG\_FULL@{ERR\_CAN\_REG\_FULL}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_CAN\_REG\_FULL}{ERR\_CAN\_REG\_FULL}}
+\doxysubsubsection{ERR\_CAN\_REG\_FULL}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_ab943e1812c81c60dcef8953faa55b560} 
 \#define ERR\+\_\+\+CAN\+\_\+\+REG\+\_\+\+FULL~0x0020}
 
-\Hypertarget{_e_can_vci_8h_a44cc4785c8ed110866feff913eda4aab}\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_REG\_OVER@{ERR\_CAN\_REG\_OVER}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_REG\_OVER@{ERR\_CAN\_REG\_OVER}}
 \index{ERR\_CAN\_REG\_OVER@{ERR\_CAN\_REG\_OVER}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_CAN\_REG\_OVER}{ERR\_CAN\_REG\_OVER}}
+\doxysubsubsection{ERR\_CAN\_REG\_OVER}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a44cc4785c8ed110866feff913eda4aab} 
 \#define ERR\+\_\+\+CAN\+\_\+\+REG\+\_\+\+OVER~0x0040}
 
-\Hypertarget{_e_can_vci_8h_a9a662a433d4dd9aa14c8e3175b77a169}\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_ZHUDONG@{ERR\_CAN\_ZHUDONG}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_CAN\_ZHUDONG@{ERR\_CAN\_ZHUDONG}}
 \index{ERR\_CAN\_ZHUDONG@{ERR\_CAN\_ZHUDONG}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_CAN\_ZHUDONG}{ERR\_CAN\_ZHUDONG}}
+\doxysubsubsection{ERR\_CAN\_ZHUDONG}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a9a662a433d4dd9aa14c8e3175b77a169} 
 \#define ERR\+\_\+\+CAN\+\_\+\+ZHUDONG~0x0080}
 
-\Hypertarget{_e_can_vci_8h_a8a7712decf2ec4d71c6b2bd64739bb45}\index{ECanVci.h@{ECanVci.h}!ERR\_CMDFAILED@{ERR\_CMDFAILED}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_CMDFAILED@{ERR\_CMDFAILED}}
 \index{ERR\_CMDFAILED@{ERR\_CMDFAILED}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_CMDFAILED}{ERR\_CMDFAILED}}
+\doxysubsubsection{ERR\_CMDFAILED}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a8a7712decf2ec4d71c6b2bd64739bb45} 
 \#define ERR\+\_\+\+CMDFAILED~0x4000}
 
-\Hypertarget{_e_can_vci_8h_a35d3c668af4f4c4222a89bdc724a4d3c}\index{ECanVci.h@{ECanVci.h}!ERR\_DEVICENOTEXIST@{ERR\_DEVICENOTEXIST}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_DEVICENOTEXIST@{ERR\_DEVICENOTEXIST}}
 \index{ERR\_DEVICENOTEXIST@{ERR\_DEVICENOTEXIST}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_DEVICENOTEXIST}{ERR\_DEVICENOTEXIST}}
+\doxysubsubsection{ERR\_DEVICENOTEXIST}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a35d3c668af4f4c4222a89bdc724a4d3c} 
 \#define ERR\+\_\+\+DEVICENOTEXIST~0x1000}
 
-\Hypertarget{_e_can_vci_8h_af6da5e5ff9df06fddec068766f9d21d3}\index{ECanVci.h@{ECanVci.h}!ERR\_DEVICENOTOPEN@{ERR\_DEVICENOTOPEN}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_DEVICENOTOPEN@{ERR\_DEVICENOTOPEN}}
 \index{ERR\_DEVICENOTOPEN@{ERR\_DEVICENOTOPEN}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_DEVICENOTOPEN}{ERR\_DEVICENOTOPEN}}
+\doxysubsubsection{ERR\_DEVICENOTOPEN}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_af6da5e5ff9df06fddec068766f9d21d3} 
 \#define ERR\+\_\+\+DEVICENOTOPEN~0x0400}
 
-\Hypertarget{_e_can_vci_8h_a095c1049e96bab986fce7c216b4eb991}\index{ECanVci.h@{ECanVci.h}!ERR\_DEVICEOPEN@{ERR\_DEVICEOPEN}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_DEVICEOPEN@{ERR\_DEVICEOPEN}}
 \index{ERR\_DEVICEOPEN@{ERR\_DEVICEOPEN}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_DEVICEOPEN}{ERR\_DEVICEOPEN}}
+\doxysubsubsection{ERR\_DEVICEOPEN}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a095c1049e96bab986fce7c216b4eb991} 
 \#define ERR\+\_\+\+DEVICEOPEN~0x0200}
 
-\Hypertarget{_e_can_vci_8h_a298696a46039a86c645512b333ce0207}\index{ECanVci.h@{ECanVci.h}!ERR\_DEVICEOPENED@{ERR\_DEVICEOPENED}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_DEVICEOPENED@{ERR\_DEVICEOPENED}}
 \index{ERR\_DEVICEOPENED@{ERR\_DEVICEOPENED}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_DEVICEOPENED}{ERR\_DEVICEOPENED}}
+\doxysubsubsection{ERR\_DEVICEOPENED}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a298696a46039a86c645512b333ce0207} 
 \#define ERR\+\_\+\+DEVICEOPENED~0x0100}
 
-\Hypertarget{_e_can_vci_8h_a434646138b406a076f0803402971857a}\index{ECanVci.h@{ECanVci.h}!ERR\_LOADKERNELDLL@{ERR\_LOADKERNELDLL}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_LOADKERNELDLL@{ERR\_LOADKERNELDLL}}
 \index{ERR\_LOADKERNELDLL@{ERR\_LOADKERNELDLL}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_LOADKERNELDLL}{ERR\_LOADKERNELDLL}}
+\doxysubsubsection{ERR\_LOADKERNELDLL}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a434646138b406a076f0803402971857a} 
 \#define ERR\+\_\+\+LOADKERNELDLL~0x2000}
 
-\Hypertarget{_e_can_vci_8h_ab521aa5010fb1afb801a899a55569e03}\index{ECanVci.h@{ECanVci.h}!HANDLE@{HANDLE}}
+\index{ECanVci.h@{ECanVci.h}!HANDLE@{HANDLE}}
 \index{HANDLE@{HANDLE}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{HANDLE}{HANDLE}}
+\doxysubsubsection{HANDLE}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_ab521aa5010fb1afb801a899a55569e03} 
-\#define HANDLE~void\texorpdfstring{$\ast$}{*}}
+\#define HANDLE~void$\ast$}
 
-\Hypertarget{_e_can_vci_8h_afeeffe52c8fd59db7c61cf8b02042dbf}\index{ECanVci.h@{ECanVci.h}!INT@{INT}}
+\index{ECanVci.h@{ECanVci.h}!INT@{INT}}
 \index{INT@{INT}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{INT}{INT}}
+\doxysubsubsection{INT}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_afeeffe52c8fd59db7c61cf8b02042dbf} 
 \#define INT~signed int}
 
-\Hypertarget{_e_can_vci_8h_a085f5f68a0ee4ab24d9f3954a78e8063}\index{ECanVci.h@{ECanVci.h}!LPVOID@{LPVOID}}
+\index{ECanVci.h@{ECanVci.h}!LPVOID@{LPVOID}}
 \index{LPVOID@{LPVOID}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{LPVOID}{LPVOID}}
+\doxysubsubsection{LPVOID}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a085f5f68a0ee4ab24d9f3954a78e8063} 
-\#define LPVOID~void\texorpdfstring{$\ast$}{*}}
+\#define LPVOID~void$\ast$}
 
-\Hypertarget{_e_can_vci_8h_a03f3290757a46f2993802ffc9750d347}\index{ECanVci.h@{ECanVci.h}!PVOID@{PVOID}}
+\index{ECanVci.h@{ECanVci.h}!PVOID@{PVOID}}
 \index{PVOID@{PVOID}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{PVOID}{PVOID}}
+\doxysubsubsection{PVOID}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a03f3290757a46f2993802ffc9750d347} 
-\#define PVOID~void\texorpdfstring{$\ast$}{*}}
+\#define PVOID~void$\ast$}
 
-\Hypertarget{_e_can_vci_8h_a23205a6a97096d57a247794f5e250963}\index{ECanVci.h@{ECanVci.h}!STATUS\_ERR@{STATUS\_ERR}}
+\index{ECanVci.h@{ECanVci.h}!STATUS\_ERR@{STATUS\_ERR}}
 \index{STATUS\_ERR@{STATUS\_ERR}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{STATUS\_ERR}{STATUS\_ERR}}
+\doxysubsubsection{STATUS\_ERR}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a23205a6a97096d57a247794f5e250963} 
 \#define STATUS\+\_\+\+ERR~0}
 
-\Hypertarget{_e_can_vci_8h_a2403320c41f08e7567cb169de5db66b3}\index{ECanVci.h@{ECanVci.h}!STATUS\_OK@{STATUS\_OK}}
+\index{ECanVci.h@{ECanVci.h}!STATUS\_OK@{STATUS\_OK}}
 \index{STATUS\_OK@{STATUS\_OK}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{STATUS\_OK}{STATUS\_OK}}
+\doxysubsubsection{STATUS\_OK}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a2403320c41f08e7567cb169de5db66b3} 
 \#define STATUS\+\_\+\+OK~1}
 
-\Hypertarget{_e_can_vci_8h_a9a1dc6d243c6f75bb42f87e3f69649e4}\index{ECanVci.h@{ECanVci.h}!UCHAR@{UCHAR}}
+\index{ECanVci.h@{ECanVci.h}!UCHAR@{UCHAR}}
 \index{UCHAR@{UCHAR}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{UCHAR}{UCHAR}}
+\doxysubsubsection{UCHAR}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a9a1dc6d243c6f75bb42f87e3f69649e4} 
 \#define UCHAR~unsigned char}
 
-\Hypertarget{_e_can_vci_8h_a45c20c14d3d8790a22153d08ab2eb2ff}\index{ECanVci.h@{ECanVci.h}!UINT@{UINT}}
+\index{ECanVci.h@{ECanVci.h}!UINT@{UINT}}
 \index{UINT@{UINT}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{UINT}{UINT}}
+\doxysubsubsection{UINT}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a45c20c14d3d8790a22153d08ab2eb2ff} 
 \#define UINT~unsigned int}
 
-\Hypertarget{_e_can_vci_8h_a13503cb3b34d9eb71eda8ff4065e80ff}\index{ECanVci.h@{ECanVci.h}!ULONG@{ULONG}}
+\index{ECanVci.h@{ECanVci.h}!ULONG@{ULONG}}
 \index{ULONG@{ULONG}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ULONG}{ULONG}}
+\doxysubsubsection{ULONG}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a13503cb3b34d9eb71eda8ff4065e80ff} 
 \#define ULONG~unsigned int}
 
-\Hypertarget{_e_can_vci_8h_aea50feaf24fd53b7ffab0e9b62ff30a6}\index{ECanVci.h@{ECanVci.h}!USHORT@{USHORT}}
+\index{ECanVci.h@{ECanVci.h}!USHORT@{USHORT}}
 \index{USHORT@{USHORT}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{USHORT}{USHORT}}
+\doxysubsubsection{USHORT}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_aea50feaf24fd53b7ffab0e9b62ff30a6} 
 \#define USHORT~unsigned short int}
 
 
 
 \doxysubsection{类型定义说明}
-\Hypertarget{_e_can_vci_8h_af5ed855cec8a0d2b9934e3c2501b1594}\index{ECanVci.h@{ECanVci.h}!BOARD\_INFO@{BOARD\_INFO}}
+\index{ECanVci.h@{ECanVci.h}!BOARD\_INFO@{BOARD\_INFO}}
 \index{BOARD\_INFO@{BOARD\_INFO}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{BOARD\_INFO}{BOARD\_INFO}}
+\doxysubsubsection{BOARD\_INFO}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_af5ed855cec8a0d2b9934e3c2501b1594} 
-typedef struct \mbox{\hyperlink{struct___b_o_a_r_d___i_n_f_o}{\+\_\+\+BOARD\+\_\+\+INFO}} \mbox{\hyperlink{_e_can_vci_8h_af5ed855cec8a0d2b9934e3c2501b1594}{BOARD\+\_\+\+INFO}}}
+typedef struct \textbf{ \+\_\+\+BOARD\+\_\+\+INFO} \textbf{ BOARD\+\_\+\+INFO}}
 
-\Hypertarget{_e_can_vci_8h_a1297583dce0f039cad8e7da69cee9ab6}\index{ECanVci.h@{ECanVci.h}!CAN\_OBJ@{CAN\_OBJ}}
+\index{ECanVci.h@{ECanVci.h}!CAN\_OBJ@{CAN\_OBJ}}
 \index{CAN\_OBJ@{CAN\_OBJ}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{CAN\_OBJ}{CAN\_OBJ}}
+\doxysubsubsection{CAN\_OBJ}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a1297583dce0f039cad8e7da69cee9ab6} 
-typedef struct \mbox{\hyperlink{struct___c_a_n___o_b_j}{\+\_\+\+CAN\+\_\+\+OBJ}} \mbox{\hyperlink{_e_can_vci_8h_a1297583dce0f039cad8e7da69cee9ab6}{CAN\+\_\+\+OBJ}}}
+typedef struct \textbf{ \+\_\+\+CAN\+\_\+\+OBJ} \textbf{ CAN\+\_\+\+OBJ}}
 
-\Hypertarget{_e_can_vci_8h_a191c6ed925eaf3cf2070f8cd36abca29}\index{ECanVci.h@{ECanVci.h}!CAN\_STATUS@{CAN\_STATUS}}
+\index{ECanVci.h@{ECanVci.h}!CAN\_STATUS@{CAN\_STATUS}}
 \index{CAN\_STATUS@{CAN\_STATUS}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{CAN\_STATUS}{CAN\_STATUS}}
+\doxysubsubsection{CAN\_STATUS}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a191c6ed925eaf3cf2070f8cd36abca29} 
-typedef struct \mbox{\hyperlink{struct___c_a_n___s_t_a_t_u_s}{\+\_\+\+CAN\+\_\+\+STATUS}} \mbox{\hyperlink{_e_can_vci_8h_a191c6ed925eaf3cf2070f8cd36abca29}{CAN\+\_\+\+STATUS}}}
+typedef struct \textbf{ \+\_\+\+CAN\+\_\+\+STATUS} \textbf{ CAN\+\_\+\+STATUS}}
 
-\Hypertarget{_e_can_vci_8h_aa12843bdec30715577ad31385f0e1a81}\index{ECanVci.h@{ECanVci.h}!ECAN\_HANDLE@{ECAN\_HANDLE}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_HANDLE@{ECAN\_HANDLE}}
 \index{ECAN\_HANDLE@{ECAN\_HANDLE}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_HANDLE}{ECAN\_HANDLE}}
+\doxysubsubsection{ECAN\_HANDLE}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_aa12843bdec30715577ad31385f0e1a81} 
-typedef \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_aa12843bdec30715577ad31385f0e1a81}{ECAN\+\_\+\+HANDLE}}}
+typedef \textbf{ DWORD} \textbf{ ECAN\+\_\+\+HANDLE}}
 
-\Hypertarget{_e_can_vci_8h_a29b6316be96b07864c6a7b77994fa810}\index{ECanVci.h@{ECanVci.h}!ECAN\_RESULT@{ECAN\_RESULT}}
+\index{ECanVci.h@{ECanVci.h}!ECAN\_RESULT@{ECAN\_RESULT}}
 \index{ECAN\_RESULT@{ECAN\_RESULT}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ECAN\_RESULT}{ECAN\_RESULT}}
+\doxysubsubsection{ECAN\_RESULT}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a29b6316be96b07864c6a7b77994fa810} 
-typedef \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} \mbox{\hyperlink{_e_can_vci_8h_a29b6316be96b07864c6a7b77994fa810}{ECAN\+\_\+\+RESULT}}}
+typedef \textbf{ DWORD} \textbf{ ECAN\+\_\+\+RESULT}}
 
-\Hypertarget{_e_can_vci_8h_ab7e49d5b4a2afae054c8d0a65c337872}\index{ECanVci.h@{ECanVci.h}!ERR\_INFO@{ERR\_INFO}}
+\index{ECanVci.h@{ECanVci.h}!ERR\_INFO@{ERR\_INFO}}
 \index{ERR\_INFO@{ERR\_INFO}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ERR\_INFO}{ERR\_INFO}}
+\doxysubsubsection{ERR\_INFO}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_ab7e49d5b4a2afae054c8d0a65c337872} 
-typedef struct \mbox{\hyperlink{struct___e_r_r___i_n_f_o}{\+\_\+\+ERR\+\_\+\+INFO}} \mbox{\hyperlink{_e_can_vci_8h_ab7e49d5b4a2afae054c8d0a65c337872}{ERR\+\_\+\+INFO}}}
+typedef struct \textbf{ \+\_\+\+ERR\+\_\+\+INFO} \textbf{ ERR\+\_\+\+INFO}}
 
-\Hypertarget{_e_can_vci_8h_a445d8fda4979a8fcfaa6cad050b5e3a8}\index{ECanVci.h@{ECanVci.h}!FILTER\_RECORD@{FILTER\_RECORD}}
+\index{ECanVci.h@{ECanVci.h}!FILTER\_RECORD@{FILTER\_RECORD}}
 \index{FILTER\_RECORD@{FILTER\_RECORD}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{FILTER\_RECORD}{FILTER\_RECORD}}
+\doxysubsubsection{FILTER\_RECORD}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a445d8fda4979a8fcfaa6cad050b5e3a8} 
-typedef struct \mbox{\hyperlink{struct___f_i_l_t_e_r___r_e_c_o_r_d}{\+\_\+\+FILTER\+\_\+\+RECORD}} \mbox{\hyperlink{_e_can_vci_8h_a445d8fda4979a8fcfaa6cad050b5e3a8}{FILTER\+\_\+\+RECORD}}}
+typedef struct \textbf{ \+\_\+\+FILTER\+\_\+\+RECORD} \textbf{ FILTER\+\_\+\+RECORD}}
 
-\Hypertarget{_e_can_vci_8h_a97d5dab778fb21834da32140b5bb8996}\index{ECanVci.h@{ECanVci.h}!INIT\_CONFIG@{INIT\_CONFIG}}
+\index{ECanVci.h@{ECanVci.h}!INIT\_CONFIG@{INIT\_CONFIG}}
 \index{INIT\_CONFIG@{INIT\_CONFIG}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{INIT\_CONFIG}{INIT\_CONFIG}}
+\doxysubsubsection{INIT\_CONFIG}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a97d5dab778fb21834da32140b5bb8996} 
-typedef struct \mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g}{\+\_\+\+INIT\+\_\+\+CONFIG}} \mbox{\hyperlink{_e_can_vci_8h_a97d5dab778fb21834da32140b5bb8996}{INIT\+\_\+\+CONFIG}}}
+typedef struct \textbf{ \+\_\+\+INIT\+\_\+\+CONFIG} \textbf{ INIT\+\_\+\+CONFIG}}
 
-\Hypertarget{_e_can_vci_8h_a98f30ef1f2d26c50df1e5cb3cf6e6040}\index{ECanVci.h@{ECanVci.h}!P\_BOARD\_INFO@{P\_BOARD\_INFO}}
+\index{ECanVci.h@{ECanVci.h}!P\_BOARD\_INFO@{P\_BOARD\_INFO}}
 \index{P\_BOARD\_INFO@{P\_BOARD\_INFO}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{P\_BOARD\_INFO}{P\_BOARD\_INFO}}
+\doxysubsubsection{P\_BOARD\_INFO}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a98f30ef1f2d26c50df1e5cb3cf6e6040} 
-typedef struct \mbox{\hyperlink{struct___b_o_a_r_d___i_n_f_o}{\+\_\+\+BOARD\+\_\+\+INFO}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_a98f30ef1f2d26c50df1e5cb3cf6e6040}{P\+\_\+\+BOARD\+\_\+\+INFO}}}
+typedef struct \textbf{ \+\_\+\+BOARD\+\_\+\+INFO}$\ast$ \textbf{ P\+\_\+\+BOARD\+\_\+\+INFO}}
 
-\Hypertarget{_e_can_vci_8h_aae31f3d5e8f7005c0f40e97bdd4e5bb0}\index{ECanVci.h@{ECanVci.h}!P\_CAN\_OBJ@{P\_CAN\_OBJ}}
+\index{ECanVci.h@{ECanVci.h}!P\_CAN\_OBJ@{P\_CAN\_OBJ}}
 \index{P\_CAN\_OBJ@{P\_CAN\_OBJ}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{P\_CAN\_OBJ}{P\_CAN\_OBJ}}
+\doxysubsubsection{P\_CAN\_OBJ}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_aae31f3d5e8f7005c0f40e97bdd4e5bb0} 
-typedef struct \mbox{\hyperlink{struct___c_a_n___o_b_j}{\+\_\+\+CAN\+\_\+\+OBJ}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_aae31f3d5e8f7005c0f40e97bdd4e5bb0}{P\+\_\+\+CAN\+\_\+\+OBJ}}}
+typedef struct \textbf{ \+\_\+\+CAN\+\_\+\+OBJ}$\ast$ \textbf{ P\+\_\+\+CAN\+\_\+\+OBJ}}
 
-\Hypertarget{_e_can_vci_8h_a4ba38802e100554e8ad30ecdeb36723b}\index{ECanVci.h@{ECanVci.h}!P\_CAN\_STATUS@{P\_CAN\_STATUS}}
+\index{ECanVci.h@{ECanVci.h}!P\_CAN\_STATUS@{P\_CAN\_STATUS}}
 \index{P\_CAN\_STATUS@{P\_CAN\_STATUS}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{P\_CAN\_STATUS}{P\_CAN\_STATUS}}
+\doxysubsubsection{P\_CAN\_STATUS}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a4ba38802e100554e8ad30ecdeb36723b} 
-typedef struct \mbox{\hyperlink{struct___c_a_n___s_t_a_t_u_s}{\+\_\+\+CAN\+\_\+\+STATUS}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_a4ba38802e100554e8ad30ecdeb36723b}{P\+\_\+\+CAN\+\_\+\+STATUS}}}
+typedef struct \textbf{ \+\_\+\+CAN\+\_\+\+STATUS}$\ast$ \textbf{ P\+\_\+\+CAN\+\_\+\+STATUS}}
 
-\Hypertarget{_e_can_vci_8h_a919c52a69a6ccbf3e765d8409a07def5}\index{ECanVci.h@{ECanVci.h}!P\_ERR\_INFO@{P\_ERR\_INFO}}
+\index{ECanVci.h@{ECanVci.h}!P\_ERR\_INFO@{P\_ERR\_INFO}}
 \index{P\_ERR\_INFO@{P\_ERR\_INFO}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{P\_ERR\_INFO}{P\_ERR\_INFO}}
+\doxysubsubsection{P\_ERR\_INFO}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a919c52a69a6ccbf3e765d8409a07def5} 
-typedef struct \mbox{\hyperlink{struct___e_r_r___i_n_f_o}{\+\_\+\+ERR\+\_\+\+INFO}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_a919c52a69a6ccbf3e765d8409a07def5}{P\+\_\+\+ERR\+\_\+\+INFO}}}
+typedef struct \textbf{ \+\_\+\+ERR\+\_\+\+INFO}$\ast$ \textbf{ P\+\_\+\+ERR\+\_\+\+INFO}}
 
-\Hypertarget{_e_can_vci_8h_aaaa64b8ae4a266f47c03dc079de65e2f}\index{ECanVci.h@{ECanVci.h}!P\_FILTER\_RECORD@{P\_FILTER\_RECORD}}
+\index{ECanVci.h@{ECanVci.h}!P\_FILTER\_RECORD@{P\_FILTER\_RECORD}}
 \index{P\_FILTER\_RECORD@{P\_FILTER\_RECORD}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{P\_FILTER\_RECORD}{P\_FILTER\_RECORD}}
+\doxysubsubsection{P\_FILTER\_RECORD}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_aaaa64b8ae4a266f47c03dc079de65e2f} 
-typedef struct \mbox{\hyperlink{struct___f_i_l_t_e_r___r_e_c_o_r_d}{\+\_\+\+FILTER\+\_\+\+RECORD}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_aaaa64b8ae4a266f47c03dc079de65e2f}{P\+\_\+\+FILTER\+\_\+\+RECORD}}}
+typedef struct \textbf{ \+\_\+\+FILTER\+\_\+\+RECORD}$\ast$ \textbf{ P\+\_\+\+FILTER\+\_\+\+RECORD}}
 
-\Hypertarget{_e_can_vci_8h_a754d13cd67b3a4486b18878a5265bf06}\index{ECanVci.h@{ECanVci.h}!P\_INIT\_CONFIG@{P\_INIT\_CONFIG}}
+\index{ECanVci.h@{ECanVci.h}!P\_INIT\_CONFIG@{P\_INIT\_CONFIG}}
 \index{P\_INIT\_CONFIG@{P\_INIT\_CONFIG}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{P\_INIT\_CONFIG}{P\_INIT\_CONFIG}}
+\doxysubsubsection{P\_INIT\_CONFIG}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a754d13cd67b3a4486b18878a5265bf06} 
-typedef struct \mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g}{\+\_\+\+INIT\+\_\+\+CONFIG}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_e_can_vci_8h_a754d13cd67b3a4486b18878a5265bf06}{P\+\_\+\+INIT\+\_\+\+CONFIG}}}
+typedef struct \textbf{ \+\_\+\+INIT\+\_\+\+CONFIG}$\ast$ \textbf{ P\+\_\+\+INIT\+\_\+\+CONFIG}}
 
 
 
 \doxysubsection{函数说明}
-\Hypertarget{_e_can_vci_8h_a4e60fc535b4d4263594cc9a17d1b1c46}\index{ECanVci.h@{ECanVci.h}!ClearBuffer@{ClearBuffer}}
+\index{ECanVci.h@{ECanVci.h}!ClearBuffer@{ClearBuffer}}
 \index{ClearBuffer@{ClearBuffer}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ClearBuffer()}{ClearBuffer()}}
+\doxysubsubsection{ClearBuffer()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a4e60fc535b4d4263594cc9a17d1b1c46} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Clear\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Clear\+Buffer (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_accb9eba67a87e313507d88a3b554bd72}\index{ECanVci.h@{ECanVci.h}!CloseDevice@{CloseDevice}}
+\index{ECanVci.h@{ECanVci.h}!CloseDevice@{CloseDevice}}
 \index{CloseDevice@{CloseDevice}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{CloseDevice()}{CloseDevice()}}
+\doxysubsubsection{CloseDevice()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_accb9eba67a87e313507d88a3b554bd72} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Close\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Close\+Device (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_af4d90859b6bd9c551750c8b294ae976a}\index{ECanVci.h@{ECanVci.h}!GetReceiveNum@{GetReceiveNum}}
+\index{ECanVci.h@{ECanVci.h}!GetReceiveNum@{GetReceiveNum}}
 \index{GetReceiveNum@{GetReceiveNum}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{GetReceiveNum()}{GetReceiveNum()}}
+\doxysubsubsection{GetReceiveNum()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_af4d90859b6bd9c551750c8b294ae976a} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Get\+Receive\+Num (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Get\+Receive\+Num (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_a59e960288f67bbdcda1c328fce218abb}\index{ECanVci.h@{ECanVci.h}!GetReference@{GetReference}}
+\index{ECanVci.h@{ECanVci.h}!GetReference@{GetReference}}
 \index{GetReference@{GetReference}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{GetReference()}{GetReference()}}
+\doxysubsubsection{GetReference()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a59e960288f67bbdcda1c328fce218abb} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Get\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Ref\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_a03f3290757a46f2993802ffc9750d347}{PVOID}}}]{p\+Data}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Get\+Reference (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{, }\item[{\textbf{ DWORD}}]{Ref\+Type}{, }\item[{\textbf{ PVOID}}]{p\+Data}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_aa2e7908f574ea5d75ab10218016b2e16}\index{ECanVci.h@{ECanVci.h}!InitCAN@{InitCAN}}
+\index{ECanVci.h@{ECanVci.h}!InitCAN@{InitCAN}}
 \index{InitCAN@{InitCAN}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{InitCAN()}{InitCAN()}}
+\doxysubsubsection{InitCAN()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_aa2e7908f574ea5d75ab10218016b2e16} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Init\+CAN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_a754d13cd67b3a4486b18878a5265bf06}{P\+\_\+\+INIT\+\_\+\+CONFIG}}}]{p\+Init\+Config}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Init\+CAN (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{, }\item[{\textbf{ P\+\_\+\+INIT\+\_\+\+CONFIG}}]{p\+Init\+Config}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_a9022c5b045e725e2cce127412e1ce765}\index{ECanVci.h@{ECanVci.h}!OpenDevice@{OpenDevice}}
+\index{ECanVci.h@{ECanVci.h}!OpenDevice@{OpenDevice}}
 \index{OpenDevice@{OpenDevice}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{OpenDevice()}{OpenDevice()}}
+\doxysubsubsection{OpenDevice()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a9022c5b045e725e2cce127412e1ce765} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Open\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Reserved}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Open\+Device (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{Reserved}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_ab38f194d5d8368a9d55642ffb928275d}\index{ECanVci.h@{ECanVci.h}!ReadBoardInfo@{ReadBoardInfo}}
+\index{ECanVci.h@{ECanVci.h}!ReadBoardInfo@{ReadBoardInfo}}
 \index{ReadBoardInfo@{ReadBoardInfo}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ReadBoardInfo()}{ReadBoardInfo()}}
+\doxysubsubsection{ReadBoardInfo()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_ab38f194d5d8368a9d55642ffb928275d} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Read\+Board\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_a98f30ef1f2d26c50df1e5cb3cf6e6040}{P\+\_\+\+BOARD\+\_\+\+INFO}}}]{p\+Info}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Read\+Board\+Info (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ P\+\_\+\+BOARD\+\_\+\+INFO}}]{p\+Info}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_a0c03b6dc3f62a16037309c443295b8c7}\index{ECanVci.h@{ECanVci.h}!ReadCANStatus@{ReadCANStatus}}
+\index{ECanVci.h@{ECanVci.h}!ReadCANStatus@{ReadCANStatus}}
 \index{ReadCANStatus@{ReadCANStatus}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ReadCANStatus()}{ReadCANStatus()}}
+\doxysubsubsection{ReadCANStatus()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a0c03b6dc3f62a16037309c443295b8c7} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Read\+CANStatus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_a4ba38802e100554e8ad30ecdeb36723b}{P\+\_\+\+CAN\+\_\+\+STATUS}}}]{p\+CANStatus}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Read\+CANStatus (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{, }\item[{\textbf{ P\+\_\+\+CAN\+\_\+\+STATUS}}]{p\+CANStatus}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_aea1dd3a7c5bc0846207410fdf330a702}\index{ECanVci.h@{ECanVci.h}!ReadErrInfo@{ReadErrInfo}}
+\index{ECanVci.h@{ECanVci.h}!ReadErrInfo@{ReadErrInfo}}
 \index{ReadErrInfo@{ReadErrInfo}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ReadErrInfo()}{ReadErrInfo()}}
+\doxysubsubsection{ReadErrInfo()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_aea1dd3a7c5bc0846207410fdf330a702} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Read\+Err\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_a919c52a69a6ccbf3e765d8409a07def5}{P\+\_\+\+ERR\+\_\+\+INFO}}}]{p\+Err\+Info}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Read\+Err\+Info (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{, }\item[{\textbf{ P\+\_\+\+ERR\+\_\+\+INFO}}]{p\+Err\+Info}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_a1a4bcc31fafacbfcd5f0ec84c7ddfd8c}\index{ECanVci.h@{ECanVci.h}!Receive@{Receive}}
+\index{ECanVci.h@{ECanVci.h}!Receive@{Receive}}
 \index{Receive@{Receive}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{Receive()}{Receive()}}
+\doxysubsubsection{Receive()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a1a4bcc31fafacbfcd5f0ec84c7ddfd8c} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Receive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aae31f3d5e8f7005c0f40e97bdd4e5bb0}{P\+\_\+\+CAN\+\_\+\+OBJ}}}]{p\+Receive}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_a13503cb3b34d9eb71eda8ff4065e80ff}{ULONG}}}]{Len}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_afeeffe52c8fd59db7c61cf8b02042dbf}{INT}}}]{Wait\+Time}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Receive (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{, }\item[{\textbf{ P\+\_\+\+CAN\+\_\+\+OBJ}}]{p\+Receive}{, }\item[{\textbf{ ULONG}}]{Len}{, }\item[{\textbf{ INT}}]{Wait\+Time}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_a6bae3cb7a83a0f8379cf78d39da60072}\index{ECanVci.h@{ECanVci.h}!ResetCAN@{ResetCAN}}
+\index{ECanVci.h@{ECanVci.h}!ResetCAN@{ResetCAN}}
 \index{ResetCAN@{ResetCAN}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{ResetCAN()}{ResetCAN()}}
+\doxysubsubsection{ResetCAN()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a6bae3cb7a83a0f8379cf78d39da60072} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Reset\+CAN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Reset\+CAN (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_a1ef960b1aecede17b109272da1040467}\index{ECanVci.h@{ECanVci.h}!SetReference@{SetReference}}
+\index{ECanVci.h@{ECanVci.h}!SetReference@{SetReference}}
 \index{SetReference@{SetReference}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{SetReference()}{SetReference()}}
+\doxysubsubsection{SetReference()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a1ef960b1aecede17b109272da1040467} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Set\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Ref\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_a03f3290757a46f2993802ffc9750d347}{PVOID}}}]{p\+Data}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Set\+Reference (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{, }\item[{\textbf{ DWORD}}]{Ref\+Type}{, }\item[{\textbf{ PVOID}}]{p\+Data}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_a7098cb9ca9f4ee3dadee3896c9d5df8b}\index{ECanVci.h@{ECanVci.h}!StartCAN@{StartCAN}}
+\index{ECanVci.h@{ECanVci.h}!StartCAN@{StartCAN}}
 \index{StartCAN@{StartCAN}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{StartCAN()}{StartCAN()}}
+\doxysubsubsection{StartCAN()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a7098cb9ca9f4ee3dadee3896c9d5df8b} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Start\+CAN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Start\+CAN (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{}\end{DoxyParamCaption})}
 
-\Hypertarget{_e_can_vci_8h_a828a26f60aac5411280f2ca4f277eb95}\index{ECanVci.h@{ECanVci.h}!Transmit@{Transmit}}
+\index{ECanVci.h@{ECanVci.h}!Transmit@{Transmit}}
 \index{Transmit@{Transmit}!ECanVci.h@{ECanVci.h}}
-\doxysubsubsection{\texorpdfstring{Transmit()}{Transmit()}}
+\doxysubsubsection{Transmit()}
 {\footnotesize\ttfamily \label{_e_can_vci_8h_a828a26f60aac5411280f2ca4f277eb95} 
-\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}} Transmit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Type}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{Device\+Ind}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}}]{CANInd}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_aae31f3d5e8f7005c0f40e97bdd4e5bb0}{P\+\_\+\+CAN\+\_\+\+OBJ}}}]{p\+Send}{, }\item[{\mbox{\hyperlink{_e_can_vci_8h_a13503cb3b34d9eb71eda8ff4065e80ff}{ULONG}}}]{Len}{}\end{DoxyParamCaption})}
+\textbf{ DWORD} Transmit (\begin{DoxyParamCaption}\item[{\textbf{ DWORD}}]{Device\+Type}{, }\item[{\textbf{ DWORD}}]{Device\+Ind}{, }\item[{\textbf{ DWORD}}]{CANInd}{, }\item[{\textbf{ P\+\_\+\+CAN\+\_\+\+OBJ}}]{p\+Send}{, }\item[{\textbf{ ULONG}}]{Len}{}\end{DoxyParamCaption})}
 

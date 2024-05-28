@@ -1,5 +1,5 @@
 \doxysection{src/test.cc 文件参考}
-\hypertarget{test_8cc}{}\label{test_8cc}\index{src/test.cc@{src/test.cc}}
+\label{test_8cc}\index{src/test.cc@{src/test.cc}}
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$string.\+h$>$}\newline
@@ -15,175 +15,175 @@ test.\+cc 的引用(Include)关系图\+:
 \doxysubsubsection*{类}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{struct_r_x___c_t_x}{RX\+\_\+\+CTX}}
+struct \textbf{ RX\+\_\+\+CTX}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{宏定义}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{test_8cc_aa4eab42491cbc9e2a9d18c6c67dc5533}{msleep}}(ms)~usleep((ms)\texorpdfstring{$\ast$}{*}1000)
+\#define \textbf{ msleep}(ms)~usleep((ms)$\ast$1000)
 \item 
-\#define \mbox{\hyperlink{test_8cc_ac6afabdc09a49a433ee19d8a9486056d}{min}}(a,  b)~(((a) $<$ (b)) ? (a) \+: (b))
+\#define \textbf{ min}(a,  b)~(((a) $<$ (b)) ? (a) \+: (b))
 \item 
-\#define \mbox{\hyperlink{test_8cc_ac69ee46f4a51ed14f0d68628c2dec71d}{MAX\+\_\+\+CHANNELS}}~2
+\#define \textbf{ MAX\+\_\+\+CHANNELS}~2
 \item 
-\#define \mbox{\hyperlink{test_8cc_a619d97bcebac72ae85378dda955978f6}{CHECK\+\_\+\+POINT}}~200
+\#define \textbf{ CHECK\+\_\+\+POINT}~200
 \item 
-\#define \mbox{\hyperlink{test_8cc_ac9859a205301a696a033a4bd29a6d9cc}{RX\+\_\+\+WAIT\+\_\+\+TIME}}~0
+\#define \textbf{ RX\+\_\+\+WAIT\+\_\+\+TIME}~0
 \item 
-\#define \mbox{\hyperlink{test_8cc_a9ffd460647ecd927786c7d3db9297e05}{RX\+\_\+\+BUFF\+\_\+\+SIZE}}~1
+\#define \textbf{ RX\+\_\+\+BUFF\+\_\+\+SIZE}~1
 \end{DoxyCompactItemize}
 \doxysubsubsection*{函数}
 \begin{DoxyCompactItemize}
 \item 
-unsigned int \mbox{\hyperlink{test_8cc_a00d4c94405373df6182bb7153e8ba882}{s2n}} (const char \texorpdfstring{$\ast$}{*}s)
+unsigned int \textbf{ s2n} (const char $\ast$s)
 \item 
-void \mbox{\hyperlink{test_8cc_a60475535f785e78b50a6ac20d1d133d4}{generate\+\_\+frame}} (\mbox{\hyperlink{_e_can_vci_8h_a1297583dce0f039cad8e7da69cee9ab6}{CAN\+\_\+\+OBJ}} \texorpdfstring{$\ast$}{*}can)
+void \textbf{ generate\+\_\+frame} (\textbf{ CAN\+\_\+\+OBJ} $\ast$can)
 \item 
-int \mbox{\hyperlink{test_8cc_aa221774323ec1d9c86cfd36247213dfa}{verify\+\_\+frame}} (\mbox{\hyperlink{_e_can_vci_8h_a1297583dce0f039cad8e7da69cee9ab6}{CAN\+\_\+\+OBJ}} \texorpdfstring{$\ast$}{*}can)
+int \textbf{ verify\+\_\+frame} (\textbf{ CAN\+\_\+\+OBJ} $\ast$can)
 \item 
-void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{test_8cc_aee68f2669f944607cb4fd65c81f5b36a}{rx\+\_\+thread}} (void \texorpdfstring{$\ast$}{*}data)
+void $\ast$ \textbf{ rx\+\_\+thread} (void $\ast$data)
 \item 
-int \mbox{\hyperlink{test_8cc_ac8da963855e09bf929c085486f4a3b47}{test}} ()
+int \textbf{ test} ()
 \item 
-int \mbox{\hyperlink{test_8cc_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+int \textbf{ main} (int argc, char $\ast$argv[$\,$])
 \end{DoxyCompactItemize}
 \doxysubsubsection*{变量}
 \begin{DoxyCompactItemize}
 \item 
-unsigned int \mbox{\hyperlink{test_8cc_a38a6572ed3af5b7e2c7670f74ebb457b}{g\+Dev\+Type}} = 0
+unsigned int \textbf{ g\+Dev\+Type} = 0
 \item 
-unsigned int \mbox{\hyperlink{test_8cc_a708bd14ffebc4d5ec0594120aa0e6e60}{g\+Dev\+Idx}} = 0
+unsigned int \textbf{ g\+Dev\+Idx} = 0
 \item 
-unsigned int \mbox{\hyperlink{test_8cc_aa7ced24463c3050ae6bed9065ee27a60}{g\+Ch\+Mask}} = 0
+unsigned int \textbf{ g\+Ch\+Mask} = 0
 \item 
-unsigned int \mbox{\hyperlink{test_8cc_a563e4b3527b6e6cb8a8fae32796571b0}{g\+Baud}} = 0
+unsigned int \textbf{ g\+Baud} = 0
 \item 
-unsigned char \mbox{\hyperlink{test_8cc_a46c42280ddeb91f1eee82f387fdcdba3}{g\+Tx\+Type}} = 0
+unsigned char \textbf{ g\+Tx\+Type} = 0
 \item 
-unsigned int \mbox{\hyperlink{test_8cc_a4506bcdb2f074621e67cf28440e4ce21}{g\+Tx\+Sleep}} = 0
+unsigned int \textbf{ g\+Tx\+Sleep} = 0
 \item 
-unsigned int \mbox{\hyperlink{test_8cc_ac4f7124ae2c1197e84e44f3ca74380e2}{g\+Tx\+Frames}} = 0
+unsigned int \textbf{ g\+Tx\+Frames} = 0
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{宏定义说明}
-\Hypertarget{test_8cc_a619d97bcebac72ae85378dda955978f6}\index{test.cc@{test.cc}!CHECK\_POINT@{CHECK\_POINT}}
+\index{test.cc@{test.cc}!CHECK\_POINT@{CHECK\_POINT}}
 \index{CHECK\_POINT@{CHECK\_POINT}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{CHECK\_POINT}{CHECK\_POINT}}
+\doxysubsubsection{CHECK\_POINT}
 {\footnotesize\ttfamily \label{test_8cc_a619d97bcebac72ae85378dda955978f6} 
 \#define CHECK\+\_\+\+POINT~200}
 
-\Hypertarget{test_8cc_ac69ee46f4a51ed14f0d68628c2dec71d}\index{test.cc@{test.cc}!MAX\_CHANNELS@{MAX\_CHANNELS}}
+\index{test.cc@{test.cc}!MAX\_CHANNELS@{MAX\_CHANNELS}}
 \index{MAX\_CHANNELS@{MAX\_CHANNELS}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{MAX\_CHANNELS}{MAX\_CHANNELS}}
+\doxysubsubsection{MAX\_CHANNELS}
 {\footnotesize\ttfamily \label{test_8cc_ac69ee46f4a51ed14f0d68628c2dec71d} 
 \#define MAX\+\_\+\+CHANNELS~2}
 
-\Hypertarget{test_8cc_ac6afabdc09a49a433ee19d8a9486056d}\index{test.cc@{test.cc}!min@{min}}
+\index{test.cc@{test.cc}!min@{min}}
 \index{min@{min}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{min}{min}}
+\doxysubsubsection{min}
 {\footnotesize\ttfamily \label{test_8cc_ac6afabdc09a49a433ee19d8a9486056d} 
 \#define min(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{}\end{DoxyParamCaption})~(((a) $<$ (b)) ? (a) \+: (b))}
 
-\Hypertarget{test_8cc_aa4eab42491cbc9e2a9d18c6c67dc5533}\index{test.cc@{test.cc}!msleep@{msleep}}
+\index{test.cc@{test.cc}!msleep@{msleep}}
 \index{msleep@{msleep}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{msleep}{msleep}}
+\doxysubsubsection{msleep}
 {\footnotesize\ttfamily \label{test_8cc_aa4eab42491cbc9e2a9d18c6c67dc5533} 
-\#define msleep(\begin{DoxyParamCaption}\item[{}]{ms}{}\end{DoxyParamCaption})~usleep((ms)\texorpdfstring{$\ast$}{*}1000)}
+\#define msleep(\begin{DoxyParamCaption}\item[{}]{ms}{}\end{DoxyParamCaption})~usleep((ms)$\ast$1000)}
 
-\Hypertarget{test_8cc_a9ffd460647ecd927786c7d3db9297e05}\index{test.cc@{test.cc}!RX\_BUFF\_SIZE@{RX\_BUFF\_SIZE}}
+\index{test.cc@{test.cc}!RX\_BUFF\_SIZE@{RX\_BUFF\_SIZE}}
 \index{RX\_BUFF\_SIZE@{RX\_BUFF\_SIZE}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{RX\_BUFF\_SIZE}{RX\_BUFF\_SIZE}}
+\doxysubsubsection{RX\_BUFF\_SIZE}
 {\footnotesize\ttfamily \label{test_8cc_a9ffd460647ecd927786c7d3db9297e05} 
 \#define RX\+\_\+\+BUFF\+\_\+\+SIZE~1}
 
-\Hypertarget{test_8cc_ac9859a205301a696a033a4bd29a6d9cc}\index{test.cc@{test.cc}!RX\_WAIT\_TIME@{RX\_WAIT\_TIME}}
+\index{test.cc@{test.cc}!RX\_WAIT\_TIME@{RX\_WAIT\_TIME}}
 \index{RX\_WAIT\_TIME@{RX\_WAIT\_TIME}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{RX\_WAIT\_TIME}{RX\_WAIT\_TIME}}
+\doxysubsubsection{RX\_WAIT\_TIME}
 {\footnotesize\ttfamily \label{test_8cc_ac9859a205301a696a033a4bd29a6d9cc} 
 \#define RX\+\_\+\+WAIT\+\_\+\+TIME~0}
 
 
 
 \doxysubsection{函数说明}
-\Hypertarget{test_8cc_a60475535f785e78b50a6ac20d1d133d4}\index{test.cc@{test.cc}!generate\_frame@{generate\_frame}}
+\index{test.cc@{test.cc}!generate\_frame@{generate\_frame}}
 \index{generate\_frame@{generate\_frame}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{generate\_frame()}{generate\_frame()}}
+\doxysubsubsection{generate\_frame()}
 {\footnotesize\ttfamily \label{test_8cc_a60475535f785e78b50a6ac20d1d133d4} 
-void generate\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_a1297583dce0f039cad8e7da69cee9ab6}{CAN\+\_\+\+OBJ}} \texorpdfstring{$\ast$}{*}}]{can}{}\end{DoxyParamCaption})}
+void generate\+\_\+frame (\begin{DoxyParamCaption}\item[{\textbf{ CAN\+\_\+\+OBJ} $\ast$}]{can}{}\end{DoxyParamCaption})}
 
-\Hypertarget{test_8cc_a0ddf1224851353fc92bfbff6f499fa97}\index{test.cc@{test.cc}!main@{main}}
+\index{test.cc@{test.cc}!main@{main}}
 \index{main@{main}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{main()}{main()}}
+\doxysubsubsection{main()}
 {\footnotesize\ttfamily \label{test_8cc_a0ddf1224851353fc92bfbff6f499fa97} 
-int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char $\ast$}]{argv}{[$\,$]}\end{DoxyParamCaption})}
 
-\Hypertarget{test_8cc_aee68f2669f944607cb4fd65c81f5b36a}\index{test.cc@{test.cc}!rx\_thread@{rx\_thread}}
+\index{test.cc@{test.cc}!rx\_thread@{rx\_thread}}
 \index{rx\_thread@{rx\_thread}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{rx\_thread()}{rx\_thread()}}
+\doxysubsubsection{rx\_thread()}
 {\footnotesize\ttfamily \label{test_8cc_aee68f2669f944607cb4fd65c81f5b36a} 
-void \texorpdfstring{$\ast$}{*} rx\+\_\+thread (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+void $\ast$ rx\+\_\+thread (\begin{DoxyParamCaption}\item[{void $\ast$}]{data}{}\end{DoxyParamCaption})}
 
-\Hypertarget{test_8cc_a00d4c94405373df6182bb7153e8ba882}\index{test.cc@{test.cc}!s2n@{s2n}}
+\index{test.cc@{test.cc}!s2n@{s2n}}
 \index{s2n@{s2n}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{s2n()}{s2n()}}
+\doxysubsubsection{s2n()}
 {\footnotesize\ttfamily \label{test_8cc_a00d4c94405373df6182bb7153e8ba882} 
-unsigned int s2n (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+unsigned int s2n (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s}{}\end{DoxyParamCaption})}
 
-\Hypertarget{test_8cc_ac8da963855e09bf929c085486f4a3b47}\index{test.cc@{test.cc}!test@{test}}
+\index{test.cc@{test.cc}!test@{test}}
 \index{test@{test}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{test()}{test()}}
+\doxysubsubsection{test()}
 {\footnotesize\ttfamily \label{test_8cc_ac8da963855e09bf929c085486f4a3b47} 
 int test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-\Hypertarget{test_8cc_aa221774323ec1d9c86cfd36247213dfa}\index{test.cc@{test.cc}!verify\_frame@{verify\_frame}}
+\index{test.cc@{test.cc}!verify\_frame@{verify\_frame}}
 \index{verify\_frame@{verify\_frame}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{verify\_frame()}{verify\_frame()}}
+\doxysubsubsection{verify\_frame()}
 {\footnotesize\ttfamily \label{test_8cc_aa221774323ec1d9c86cfd36247213dfa} 
-int verify\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_can_vci_8h_a1297583dce0f039cad8e7da69cee9ab6}{CAN\+\_\+\+OBJ}} \texorpdfstring{$\ast$}{*}}]{can}{}\end{DoxyParamCaption})}
+int verify\+\_\+frame (\begin{DoxyParamCaption}\item[{\textbf{ CAN\+\_\+\+OBJ} $\ast$}]{can}{}\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{变量说明}
-\Hypertarget{test_8cc_a563e4b3527b6e6cb8a8fae32796571b0}\index{test.cc@{test.cc}!gBaud@{gBaud}}
+\index{test.cc@{test.cc}!gBaud@{gBaud}}
 \index{gBaud@{gBaud}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{gBaud}{gBaud}}
+\doxysubsubsection{gBaud}
 {\footnotesize\ttfamily \label{test_8cc_a563e4b3527b6e6cb8a8fae32796571b0} 
 unsigned int g\+Baud = 0}
 
-\Hypertarget{test_8cc_aa7ced24463c3050ae6bed9065ee27a60}\index{test.cc@{test.cc}!gChMask@{gChMask}}
+\index{test.cc@{test.cc}!gChMask@{gChMask}}
 \index{gChMask@{gChMask}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{gChMask}{gChMask}}
+\doxysubsubsection{gChMask}
 {\footnotesize\ttfamily \label{test_8cc_aa7ced24463c3050ae6bed9065ee27a60} 
 unsigned int g\+Ch\+Mask = 0}
 
-\Hypertarget{test_8cc_a708bd14ffebc4d5ec0594120aa0e6e60}\index{test.cc@{test.cc}!gDevIdx@{gDevIdx}}
+\index{test.cc@{test.cc}!gDevIdx@{gDevIdx}}
 \index{gDevIdx@{gDevIdx}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{gDevIdx}{gDevIdx}}
+\doxysubsubsection{gDevIdx}
 {\footnotesize\ttfamily \label{test_8cc_a708bd14ffebc4d5ec0594120aa0e6e60} 
 unsigned int g\+Dev\+Idx = 0}
 
-\Hypertarget{test_8cc_a38a6572ed3af5b7e2c7670f74ebb457b}\index{test.cc@{test.cc}!gDevType@{gDevType}}
+\index{test.cc@{test.cc}!gDevType@{gDevType}}
 \index{gDevType@{gDevType}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{gDevType}{gDevType}}
+\doxysubsubsection{gDevType}
 {\footnotesize\ttfamily \label{test_8cc_a38a6572ed3af5b7e2c7670f74ebb457b} 
 unsigned int g\+Dev\+Type = 0}
 
-\Hypertarget{test_8cc_ac4f7124ae2c1197e84e44f3ca74380e2}\index{test.cc@{test.cc}!gTxFrames@{gTxFrames}}
+\index{test.cc@{test.cc}!gTxFrames@{gTxFrames}}
 \index{gTxFrames@{gTxFrames}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{gTxFrames}{gTxFrames}}
+\doxysubsubsection{gTxFrames}
 {\footnotesize\ttfamily \label{test_8cc_ac4f7124ae2c1197e84e44f3ca74380e2} 
 unsigned int g\+Tx\+Frames = 0}
 
-\Hypertarget{test_8cc_a4506bcdb2f074621e67cf28440e4ce21}\index{test.cc@{test.cc}!gTxSleep@{gTxSleep}}
+\index{test.cc@{test.cc}!gTxSleep@{gTxSleep}}
 \index{gTxSleep@{gTxSleep}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{gTxSleep}{gTxSleep}}
+\doxysubsubsection{gTxSleep}
 {\footnotesize\ttfamily \label{test_8cc_a4506bcdb2f074621e67cf28440e4ce21} 
 unsigned int g\+Tx\+Sleep = 0}
 
-\Hypertarget{test_8cc_a46c42280ddeb91f1eee82f387fdcdba3}\index{test.cc@{test.cc}!gTxType@{gTxType}}
+\index{test.cc@{test.cc}!gTxType@{gTxType}}
 \index{gTxType@{gTxType}!test.cc@{test.cc}}
-\doxysubsubsection{\texorpdfstring{gTxType}{gTxType}}
+\doxysubsubsection{gTxType}
 {\footnotesize\ttfamily \label{test_8cc_a46c42280ddeb91f1eee82f387fdcdba3} 
 unsigned char g\+Tx\+Type = 0}
 

@@ -1,7 +1,6 @@
+
 #ifndef _INSPIRE_HPP_
 #define _INSPIRE_HPP_
-// 创建因时手运动控制的类和代码
-// 本文件函数全用驼峰命名法
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
@@ -25,13 +24,18 @@ public:
     virtual int WriteCan(int address, int value, int handid) = 0;
     virtual ~CanWriter() = default;
 };
-
+/**
+ * \class Inspire
+ * \brief 控制因时手运动的类，实现了基于CAN总线的通信
+ *
+ * 此类继承自CanWriter，提供了初始化CAN通信、发送数据以及对手指运动的控制功能。
+ */
 class Inspire : public CanWriter
 {
 private:
-    DWORD dwRel;
-    INIT_CONFIG init_config;
-    CAN_OBJ frame;
+    DWORD dwRel;///返回值
+    INIT_CONFIG init_config;///CAN初始化配置
+    CAN_OBJ frame;///CAN帧对象
 
 public:
     /**
@@ -39,44 +43,97 @@ public:
      * 这些常量用于识别和表示人类手部的五个手指：拇指、食指、中指、无名指和小指。
      * 通过分配唯一的整数值来代表每个手指，使得在程序中可以方便地引用和识别它们。
      */
-    static const int THUMB_ROT = 1496; // 拇指
-    static const int THUMB = 1494;     // 拇指
-    static const int INDEX = 1492;     // 食指
-    static const int MIDDLE = 1490;    // 中指
-    static const int RING = 1488;      // 无名指
-    static const int PINKY = 1486;     // 小指
-    // 各个手指的速度和力的限制
-    static const int MAX_SPEED = 1000;
-    static const int MIN_SPEED = 0;
-    static const int MAX_FORCE = 1000;
-    static const int MIN_FORCE = 0;
+    static const int THUMB_ROT = 1496; /// 拇指旋转
+    static const int THUMB = 1494;     /// 拇指
+    static const int INDEX = 1492;     /// 食指
+    static const int MIDDLE = 1490;    /// 中指
+    static const int RING = 1488;      /// 无名指
+    static const int PINKY = 1486;     /// 小指
+    
+    static const int MAX_SPEED = 1000;///各个手指的最大速度限制
+    static const int MIN_SPEED = 0;///各个手指的最小速度限制
+    static const int MAX_FORCE = 1000;///各个手指的最大力限制
+    static const int MIN_FORCE = 0;///各个手指的最小力限制
     // 手指速度对应的寄存器数值
-    static const int SPEED_THUMB_ROT = 1532;
-    static const int SPEED_THUMB = 1530;
-    static const int SPEED_INDEX = 1528;
-    static const int SPEED_MIDDLE = 1526;
-    static const int SPEED_RING = 1524;
-    static const int SPEED_PINKY = 1522;
+    static const int SPEED_THUMB_ROT = 1532;///拇指旋转的速度对应的寄存器数值
+    static const int SPEED_THUMB = 1530;///拇指的速度对应的寄存器数值
+    static const int SPEED_INDEX = 1528;///食指的速度对应的寄存器数值
+    static const int SPEED_MIDDLE = 1526;///中指的速度对应的寄存器数值
+    static const int SPEED_RING = 1524;///无名指的速度对应的寄存器数值
+    static const int SPEED_PINKY = 1522;///小指的速度对应的寄存器数值
     // 手指力对应的寄存器数值
-    static const int FORCE_THUMB_ROT = 1508;
-    static const int FORCE_THUMB = 1506;
-    static const int FORCE_INDEX = 1504;
-    static const int FORCE_MIDDLE = 1502;
-    static const int FORCE_RING = 1500;
-    static const int FORCE_PINKY = 1498;
+    static const int FORCE_THUMB_ROT = 1508;///拇指旋转的力对应的寄存器数值
+    static const int FORCE_THUMB = 1506;///拇指的力对应的寄存器数值
+    static const int FORCE_INDEX = 1504;///食指的力对应的寄存器数值
+    static const int FORCE_MIDDLE = 1502;///中指的力对应的寄存器数值
+    static const int FORCE_RING = 1500;///无名指的力对应的寄存器数值
+    static const int FORCE_PINKY = 1498;///小指的力对应的寄存器数值
 
     Inspire(/* args */);
 
     ~Inspire();
-
+    
+    /**
+     * \brief 初始化CAN通信
+     *
+     * \return 成功返回0，失败返回-1
+     */
     int InitCan();
-    // 重载函数
+
+    /**
+     * \brief 重载CanWriter的WriteCan函数，实现写入CAN总线
+     *
+     * \param[in] address 寄存器地址
+     * \param[in] value 写入的数值
+     * \param[in] handid 手指编号
+     * \return 成功写入返回0，失败返回-1
+     */
     int WriteCan(int address, int value, int handid);
+
+    /**
+     * \brief 获取地址ID的二进制字符串表示
+     *
+     * \param[in] address 目标地址
+     * \return 地址ID的二进制字符串，如果地址不在范围内则返回空字符串
+     */
     std::string GetAddressId(int address);
+
+    /**
+     * \brief 获取手ID的二进制字符串表示
+     *
+     * \param[in] handid 手指编号
+     * \return 手ID的二进制字符串，如果手ID不在范围内则返回空字符串
+     */
     std::string GetHandId(int handid);
+
+    /**
+     * \brief 获取写读标志的二进制字符串表示
+     *
+     * \param[in] flag_write_read 写读标志
+     * \return 标志的二进制字符串，如果标志不在范围内则返回空字符串
+     */
+
     std::string GetFlageWriteRead(int flag_write_read);
+    /**
+     * \brief 获取CAN ID的二进制字符串表示
+     *
+     * \param[in] Address 寄存器地址
+     * \param[in] HandId 手指编号
+     * \param[in] flag_write_read 写读标志
+     * \return CAN ID的二进制字符串，如果参数不在范围内则返回空字符串
+     */
     std::string GetCanId(int Address, int HandId, int flag_write_read);
+    /**
+     * \brief 将数值转换为16进制字节数组
+     *
+     * \param[in] value 要转换的数值
+     * \param[out] data 转换后的字节数组
+     */
     void ConvertValueToHex(int value, Byte data[2]);
+    /**
+     * \brief 关闭CAN设备
+     *
+     */
     void InspireCloseDevice();
 };
 
@@ -259,43 +316,74 @@ void Inspire::InspireCloseDevice()
     CloseDevice(USBCAN2, DeviceInd);
 }
 
-// 接受基类指针，实现多态的动作类
+/*
+    * \class InspireAction
+    * \brief 控制因时手运动的类，实现了基于CAN总线的通信
+    *
+    * 此类继承自CanWriter，提供了初始化CAN通信、发送数据以及对手指运动的控制功能。
+    
+*/
 class InspireAction
 {
 public:
+    /**
+     * \brief 构造函数
+    */
     InspireAction(CanWriter *canwriter) : action_canwriter(canwriter) {}
-    // 编写动作函数，对应不同的动作，比如五指单独运动，五指同时运动等
-    // 拇指旋转
+    /*
+    * \brief  拇指旋转
+    * \param[in] value 旋转角度
+    * \return 无
+    */
     void ThumbRotAction(int value)
     {
         action_canwriter->WriteCan(Inspire::THUMB_ROT, value, 1);
     }
-    // 拇指运动
+    /*
+    * \brief  拇指运动
+    * \param[in] value 旋转角度
+    */
     void ThumbAction(int value)
     {
         action_canwriter->WriteCan(Inspire::THUMB, value, 1);
     }
-    // 食指运动
+    /*
+    * \brief  食指运动
+    * \param[in] value 旋转角度
+    */
     void IndexAction(int value)
     {
         action_canwriter->WriteCan(Inspire::INDEX, value, 1);
     }
-    // 中指运动
+    /*
+    * \brief  中指运动
+    * \param[in] value 旋转角度
+    */
     void MiddleAction(int value)
     {
         action_canwriter->WriteCan(Inspire::MIDDLE, value, 1);
     }
-    // 无名指运动
+    /*
+    * \brief  无名指运动
+    * \param[in] value 旋转角度
+    */
     void RingAction(int value)
     {
         action_canwriter->WriteCan(Inspire::RING, value, 1);
     }
-    // 小指运动
+    /*
+    * \brief  小指运动
+    * \param[in] value 旋转角度
+    */
     void PinkyAction(int value)
     {
         action_canwriter->WriteCan(Inspire::PINKY, value, 1);
     }
-    // 五指同时运动
+    /*
+    * \brief  五指同时运动
+    * \param[in] value 五个手指的旋转角度
+    * \return 无
+   */
     int FiveFingerAction(std::vector<int> value)
     {
         if (value.size() != 6)
@@ -317,7 +405,10 @@ public:
 
         return 0;
     }
-// 设置五指的速度
+    /*
+    * \brief  设置五指的速度
+    * \param[in] value 五个手指的速度
+    */
 void SetFiveFingerSpeed(std::vector<int> value)
 {
     if (value.size() != 6)
@@ -345,7 +436,10 @@ void SetFiveFingerSpeed(std::vector<int> value)
 
     action_canwriter->WriteCan(Inspire::SPEED_PINKY, value[5], 1);
 }
-// 设置五指的力
+/*
+* \brief  设置五指的力
+* \param[in] value 五个手指的力
+*/
 void SetFiveFingerForce(std::vector<int> value)
 {
     if (value.size() != 6)

@@ -1,384 +1,419 @@
 \doxysection{Inspire.\+hpp}
-\hypertarget{_inspire_8hpp_source}{}\label{_inspire_8hpp_source}\index{src/Inspire.hpp@{src/Inspire.hpp}}
-\mbox{\hyperlink{_inspire_8hpp}{浏览该文件的文档.}}
+\label{_inspire_8hpp_source}\index{src/Inspire.hpp@{src/Inspire.hpp}}
+\textbf{ 浏览该文件的文档.}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_INSPIRE\_HPP\_}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_INSPIRE\_HPP\_}}
-\DoxyCodeLine{00003\ \textcolor{comment}{//\ 创建因时手运动控制的类和代码}}
-\DoxyCodeLine{00004\ \textcolor{comment}{//\ 本文件函数全用驼峰命名法}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string.h>}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_e_can_vci_8h}{ECanVci.h}}>}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <bitset>}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <sstream>}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iomanip>}}
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
-\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ USBCAN1\ 3\ }\textcolor{comment}{/*\ USBCAN-\/I\ */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ USBCAN2\ 4\ }\textcolor{comment}{/*\ USBCAN-\/II\ */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ CAN1\ 0}}
-\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ CAN2\ 1}}
-\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ DeviceInd\ 0}}
-\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ Reserved\ 0}}
-\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ uint8\_t\ \mbox{\hyperlink{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0}{Byte}};}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \textcolor{comment}{//\ 基类}}
-\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_can_writer}{CanWriter}}}
-\DoxyCodeLine{00023\ \{}
-\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(\textcolor{keywordtype}{int}\ address,\ \textcolor{keywordtype}{int}\ value,\ \textcolor{keywordtype}{int}\ handid)\ =\ 0;}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_can_writer_ab830e1f5632bac4afdcf1e40a6409fb5}{\string~CanWriter}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00027\ \};}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{namespace_inspire}{Inspire}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_can_writer}{CanWriter}}}
-\DoxyCodeLine{00030\ \{}
-\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{_e_can_vci_8h_aa39b39d94407451a6ec0226479db68cf}{DWORD}}\ \mbox{\hyperlink{class_inspire_a0794616ed24d55dcec49da6cc160c7dd}{dwRel}};}
-\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g}{INIT\_CONFIG}}\ \mbox{\hyperlink{class_inspire_ad8332d5b0b3e09cab64902d11311c30e}{init\_config}};}
-\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{struct___c_a_n___o_b_j}{CAN\_OBJ}}\ \mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}};}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_aa90a22d171948f10e4bcadda299abfd1}{THUMB\_ROT}}\ =\ 1496;\ \textcolor{comment}{//\ 拇指}}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_ac4112d6cf9bc2529af9f279f2c7845d8}{THUMB}}\ =\ 1494;\ \ \ \ \ \textcolor{comment}{//\ 拇指}}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a47b56b70916fbc368d521a1ef504309b}{INDEX}}\ =\ 1492;\ \ \ \ \ \textcolor{comment}{//\ 食指}}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_ad12424f5daceddd9feb6b5d0d6669c3d}{MIDDLE}}\ =\ 1490;\ \ \ \ \textcolor{comment}{//\ 中指}}
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a04fb5f5ef72b3dd5fa8e14f0ced43573}{RING}}\ =\ 1488;\ \ \ \ \ \ \textcolor{comment}{//\ 无名指}}
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_aa982dc804f7dbae1f9546bdddaf78a89}{PINKY}}\ =\ 1486;\ \ \ \ \ \textcolor{comment}{//\ 小指}}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ 各个手指的速度和力的限制}}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_ad78cd5c3643a61707462e44d3c8de345}{MAX\_SPEED}}\ =\ 1000;}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a90c7c06ec63c78c7533eec0c08f436fc}{MIN\_SPEED}}\ =\ 0;}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_af8c3a7b007d7b4bfb97b6441aa2722b5}{MAX\_FORCE}}\ =\ 1000;}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_ab6a4a482fe57c9fb2d9617b34be7e0bc}{MIN\_FORCE}}\ =\ 0;}
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{//\ 手指速度对应的寄存器数值}}
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a01b56e692e416927bb609cae8783eab4}{SPEED\_THUMB\_ROT}}\ =\ 1532;}
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a02725c0be942d6a663db7a38019c7f4e}{SPEED\_THUMB}}\ =\ 1530;}
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a10d5f9244d20f48cb836a3e70010dd3c}{SPEED\_INDEX}}\ =\ 1528;}
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a7c8806fff20936baf41ee3deb7e7895f}{SPEED\_MIDDLE}}\ =\ 1526;}
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a65e27ccd89571b12c3316a4717eddbf9}{SPEED\_RING}}\ =\ 1524;}
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_ae470035250fcd5f3a46fa34a2e22773b}{SPEED\_PINKY}}\ =\ 1522;}
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//\ 手指力对应的寄存器数值}}
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_aecdbc31afc8a4d8e74b90ec77680c09c}{FORCE\_THUMB\_ROT}}\ =\ 1508;}
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_ac8d4b2dd80fe4236c162f1bd66bc9a80}{FORCE\_THUMB}}\ =\ 1506;}
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_aad4311dc16d1d01ddb22668ea0427acc}{FORCE\_INDEX}}\ =\ 1504;}
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_ac4a02eb82949f24fcaec29a99735ae7d}{FORCE\_MIDDLE}}\ =\ 1502;}
-\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a7e0886f77b56821222eec1033e7f5565}{FORCE\_RING}}\ =\ 1500;}
-\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a97ec345e59478bc88a236ec2c3e923ef}{FORCE\_PINKY}}\ =\ 1498;}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{namespace_inspire}{Inspire}}(\textcolor{comment}{/*\ args\ */});}
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{namespace_inspire}{\string~Inspire}}();}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ \_INSPIRE\_HPP\_}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ \_INSPIRE\_HPP\_}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <ECanVci.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <bitset>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ USBCAN1\ 3\ }\textcolor{comment}{/*\ USBCAN-\/I\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ USBCAN2\ 4\ }\textcolor{comment}{/*\ USBCAN-\/II\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ CAN1\ 0}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ CAN2\ 1}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ DeviceInd\ 0}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ Reserved\ 0}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ uint8\_t\ Byte;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ 基类}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }CanWriter}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ WriteCan(\textcolor{keywordtype}{int}\ address,\ \textcolor{keywordtype}{int}\ value,\ \textcolor{keywordtype}{int}\ handid)\ =\ 0;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~CanWriter()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }Inspire\ :\ \textcolor{keyword}{public}\ CanWriter}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ DWORD\ dwRel;}
+\DoxyCodeLine{00037\ \ \ \ \ INIT\_CONFIG\ init\_config;}
+\DoxyCodeLine{00038\ \ \ \ \ CAN\_OBJ\ frame;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ THUMB\_ROT\ =\ 1496;\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ THUMB\ =\ 1494;\ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ INDEX\ =\ 1492;\ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MIDDLE\ =\ 1490;\ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ RING\ =\ 1488;\ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ PINKY\ =\ 1486;\ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MAX\_SPEED\ =\ 1000;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MIN\_SPEED\ =\ 0;}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MAX\_FORCE\ =\ 1000;}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MIN\_FORCE\ =\ 0;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//\ 手指速度对应的寄存器数值}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SPEED\_THUMB\_ROT\ =\ 1532;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SPEED\_THUMB\ =\ 1530;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SPEED\_INDEX\ =\ 1528;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SPEED\_MIDDLE\ =\ 1526;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SPEED\_RING\ =\ 1524;}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SPEED\_PINKY\ =\ 1522;}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{comment}{//\ 手指力对应的寄存器数值}}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ FORCE\_THUMB\_ROT\ =\ 1508;}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ FORCE\_THUMB\ =\ 1506;}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ FORCE\_INDEX\ =\ 1504;}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ FORCE\_MIDDLE\ =\ 1502;}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ FORCE\_RING\ =\ 1500;}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ FORCE\_PINKY\ =\ 1498;}
 \DoxyCodeLine{00071\ }
-\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a1b0320ebe9e2c027883141339c761aff}{InitCan}}();}
-\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{//\ 重载函数}}
-\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_ad256c421e10abc35cd6ff8f48143b00f}{WriteCan}}(\textcolor{keywordtype}{int}\ address,\ \textcolor{keywordtype}{int}\ value,\ \textcolor{keywordtype}{int}\ handid);}
-\DoxyCodeLine{00075\ \ \ \ \ std::string\ \mbox{\hyperlink{class_inspire_a4e6bc517c81ca1612d130966b9ca1f4e}{GetAddressId}}(\textcolor{keywordtype}{int}\ address);}
-\DoxyCodeLine{00076\ \ \ \ \ std::string\ \mbox{\hyperlink{class_inspire_a3648a2e634bc3e9ba24603bdcdec34ff}{GetHandId}}(\textcolor{keywordtype}{int}\ handid);}
-\DoxyCodeLine{00077\ \ \ \ \ std::string\ \mbox{\hyperlink{class_inspire_ab99caa974bbb3232a69b6970acc03d6a}{GetFlageWriteRead}}(\textcolor{keywordtype}{int}\ flag\_write\_read);}
-\DoxyCodeLine{00078\ \ \ \ \ std::string\ \mbox{\hyperlink{class_inspire_a4f20f1644ac1c4095091fd9d543d64f0}{GetCanId}}(\textcolor{keywordtype}{int}\ Address,\ \textcolor{keywordtype}{int}\ HandId,\ \textcolor{keywordtype}{int}\ flag\_write\_read);}
-\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_aee50591238bbf691bc9ea3ac23b2ae01}{ConvertValueToHex}}(\textcolor{keywordtype}{int}\ value,\ \mbox{\hyperlink{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0}{Byte}}\ data[2]);}
-\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_aee36ef89ab25c53e0c3bb6beb4335f26}{InspireCloseDevice}}();}
-\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00072\ \ \ \ \ Inspire(\textcolor{comment}{/*\ args\ */});}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \string~Inspire();}
+\DoxyCodeLine{00075\ \ \ \ \ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ InitCan();}
 \DoxyCodeLine{00082\ }
-\DoxyCodeLine{00083\ \mbox{\hyperlink{class_inspire_1_1_inspire}{Inspire::Inspire}}(\textcolor{comment}{/*\ args\ */})}
-\DoxyCodeLine{00084\ \{}
-\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_inspire_ad8332d5b0b3e09cab64902d11311c30e}{init\_config}}.\mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g_a141bad0df36ed206f07c2c164e565c51}{AccCode}}\ =\ 0;}
-\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{class_inspire_ad8332d5b0b3e09cab64902d11311c30e}{init\_config}}.\mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g_ad5517931fd8f05f8d469216b0c18bc34}{AccMask}}\ =\ 0xffffffff;\ \textcolor{comment}{//\ 不滤波}}
-\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{class_inspire_ad8332d5b0b3e09cab64902d11311c30e}{init\_config}}.\mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g_af33b702a0ab75e94ae6cebc8fa62e3ed}{Filter}}\ =\ 0;}
-\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{class_inspire_ad8332d5b0b3e09cab64902d11311c30e}{init\_config}}.\mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g_ac8eba19e4d98325b91926cbcd338f80d}{Timing0}}\ =\ 0;}
-\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{class_inspire_ad8332d5b0b3e09cab64902d11311c30e}{init\_config}}.\mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g_a8b2d6c47806094d4a032a8daa8c575bd}{Timing1}}\ =\ 0x1c;\ \textcolor{comment}{//\ 500k}}
-\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{class_inspire_ad8332d5b0b3e09cab64902d11311c30e}{init\_config}}.\mbox{\hyperlink{struct___i_n_i_t___c_o_n_f_i_g_ad267988dd3a22f9b7c7aabde6c1c29f8}{Mode}}\ =\ 0;}
-\DoxyCodeLine{00091\ \ \ \ \ memset(\&\mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}},\ 0,\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}}));}
-\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}}.\mbox{\hyperlink{struct___c_a_n___o_b_j_aea9524b8a1effa0172d80f9bde8dc0db}{DataLen}}\ =\ 2;}
-\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}}.\mbox{\hyperlink{struct___c_a_n___o_b_j_a041f210bd52d51321f4bf8e92f1337bc}{SendType}}\ =\ 0;}
-\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}}.\mbox{\hyperlink{struct___c_a_n___o_b_j_a1883cb75a04f4288041e784c66ad304b}{RemoteFlag}}\ =\ 0;}
-\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}}.\mbox{\hyperlink{struct___c_a_n___o_b_j_a6ab2c6f2ca66783216f21e4fea5bbee6}{ExternFlag}}\ =\ 1;}
-\DoxyCodeLine{00096\ \}}
-\DoxyCodeLine{00097\ }
-\DoxyCodeLine{00098\ \mbox{\hyperlink{class_inspire_a0be6f1f8d731fae7b667a4f0d71ced30}{Inspire::\string~Inspire}}()}
-\DoxyCodeLine{00099\ \{}
-\DoxyCodeLine{00100\ \}}
-\DoxyCodeLine{00101\ }
-\DoxyCodeLine{00102\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_a1b0320ebe9e2c027883141339c761aff}{Inspire::InitCan}}()}
-\DoxyCodeLine{00103\ \{}
-\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{main_8cpp_ade42cec8888fceecaeeb1d6cd077ddf9}{dwRel}}\ =\ \mbox{\hyperlink{_e_can_vci_8h_a9022c5b045e725e2cce127412e1ce765}{OpenDevice}}(\mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}},\ \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{DeviceInd}},\ \mbox{\hyperlink{_inspire_8hpp_af53e51380ab436fa1e76323e9ea0ed91}{Reserved}});}
-\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{main_8cpp_ade42cec8888fceecaeeb1d6cd077ddf9}{dwRel}}\ !=\ 1)}
-\DoxyCodeLine{00106\ \ \ \ \ \{}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}it\ is\ not\ OpenDevice"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
-\DoxyCodeLine{00109\ \ \ \ \ \}}
-\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_e_can_vci_8h_aa2e7908f574ea5d75ab10218016b2e16}{InitCAN}}(\mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}},\ \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{DeviceInd}},\ \mbox{\hyperlink{_inspire_8hpp_a4964ecb6a5c689aaf8ee2832b8093aac}{CAN1}},\ \&\mbox{\hyperlink{class_inspire_ad8332d5b0b3e09cab64902d11311c30e}{init\_config}})\ !=\ \mbox{\hyperlink{_e_can_vci_8h_a2403320c41f08e7567cb169de5db66b3}{STATUS\_OK}})}
-\DoxyCodeLine{00111\ \ \ \ \ \{}
-\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}it\ is\ error\ when\ init\ can"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_e_can_vci_8h_accb9eba67a87e313507d88a3b554bd72}{CloseDevice}}(\mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}},\ \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{DeviceInd}});}
-\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
-\DoxyCodeLine{00115\ \ \ \ \ \}}
-\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_e_can_vci_8h_a7098cb9ca9f4ee3dadee3896c9d5df8b}{StartCAN}}(\mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}},\ \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{DeviceInd}},\ \mbox{\hyperlink{_inspire_8hpp_a4964ecb6a5c689aaf8ee2832b8093aac}{CAN1}})\ !=\ \mbox{\hyperlink{_e_can_vci_8h_a2403320c41f08e7567cb169de5db66b3}{STATUS\_OK}})}
-\DoxyCodeLine{00117\ \ \ \ \ \{}
-\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}it\ is\ error\ when\ start\ can"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_e_can_vci_8h_accb9eba67a87e313507d88a3b554bd72}{CloseDevice}}(\mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}},\ \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{DeviceInd}});}
-\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
-\DoxyCodeLine{00121\ \ \ \ \ \}}
-\DoxyCodeLine{00122\ \ \ \ \ usleep(10000);}
-\DoxyCodeLine{00123\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}can\ init\ success"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
-\DoxyCodeLine{00125\ \}}
-\DoxyCodeLine{00126\ }
-\DoxyCodeLine{00127\ std::string\ \mbox{\hyperlink{class_inspire_a4e6bc517c81ca1612d130966b9ca1f4e}{Inspire::GetAddressId}}(\textcolor{keywordtype}{int}\ address)}
-\DoxyCodeLine{00128\ \{}
-\DoxyCodeLine{00129\ \ \ \ \ \textcolor{comment}{//\ 检查\ address\ 是否在范围内}}
-\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordflow}{if}\ (address\ >=\ 1486\ \&\&\ address\ <\ 1534)}
-\DoxyCodeLine{00131\ \ \ \ \ \{}
-\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 将\ address\ 转换为二进制字符串}}
-\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ std::bitset<12>\ binary(address);\ \textcolor{comment}{//\ 使用\ 32\ 位存储二进制表示}}
-\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ binary.to\_string();}
-\DoxyCodeLine{00135\ }
-\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 1\ 表示\ address\ 在范围内}}
-\DoxyCodeLine{00137\ \ \ \ \ \}}
-\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordflow}{else}}
-\DoxyCodeLine{00139\ \ \ \ \ \{}
-\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Address\ "{}}\ <<\ address\ <<\ \textcolor{stringliteral}{"{}\ is\ out\ of\ the\ range\ [1486,\ 1534)"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 0\ 表示\ address\ 不在范围内}}
-\DoxyCodeLine{00143\ \ \ \ \ \}}
-\DoxyCodeLine{00144\ \}}
-\DoxyCodeLine{00145\ std::string\ \mbox{\hyperlink{class_inspire_a3648a2e634bc3e9ba24603bdcdec34ff}{Inspire::GetHandId}}(\textcolor{keywordtype}{int}\ handid)}
-\DoxyCodeLine{00146\ \{}
-\DoxyCodeLine{00147\ \ \ \ \ \textcolor{comment}{//\ 检查\ handid\ 是否在范围内}}
-\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordflow}{if}\ (handid\ >=\ 1\ \&\&\ handid\ <\ 16383)}
-\DoxyCodeLine{00149\ \ \ \ \ \{}
-\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 将\ handid\ 转换为二进制字符串}}
-\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ std::bitset<14>\ binary(handid);\ \textcolor{comment}{//\ 使用\ 32\ 位存储二进制表示}}
-\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ binary.to\_string();}
-\DoxyCodeLine{00153\ }
-\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 1\ 表示\ handid\ 在范围内}}
-\DoxyCodeLine{00155\ \ \ \ \ \}}
-\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{else}}
-\DoxyCodeLine{00157\ \ \ \ \ \{}
-\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Hand\ "{}}\ <<\ handid\ <<\ \textcolor{stringliteral}{"{}\ is\ out\ of\ the\ range\ [1,\ 7)"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 0\ 表示\ handid\ 不在范围内}}
-\DoxyCodeLine{00161\ \ \ \ \ \}}
-\DoxyCodeLine{00162\ \}}
-\DoxyCodeLine{00163\ std::string\ \mbox{\hyperlink{class_inspire_ab99caa974bbb3232a69b6970acc03d6a}{Inspire::GetFlageWriteRead}}(\textcolor{keywordtype}{int}\ flag\_write\_read)}
-\DoxyCodeLine{00164\ \{}
-\DoxyCodeLine{00165\ \ \ \ \ \textcolor{comment}{//\ 检查\ flag\_write\_read\ 是否在范围内}}
-\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordflow}{if}\ (flag\_write\_read\ >=\ 0\ \&\&\ flag\_write\_read\ <\ 8)}
-\DoxyCodeLine{00167\ \ \ \ \ \{}
-\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 将\ flag\_write\_read\ 转换为二进制字符串}}
-\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ std::bitset<3>\ binary(flag\_write\_read);\ \textcolor{comment}{//\ 使用\ 32\ 位存储二进制表示}}
-\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ binary.to\_string();}
-\DoxyCodeLine{00171\ }
-\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 1\ 表示\ flag\_write\_read\ 在范围内}}
-\DoxyCodeLine{00173\ \ \ \ \ \}}
-\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordflow}{else}}
-\DoxyCodeLine{00175\ \ \ \ \ \{}
-\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}flag\_write\_read\ "{}}\ <<\ flag\_write\_read\ <<\ \textcolor{stringliteral}{"{}\ is\ out\ of\ the\ range\ [0,\ 8)"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 0\ 表示\ flag\_write\_read\ 不在范围内}}
-\DoxyCodeLine{00179\ \ \ \ \ \}}
-\DoxyCodeLine{00180\ \}}
-\DoxyCodeLine{00181\ std::string\ \mbox{\hyperlink{class_inspire_a4f20f1644ac1c4095091fd9d543d64f0}{Inspire::GetCanId}}(\textcolor{keywordtype}{int}\ Address,\ \textcolor{keywordtype}{int}\ handid,\ \textcolor{keywordtype}{int}\ flag)}
-\DoxyCodeLine{00182\ \{}
-\DoxyCodeLine{00183\ \ \ \ \ std::string\ AddressId\ =\ \mbox{\hyperlink{class_inspire_a4e6bc517c81ca1612d130966b9ca1f4e}{GetAddressId}}(Address);}
-\DoxyCodeLine{00184\ \ \ \ \ std::string\ HandId\ =\ \mbox{\hyperlink{class_inspire_a3648a2e634bc3e9ba24603bdcdec34ff}{GetHandId}}(handid);}
-\DoxyCodeLine{00185\ \ \ \ \ std::string\ flag\_write\_read\ =\ \mbox{\hyperlink{class_inspire_ab99caa974bbb3232a69b6970acc03d6a}{GetFlageWriteRead}}(flag);}
-\DoxyCodeLine{00186\ }
-\DoxyCodeLine{00187\ \ \ \ \ \textcolor{comment}{//\ 检查\ AddressId\ 和\ HandId\ 是否为空}}
-\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordflow}{if}\ (AddressId.size()\ ==\ 0\ ||\ HandId.size()\ ==\ 0\ ||\ flag\_write\_read.size()\ ==\ 0)}
-\DoxyCodeLine{00189\ \ \ \ \ \{}
-\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}AddressId\ or\ HandId\ or\ flag\_write\_read\ is\ empty"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00192\ \ \ \ \ \}}
-\DoxyCodeLine{00193\ \ \ \ \ \textcolor{comment}{//\ 检查\ AddressId\ 和\ HandId\ 是否为\ 12\ 位和\ 14\ 位}}
-\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordflow}{if}\ (AddressId.size()\ !=\ 12\ ||\ HandId.size()\ !=\ 14\ ||\ flag\_write\_read.size()\ !=\ 3)}
-\DoxyCodeLine{00195\ \ \ \ \ \{}
-\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}AddressId\ or\ HandId\ or\ flag\_write\_read\ is\ not\ 12\ or\ 14\ or\ 3\ bits\ "{}}\ <<\ std::endl;}
-\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00198\ \ \ \ \ \}}
-\DoxyCodeLine{00199\ }
-\DoxyCodeLine{00200\ \ \ \ \ std::string\ tmp\ =\ \textcolor{stringliteral}{"{}000"{}};}
-\DoxyCodeLine{00201\ \ \ \ \ \textcolor{comment}{//\ 拼接\ AddressId\ 和\ HandId}}
-\DoxyCodeLine{00202\ \ \ \ \ std::string\ CanId\ =\ tmp\ +\ flag\_write\_read\ +\ AddressId\ +\ HandId;}
-\DoxyCodeLine{00203\ \ \ \ \ \textcolor{keywordflow}{return}\ CanId;}
-\DoxyCodeLine{00204\ \}}
-\DoxyCodeLine{00205\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_aee50591238bbf691bc9ea3ac23b2ae01}{Inspire::ConvertValueToHex}}(\textcolor{keywordtype}{int}\ value,\ \mbox{\hyperlink{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0}{Byte}}\ data[2])}
-\DoxyCodeLine{00206\ \{}
-\DoxyCodeLine{00207\ \ \ \ \ \textcolor{comment}{//\ 检查\ value\ 是否在范围内}}
-\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ <\ 0\ ||\ value\ >\ 1000)}
-\DoxyCodeLine{00209\ \ \ \ \ \{}
-\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ Value\ out\ of\ range\ [0,\ 1000]"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{int}\ WriteCan(\textcolor{keywordtype}{int}\ address,\ \textcolor{keywordtype}{int}\ value,\ \textcolor{keywordtype}{int}\ handid);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00099\ \ \ \ \ std::string\ GetAddressId(\textcolor{keywordtype}{int}\ address);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00107\ \ \ \ \ std::string\ GetHandId(\textcolor{keywordtype}{int}\ handid);}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00116\ \ \ \ \ std::string\ GetFlageWriteRead(\textcolor{keywordtype}{int}\ flag\_write\_read);}
+\DoxyCodeLine{00125\ \ \ \ \ std::string\ GetCanId(\textcolor{keywordtype}{int}\ Address,\ \textcolor{keywordtype}{int}\ HandId,\ \textcolor{keywordtype}{int}\ flag\_write\_read);}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ ConvertValueToHex(\textcolor{keywordtype}{int}\ value,\ Byte\ data[2]);}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordtype}{void}\ InspireCloseDevice();}
+\DoxyCodeLine{00138\ \};}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ Inspire::Inspire(\textcolor{comment}{/*\ args\ */})}
+\DoxyCodeLine{00141\ \{}
+\DoxyCodeLine{00142\ \ \ \ \ init\_config.AccCode\ =\ 0;}
+\DoxyCodeLine{00143\ \ \ \ \ init\_config.AccMask\ =\ 0xffffffff;\ \textcolor{comment}{//\ 不滤波}}
+\DoxyCodeLine{00144\ \ \ \ \ init\_config.Filter\ =\ 0;}
+\DoxyCodeLine{00145\ \ \ \ \ init\_config.Timing0\ =\ 0;}
+\DoxyCodeLine{00146\ \ \ \ \ init\_config.Timing1\ =\ 0x1c;\ \textcolor{comment}{//\ 500k}}
+\DoxyCodeLine{00147\ \ \ \ \ init\_config.Mode\ =\ 0;}
+\DoxyCodeLine{00148\ \ \ \ \ memset(\&frame,\ 0,\ \textcolor{keyword}{sizeof}(frame));}
+\DoxyCodeLine{00149\ \ \ \ \ frame.DataLen\ =\ 2;}
+\DoxyCodeLine{00150\ \ \ \ \ frame.SendType\ =\ 0;}
+\DoxyCodeLine{00151\ \ \ \ \ frame.RemoteFlag\ =\ 0;}
+\DoxyCodeLine{00152\ \ \ \ \ frame.ExternFlag\ =\ 1;}
+\DoxyCodeLine{00153\ \}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ Inspire::\string~Inspire()}
+\DoxyCodeLine{00156\ \{}
+\DoxyCodeLine{00157\ \}}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \textcolor{keywordtype}{int}\ Inspire::InitCan()}
+\DoxyCodeLine{00160\ \{}
+\DoxyCodeLine{00161\ \ \ \ \ dwRel\ =\ OpenDevice(USBCAN2,\ DeviceInd,\ Reserved);}
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordflow}{if}\ (dwRel\ !=\ 1)}
+\DoxyCodeLine{00163\ \ \ \ \ \{}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}it\ is\ not\ OpenDevice"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00166\ \ \ \ \ \}}
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keywordflow}{if}\ (InitCAN(USBCAN2,\ DeviceInd,\ CAN1,\ \&init\_config)\ !=\ STATUS\_OK)}
+\DoxyCodeLine{00168\ \ \ \ \ \{}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}it\ is\ error\ when\ init\ can"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ CloseDevice(USBCAN2,\ DeviceInd);}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00172\ \ \ \ \ \}}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordflow}{if}\ (StartCAN(USBCAN2,\ DeviceInd,\ CAN1)\ !=\ STATUS\_OK)}
+\DoxyCodeLine{00174\ \ \ \ \ \{}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}it\ is\ error\ when\ start\ can"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ CloseDevice(USBCAN2,\ DeviceInd);}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00178\ \ \ \ \ \}}
+\DoxyCodeLine{00179\ \ \ \ \ usleep(10000);}
+\DoxyCodeLine{00180\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}can\ init\ success"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00182\ \}}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ std::string\ Inspire::GetAddressId(\textcolor{keywordtype}{int}\ address)}
+\DoxyCodeLine{00185\ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \textcolor{comment}{//\ 检查\ address\ 是否在范围内}}
+\DoxyCodeLine{00187\ \ \ \ \ \textcolor{keywordflow}{if}\ (address\ >=\ 1486\ \&\&\ address\ <\ 1534)}
+\DoxyCodeLine{00188\ \ \ \ \ \{}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 将\ address\ 转换为二进制字符串}}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ std::bitset<12>\ binary(address);\ \textcolor{comment}{//\ 使用\ 32\ 位存储二进制表示}}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ binary.to\_string();}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 1\ 表示\ address\ 在范围内}}
+\DoxyCodeLine{00194\ \ \ \ \ \}}
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00196\ \ \ \ \ \{}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Address\ "{}}\ <<\ address\ <<\ \textcolor{stringliteral}{"{}\ is\ out\ of\ the\ range\ [1486,\ 1534)"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 0\ 表示\ address\ 不在范围内}}
+\DoxyCodeLine{00200\ \ \ \ \ \}}
+\DoxyCodeLine{00201\ \}}
+\DoxyCodeLine{00202\ std::string\ Inspire::GetHandId(\textcolor{keywordtype}{int}\ handid)}
+\DoxyCodeLine{00203\ \{}
+\DoxyCodeLine{00204\ \ \ \ \ \textcolor{comment}{//\ 检查\ handid\ 是否在范围内}}
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keywordflow}{if}\ (handid\ >=\ 1\ \&\&\ handid\ <\ 16383)}
+\DoxyCodeLine{00206\ \ \ \ \ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 将\ handid\ 转换为二进制字符串}}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ std::bitset<14>\ binary(handid);\ \textcolor{comment}{//\ 使用\ 32\ 位存储二进制表示}}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ binary.to\_string();}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 1\ 表示\ handid\ 在范围内}}
 \DoxyCodeLine{00212\ \ \ \ \ \}}
-\DoxyCodeLine{00213\ }
-\DoxyCodeLine{00214\ \ \ \ \ \textcolor{comment}{//\ 将\ value\ 转换为十六进制并存储到\ data\ 数组中}}
-\DoxyCodeLine{00215\ \ \ \ \ std::stringstream\ ss;}
-\DoxyCodeLine{00216\ \ \ \ \ ss\ <<\ std::hex\ <<\ std::uppercase\ <<\ std::setw(4)\ <<\ std::setfill(\textcolor{charliteral}{'0'})\ <<\ value;}
-\DoxyCodeLine{00217\ \ \ \ \ std::string\ hexString\ =\ ss.str();}
-\DoxyCodeLine{00218\ }
-\DoxyCodeLine{00219\ \ \ \ \ \textcolor{comment}{//\ 检查是否需要补充\ 0，确保有\ 4\ 位}}
-\DoxyCodeLine{00220\ \ \ \ \ \textcolor{keywordflow}{if}\ (hexString.length()\ <\ 4)}
-\DoxyCodeLine{00221\ \ \ \ \ \{}
-\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ hexString\ =\ std::string(4\ -\/\ hexString.length(),\ \textcolor{charliteral}{'0'})\ +\ hexString;}
-\DoxyCodeLine{00223\ \ \ \ \ \}}
-\DoxyCodeLine{00224\ }
-\DoxyCodeLine{00225\ \ \ \ \ \textcolor{comment}{//\ 交换高低字节}}
-\DoxyCodeLine{00226\ \ \ \ \ data[0]\ =\ std::stoi(hexString.substr(2,\ 2),\ \textcolor{keyword}{nullptr},\ 16);\ \textcolor{comment}{//\ 高字节}}
-\DoxyCodeLine{00227\ \ \ \ \ data[1]\ =\ std::stoi(hexString.substr(0,\ 2),\ \textcolor{keyword}{nullptr},\ 16);\ \textcolor{comment}{//\ 低字节}}
-\DoxyCodeLine{00228\ \}}
-\DoxyCodeLine{00229\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_ad256c421e10abc35cd6ff8f48143b00f}{Inspire::WriteCan}}(\textcolor{keywordtype}{int}\ address,\ \textcolor{keywordtype}{int}\ value,\ \textcolor{keywordtype}{int}\ handid)}
-\DoxyCodeLine{00230\ \{}
-\DoxyCodeLine{00231\ \ \ \ \ std::string\ \mbox{\hyperlink{class_inspire_ab4623d041d648370a73206564de10445}{canid}}\ =\ \mbox{\hyperlink{class_inspire_a4f20f1644ac1c4095091fd9d543d64f0}{GetCanId}}(address,\ handid,\ 1);}
-\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keywordflow}{if}\ (canid.size()\ !=\ 32)}
-\DoxyCodeLine{00233\ \ \ \ \ \{}
-\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}canid\ is\ error"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00214\ \ \ \ \ \{}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Hand\ "{}}\ <<\ handid\ <<\ \textcolor{stringliteral}{"{}\ is\ out\ of\ the\ range\ [1,\ 7)"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 0\ 表示\ handid\ 不在范围内}}
+\DoxyCodeLine{00218\ \ \ \ \ \}}
+\DoxyCodeLine{00219\ \}}
+\DoxyCodeLine{00220\ std::string\ Inspire::GetFlageWriteRead(\textcolor{keywordtype}{int}\ flag\_write\_read)}
+\DoxyCodeLine{00221\ \{}
+\DoxyCodeLine{00222\ \ \ \ \ \textcolor{comment}{//\ 检查\ flag\_write\_read\ 是否在范围内}}
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keywordflow}{if}\ (flag\_write\_read\ >=\ 0\ \&\&\ flag\_write\_read\ <\ 8)}
+\DoxyCodeLine{00224\ \ \ \ \ \{}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 将\ flag\_write\_read\ 转换为二进制字符串}}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ std::bitset<3>\ binary(flag\_write\_read);\ \textcolor{comment}{//\ 使用\ 32\ 位存储二进制表示}}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ binary.to\_string();}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 1\ 表示\ flag\_write\_read\ 在范围内}}
+\DoxyCodeLine{00230\ \ \ \ \ \}}
+\DoxyCodeLine{00231\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00232\ \ \ \ \ \{}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}flag\_write\_read\ "{}}\ <<\ flag\_write\_read\ <<\ \textcolor{stringliteral}{"{}\ is\ out\ of\ the\ range\ [0,\ 8)"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ std::string\ binaryString\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ binaryString;\ \textcolor{comment}{//\ 返回\ 0\ 表示\ flag\_write\_read\ 不在范围内}}
 \DoxyCodeLine{00236\ \ \ \ \ \}}
-\DoxyCodeLine{00237\ \ \ \ \ \textcolor{comment}{//\ std::cout\ <<\ "{}canid:"{}\ <<\ canid\ <<\ std::endl;}}
-\DoxyCodeLine{00238\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ Canid\ =\ std::bitset<32>(canid).to\_ulong();}
-\DoxyCodeLine{00239\ }
-\DoxyCodeLine{00240\ \ \ \ \ \textcolor{comment}{//\ frame.ID\ =\ 0000\ 0101\ 0111\ 0101\ 0000\ 0000\ 0000\ 0001}}
-\DoxyCodeLine{00241\ }
-\DoxyCodeLine{00242\ \ \ \ \ \mbox{\hyperlink{_inspire_8hpp_a7ae8f3766c8853286755f4ec0903c6f0}{Byte}}\ data[2];}
-\DoxyCodeLine{00243\ \ \ \ \ \mbox{\hyperlink{class_inspire_aee50591238bbf691bc9ea3ac23b2ae01}{ConvertValueToHex}}(value,\ data);}
-\DoxyCodeLine{00244\ \ \ \ \ \mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}}.\mbox{\hyperlink{struct___c_a_n___o_b_j_a466004f2eb7a540b1e3d651e1f82362f}{ID}}\ =\ Canid;}
-\DoxyCodeLine{00245\ }
-\DoxyCodeLine{00246\ \ \ \ \ memcpy(\mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}}.\mbox{\hyperlink{struct___c_a_n___o_b_j_a970bfebb2e32f2e51c0fc5cf61719ad0}{Data}},\ data,\ \mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}}.\mbox{\hyperlink{struct___c_a_n___o_b_j_aea9524b8a1effa0172d80f9bde8dc0db}{DataLen}});}
-\DoxyCodeLine{00247\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_e_can_vci_8h_a828a26f60aac5411280f2ca4f277eb95}{Transmit}}(\mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}},\ \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{DeviceInd}},\ \mbox{\hyperlink{_inspire_8hpp_a4964ecb6a5c689aaf8ee2832b8093aac}{CAN1}},\ \&\mbox{\hyperlink{class_inspire_acfa6a401c500b3eaae3765125017a3f6}{frame}},\ 1)\ !=\ \mbox{\hyperlink{_e_can_vci_8h_a2403320c41f08e7567cb169de5db66b3}{STATUS\_OK}})}
-\DoxyCodeLine{00248\ \ \ \ \ \{}
-\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}it\ is\ error\ when\ transmit"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_e_can_vci_8h_accb9eba67a87e313507d88a3b554bd72}{CloseDevice}}(\mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}},\ \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{DeviceInd}});}
-\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
-\DoxyCodeLine{00252\ \ \ \ \ \}}
-\DoxyCodeLine{00253\ \ \ \ \ usleep(1000);}
-\DoxyCodeLine{00254\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
-\DoxyCodeLine{00255\ \}}
-\DoxyCodeLine{00256\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_aee36ef89ab25c53e0c3bb6beb4335f26}{Inspire::InspireCloseDevice}}()}
-\DoxyCodeLine{00257\ }
-\DoxyCodeLine{00258\ \{}
-\DoxyCodeLine{00259\ \ \ \ \ \mbox{\hyperlink{_e_can_vci_8h_accb9eba67a87e313507d88a3b554bd72}{CloseDevice}}(\mbox{\hyperlink{_inspire_8hpp_a58de6b40df25056c6f8db282fe1c5e66}{USBCAN2}},\ \mbox{\hyperlink{_inspire_8hpp_a1d3e638d499a621cec1f0a6c6487f994}{DeviceInd}});}
-\DoxyCodeLine{00260\ \}}
-\DoxyCodeLine{00261\ }
-\DoxyCodeLine{00262\ \textcolor{comment}{//\ 接受基类指针，实现多态的动作类}}
-\DoxyCodeLine{00263\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inspire_action}{InspireAction}}}
-\DoxyCodeLine{00264\ \{}
-\DoxyCodeLine{00265\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00266\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_a6d1de00a69d869d166ec9996cfe6eee2}{InspireAction}}(\mbox{\hyperlink{class_can_writer}{CanWriter}}\ *canwriter)\ :\ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}(canwriter)\ \{\}}
-\DoxyCodeLine{00267\ \ \ \ \ \textcolor{comment}{//\ 编写动作函数，对应不同的动作，比如五指单独运动，五指同时运动等}}
-\DoxyCodeLine{00268\ \ \ \ \ \textcolor{comment}{//\ 拇指旋转}}
-\DoxyCodeLine{00269\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_action_a0f950a3a5b3bfb355581a3088527c183}{ThumbRotAction}}(\textcolor{keywordtype}{int}\ value)}
-\DoxyCodeLine{00270\ \ \ \ \ \{}
-\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::THUMB\_ROT,\ value,\ 1);}
-\DoxyCodeLine{00272\ \ \ \ \ \}}
-\DoxyCodeLine{00273\ \ \ \ \ \textcolor{comment}{//\ 拇指运动}}
-\DoxyCodeLine{00274\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_action_aec2ad3e90c32c46d6286902b5407c429}{ThumbAction}}(\textcolor{keywordtype}{int}\ value)}
-\DoxyCodeLine{00275\ \ \ \ \ \{}
-\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::THUMB,\ value,\ 1);}
-\DoxyCodeLine{00277\ \ \ \ \ \}}
-\DoxyCodeLine{00278\ \ \ \ \ \textcolor{comment}{//\ 食指运动}}
-\DoxyCodeLine{00279\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_action_a47e6b9701012dbf5f5d1c733192abf74}{IndexAction}}(\textcolor{keywordtype}{int}\ value)}
-\DoxyCodeLine{00280\ \ \ \ \ \{}
-\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::INDEX,\ value,\ 1);}
-\DoxyCodeLine{00282\ \ \ \ \ \}}
-\DoxyCodeLine{00283\ \ \ \ \ \textcolor{comment}{//\ 中指运动}}
-\DoxyCodeLine{00284\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_action_aec8cdb922fb787a0dd420641240011bb}{MiddleAction}}(\textcolor{keywordtype}{int}\ value)}
-\DoxyCodeLine{00285\ \ \ \ \ \{}
-\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::MIDDLE,\ value,\ 1);}
-\DoxyCodeLine{00287\ \ \ \ \ \}}
-\DoxyCodeLine{00288\ \ \ \ \ \textcolor{comment}{//\ 无名指运动}}
-\DoxyCodeLine{00289\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_action_af27e4c658cdaa83b6cac23a951d53b37}{RingAction}}(\textcolor{keywordtype}{int}\ value)}
+\DoxyCodeLine{00237\ \}}
+\DoxyCodeLine{00238\ std::string\ Inspire::GetCanId(\textcolor{keywordtype}{int}\ Address,\ \textcolor{keywordtype}{int}\ handid,\ \textcolor{keywordtype}{int}\ flag)}
+\DoxyCodeLine{00239\ \{}
+\DoxyCodeLine{00240\ \ \ \ \ std::string\ AddressId\ =\ GetAddressId(Address);}
+\DoxyCodeLine{00241\ \ \ \ \ std::string\ HandId\ =\ GetHandId(handid);}
+\DoxyCodeLine{00242\ \ \ \ \ std::string\ flag\_write\_read\ =\ GetFlageWriteRead(flag);}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ \ \ \ \ \textcolor{comment}{//\ 检查\ AddressId\ 和\ HandId\ 是否为空}}
+\DoxyCodeLine{00245\ \ \ \ \ \textcolor{keywordflow}{if}\ (AddressId.size()\ ==\ 0\ ||\ HandId.size()\ ==\ 0\ ||\ flag\_write\_read.size()\ ==\ 0)}
+\DoxyCodeLine{00246\ \ \ \ \ \{}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}AddressId\ or\ HandId\ or\ flag\_write\_read\ is\ empty"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00249\ \ \ \ \ \}}
+\DoxyCodeLine{00250\ \ \ \ \ \textcolor{comment}{//\ 检查\ AddressId\ 和\ HandId\ 是否为\ 12\ 位和\ 14\ 位}}
+\DoxyCodeLine{00251\ \ \ \ \ \textcolor{keywordflow}{if}\ (AddressId.size()\ !=\ 12\ ||\ HandId.size()\ !=\ 14\ ||\ flag\_write\_read.size()\ !=\ 3)}
+\DoxyCodeLine{00252\ \ \ \ \ \{}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}AddressId\ or\ HandId\ or\ flag\_write\_read\ is\ not\ 12\ or\ 14\ or\ 3\ bits\ "{}}\ <<\ std::endl;}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00255\ \ \ \ \ \}}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00257\ \ \ \ \ std::string\ tmp\ =\ \textcolor{stringliteral}{"{}000"{}};}
+\DoxyCodeLine{00258\ \ \ \ \ \textcolor{comment}{//\ 拼接\ AddressId\ 和\ HandId}}
+\DoxyCodeLine{00259\ \ \ \ \ std::string\ CanId\ =\ tmp\ +\ flag\_write\_read\ +\ AddressId\ +\ HandId;}
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordflow}{return}\ CanId;}
+\DoxyCodeLine{00261\ \}}
+\DoxyCodeLine{00262\ \textcolor{keywordtype}{void}\ Inspire::ConvertValueToHex(\textcolor{keywordtype}{int}\ value,\ Byte\ data[2])}
+\DoxyCodeLine{00263\ \{}
+\DoxyCodeLine{00264\ \ \ \ \ \textcolor{comment}{//\ 检查\ value\ 是否在范围内}}
+\DoxyCodeLine{00265\ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ <\ 0\ ||\ value\ >\ 1000)}
+\DoxyCodeLine{00266\ \ \ \ \ \{}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ Value\ out\ of\ range\ [0,\ 1000]"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00269\ \ \ \ \ \}}
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00271\ \ \ \ \ \textcolor{comment}{//\ 将\ value\ 转换为十六进制并存储到\ data\ 数组中}}
+\DoxyCodeLine{00272\ \ \ \ \ std::stringstream\ ss;}
+\DoxyCodeLine{00273\ \ \ \ \ ss\ <<\ std::hex\ <<\ std::uppercase\ <<\ std::setw(4)\ <<\ std::setfill(\textcolor{charliteral}{'0'})\ <<\ value;}
+\DoxyCodeLine{00274\ \ \ \ \ std::string\ hexString\ =\ ss.str();}
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00276\ \ \ \ \ \textcolor{comment}{//\ 检查是否需要补充\ 0，确保有\ 4\ 位}}
+\DoxyCodeLine{00277\ \ \ \ \ \textcolor{keywordflow}{if}\ (hexString.length()\ <\ 4)}
+\DoxyCodeLine{00278\ \ \ \ \ \{}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ hexString\ =\ std::string(4\ -\/\ hexString.length(),\ \textcolor{charliteral}{'0'})\ +\ hexString;}
+\DoxyCodeLine{00280\ \ \ \ \ \}}
+\DoxyCodeLine{00281\ }
+\DoxyCodeLine{00282\ \ \ \ \ \textcolor{comment}{//\ 交换高低字节}}
+\DoxyCodeLine{00283\ \ \ \ \ data[0]\ =\ std::stoi(hexString.substr(2,\ 2),\ \textcolor{keyword}{nullptr},\ 16);\ \textcolor{comment}{//\ 高字节}}
+\DoxyCodeLine{00284\ \ \ \ \ data[1]\ =\ std::stoi(hexString.substr(0,\ 2),\ \textcolor{keyword}{nullptr},\ 16);\ \textcolor{comment}{//\ 低字节}}
+\DoxyCodeLine{00285\ \}}
+\DoxyCodeLine{00286\ \textcolor{keywordtype}{int}\ Inspire::WriteCan(\textcolor{keywordtype}{int}\ address,\ \textcolor{keywordtype}{int}\ value,\ \textcolor{keywordtype}{int}\ handid)}
+\DoxyCodeLine{00287\ \{}
+\DoxyCodeLine{00288\ \ \ \ \ std::string\ canid\ =\ GetCanId(address,\ handid,\ 1);}
+\DoxyCodeLine{00289\ \ \ \ \ \textcolor{keywordflow}{if}\ (canid.size()\ !=\ 32)}
 \DoxyCodeLine{00290\ \ \ \ \ \{}
-\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::RING,\ value,\ 1);}
-\DoxyCodeLine{00292\ \ \ \ \ \}}
-\DoxyCodeLine{00293\ \ \ \ \ \textcolor{comment}{//\ 小指运动}}
-\DoxyCodeLine{00294\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_action_ab2fcbc47eb7d677c790fe2138c1c4d0f}{PinkyAction}}(\textcolor{keywordtype}{int}\ value)}
-\DoxyCodeLine{00295\ \ \ \ \ \{}
-\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::PINKY,\ value,\ 1);}
-\DoxyCodeLine{00297\ \ \ \ \ \}}
-\DoxyCodeLine{00298\ \ \ \ \ \textcolor{comment}{//\ 五指同时运动}}
-\DoxyCodeLine{00299\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inspire_action_ab46012053379df10d72bb4adc34b876b}{FiveFingerAction}}(std::vector<int>\ value)}
-\DoxyCodeLine{00300\ \ \ \ \ \{}
-\DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value.size()\ !=\ 6)}
-\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ size\ of\ value\ is\ not\ 6"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
-\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::THUMB\_ROT,\ value[0],\ 1);}
-\DoxyCodeLine{00307\ }
-\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::THUMB,\ value[1],\ 1);}
-\DoxyCodeLine{00309\ }
-\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::INDEX,\ value[2],\ 1);}
-\DoxyCodeLine{00311\ }
-\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::MIDDLE,\ value[3],\ 1);}
-\DoxyCodeLine{00313\ }
-\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::RING,\ value[4],\ 1);}
-\DoxyCodeLine{00315\ }
-\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::PINKY,\ value[5],\ 1);}
-\DoxyCodeLine{00317\ }
-\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
-\DoxyCodeLine{00319\ \ \ \ \ \}}
-\DoxyCodeLine{00320\ \textcolor{comment}{//\ 设置五指的速度}}
-\DoxyCodeLine{00321\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_action_a6aa9260030cce586590c90ec3122a866}{SetFiveFingerSpeed}}(std::vector<int>\ value)}
-\DoxyCodeLine{00322\ \{}
-\DoxyCodeLine{00323\ \ \ \ \ \textcolor{keywordflow}{if}\ (value.size()\ !=\ 6)}
-\DoxyCodeLine{00324\ \ \ \ \ \{}
-\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ size\ of\ value\ is\ not\ 6"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{00327\ \ \ \ \ \}}
-\DoxyCodeLine{00328\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ value.size();\ i++)}
-\DoxyCodeLine{00329\ \ \ \ \ \{}
-\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value[i]\ <\ Inspire::MIN\_SPEED\ ||\ value[i]\ >\ Inspire::MAX\_SPEED)}
-\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ value\ is\ out\ of\ range\ [0,\ 1000]"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00335\ \ \ \ \ \}}
-\DoxyCodeLine{00336\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::SPEED\_THUMB\_ROT,\ value[0],\ 1);}
-\DoxyCodeLine{00337\ }
-\DoxyCodeLine{00338\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::SPEED\_THUMB,\ value[1],\ 1);}
-\DoxyCodeLine{00339\ }
-\DoxyCodeLine{00340\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::SPEED\_INDEX,\ value[2],\ 1);}
-\DoxyCodeLine{00341\ }
-\DoxyCodeLine{00342\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::SPEED\_MIDDLE,\ value[3],\ 1);}
-\DoxyCodeLine{00343\ }
-\DoxyCodeLine{00344\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::SPEED\_RING,\ value[4],\ 1);}
-\DoxyCodeLine{00345\ }
-\DoxyCodeLine{00346\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::SPEED\_PINKY,\ value[5],\ 1);}
-\DoxyCodeLine{00347\ \}}
-\DoxyCodeLine{00348\ \textcolor{comment}{//\ 设置五指的力}}
-\DoxyCodeLine{00349\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inspire_action_ae324c8c5ab2ce1748de3ab49b7a05d4d}{SetFiveFingerForce}}(std::vector<int>\ value)}
-\DoxyCodeLine{00350\ \{}
-\DoxyCodeLine{00351\ \ \ \ \ \textcolor{keywordflow}{if}\ (value.size()\ !=\ 6)}
-\DoxyCodeLine{00352\ \ \ \ \ \{}
-\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ size\ of\ value\ is\ not\ 6"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{00355\ \ \ \ \ \}}
-\DoxyCodeLine{00356\ \ \ \ \ \textcolor{comment}{//\ 检查value范围是否在0-\/1000}}
-\DoxyCodeLine{00357\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ value.size();\ i++)}
-\DoxyCodeLine{00358\ \ \ \ \ \{}
-\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value[i]\ <\ Inspire::MIN\_FORCE\ ||\ value[i]\ >\ Inspire::MAX\_FORCE)}
-\DoxyCodeLine{00360\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00361\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ value\ is\ out\ of\ range\ [0,\ 1000]"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00362\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
-\DoxyCodeLine{00363\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00364\ \ \ \ \ \}}
-\DoxyCodeLine{00365\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::FORCE\_THUMB\_ROT,\ value[0],\ 1);}
-\DoxyCodeLine{00366\ }
-\DoxyCodeLine{00367\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::FORCE\_THUMB,\ value[1],\ 1);}
-\DoxyCodeLine{00368\ }
-\DoxyCodeLine{00369\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::FORCE\_INDEX,\ value[2],\ 1);}
-\DoxyCodeLine{00370\ }
-\DoxyCodeLine{00371\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::FORCE\_MIDDLE,\ value[3],\ 1);}
-\DoxyCodeLine{00372\ }
-\DoxyCodeLine{00373\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::FORCE\_RING,\ value[4],\ 1);}
-\DoxyCodeLine{00374\ }
-\DoxyCodeLine{00375\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}}-\/>\mbox{\hyperlink{class_can_writer_a32d89e15b9752e98489d3fec84f38ae0}{WriteCan}}(Inspire::FORCE\_PINKY,\ value[5],\ 1);}
-\DoxyCodeLine{00376\ \}}
-\DoxyCodeLine{00377\ \ \ \ \ \mbox{\hyperlink{class_inspire_action_abd5f0c0b2257114fe35561b9b21c50a7}{\string~InspireAction}}()\ \{\}}
-\DoxyCodeLine{00378\ }
-\DoxyCodeLine{00379\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00380\ \ \ \ \ \mbox{\hyperlink{class_can_writer}{CanWriter}}\ *\mbox{\hyperlink{class_inspire_action_ae6ca1732e75756071bd14bbceb71c356}{action\_canwriter}};}
-\DoxyCodeLine{00381\ \};}
-\DoxyCodeLine{00382\ }
-\DoxyCodeLine{00383\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}canid\ is\ error"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00293\ \ \ \ \ \}}
+\DoxyCodeLine{00294\ \ \ \ \ \textcolor{comment}{//\ std::cout\ <<\ "{}canid:"{}\ <<\ canid\ <<\ std::endl;}}
+\DoxyCodeLine{00295\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ Canid\ =\ std::bitset<32>(canid).to\_ulong();}
+\DoxyCodeLine{00296\ }
+\DoxyCodeLine{00297\ \ \ \ \ \textcolor{comment}{//\ frame.ID\ =\ 0000\ 0101\ 0111\ 0101\ 0000\ 0000\ 0000\ 0001}}
+\DoxyCodeLine{00298\ }
+\DoxyCodeLine{00299\ \ \ \ \ Byte\ data[2];}
+\DoxyCodeLine{00300\ \ \ \ \ ConvertValueToHex(value,\ data);}
+\DoxyCodeLine{00301\ \ \ \ \ frame.ID\ =\ Canid;}
+\DoxyCodeLine{00302\ }
+\DoxyCodeLine{00303\ \ \ \ \ memcpy(frame.Data,\ data,\ frame.DataLen);}
+\DoxyCodeLine{00304\ \ \ \ \ \textcolor{keywordflow}{if}\ (Transmit(USBCAN2,\ DeviceInd,\ CAN1,\ \&frame,\ 1)\ !=\ STATUS\_OK)}
+\DoxyCodeLine{00305\ \ \ \ \ \{}
+\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}it\ is\ error\ when\ transmit"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ CloseDevice(USBCAN2,\ DeviceInd);}
+\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00309\ \ \ \ \ \}}
+\DoxyCodeLine{00310\ \ \ \ \ usleep(1000);}
+\DoxyCodeLine{00311\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00312\ \}}
+\DoxyCodeLine{00313\ \textcolor{keywordtype}{void}\ Inspire::InspireCloseDevice()}
+\DoxyCodeLine{00314\ }
+\DoxyCodeLine{00315\ \{}
+\DoxyCodeLine{00316\ \ \ \ \ CloseDevice(USBCAN2,\ DeviceInd);}
+\DoxyCodeLine{00317\ \}}
+\DoxyCodeLine{00318\ }
+\DoxyCodeLine{00319\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00320\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)class\ InspireAction}}
+\DoxyCodeLine{00321\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)brief\ 控制因时手运动的类，实现了基于CAN总线的通信}}
+\DoxyCodeLine{00322\ \textcolor{comment}{\ \ \ \ *}}
+\DoxyCodeLine{00323\ \textcolor{comment}{\ \ \ \ *\ 此类继承自CanWriter，提供了初始化CAN通信、发送数据以及对手指运动的控制功能。}}
+\DoxyCodeLine{00324\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00325\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00326\ \textcolor{keyword}{class\ }InspireAction}
+\DoxyCodeLine{00327\ \{}
+\DoxyCodeLine{00328\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00332\ \ \ \ \ InspireAction(CanWriter\ *canwriter)\ :\ action\_canwriter(canwriter)\ \{\}}
+\DoxyCodeLine{00333\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00334\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)brief\ \ 拇指旋转}}
+\DoxyCodeLine{00335\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)param[in]\ value\ 旋转角度}}
+\DoxyCodeLine{00336\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)return\ 无}}
+\DoxyCodeLine{00337\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00338\ \ \ \ \ \textcolor{keywordtype}{void}\ ThumbRotAction(\textcolor{keywordtype}{int}\ value)}
+\DoxyCodeLine{00339\ \ \ \ \ \{}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::THUMB\_ROT,\ value,\ 1);}
+\DoxyCodeLine{00341\ \ \ \ \ \}}
+\DoxyCodeLine{00342\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00343\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)brief\ \ 拇指运动}}
+\DoxyCodeLine{00344\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)param[in]\ value\ 旋转角度}}
+\DoxyCodeLine{00345\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00346\ \ \ \ \ \textcolor{keywordtype}{void}\ ThumbAction(\textcolor{keywordtype}{int}\ value)}
+\DoxyCodeLine{00347\ \ \ \ \ \{}
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::THUMB,\ value,\ 1);}
+\DoxyCodeLine{00349\ \ \ \ \ \}}
+\DoxyCodeLine{00350\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00351\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)brief\ \ 食指运动}}
+\DoxyCodeLine{00352\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)param[in]\ value\ 旋转角度}}
+\DoxyCodeLine{00353\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00354\ \ \ \ \ \textcolor{keywordtype}{void}\ IndexAction(\textcolor{keywordtype}{int}\ value)}
+\DoxyCodeLine{00355\ \ \ \ \ \{}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::INDEX,\ value,\ 1);}
+\DoxyCodeLine{00357\ \ \ \ \ \}}
+\DoxyCodeLine{00358\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00359\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)brief\ \ 中指运动}}
+\DoxyCodeLine{00360\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)param[in]\ value\ 旋转角度}}
+\DoxyCodeLine{00361\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00362\ \ \ \ \ \textcolor{keywordtype}{void}\ MiddleAction(\textcolor{keywordtype}{int}\ value)}
+\DoxyCodeLine{00363\ \ \ \ \ \{}
+\DoxyCodeLine{00364\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::MIDDLE,\ value,\ 1);}
+\DoxyCodeLine{00365\ \ \ \ \ \}}
+\DoxyCodeLine{00366\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00367\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)brief\ \ 无名指运动}}
+\DoxyCodeLine{00368\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)param[in]\ value\ 旋转角度}}
+\DoxyCodeLine{00369\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00370\ \ \ \ \ \textcolor{keywordtype}{void}\ RingAction(\textcolor{keywordtype}{int}\ value)}
+\DoxyCodeLine{00371\ \ \ \ \ \{}
+\DoxyCodeLine{00372\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::RING,\ value,\ 1);}
+\DoxyCodeLine{00373\ \ \ \ \ \}}
+\DoxyCodeLine{00374\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00375\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)brief\ \ 小指运动}}
+\DoxyCodeLine{00376\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)param[in]\ value\ 旋转角度}}
+\DoxyCodeLine{00377\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00378\ \ \ \ \ \textcolor{keywordtype}{void}\ PinkyAction(\textcolor{keywordtype}{int}\ value)}
+\DoxyCodeLine{00379\ \ \ \ \ \{}
+\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::PINKY,\ value,\ 1);}
+\DoxyCodeLine{00381\ \ \ \ \ \}}
+\DoxyCodeLine{00382\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00383\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)brief\ \ 五指同时运动}}
+\DoxyCodeLine{00384\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)param[in]\ value\ 五个手指的旋转角度}}
+\DoxyCodeLine{00385\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)return\ 无}}
+\DoxyCodeLine{00386\ \textcolor{comment}{\ \ \ */}}
+\DoxyCodeLine{00387\ \ \ \ \ \textcolor{keywordtype}{int}\ FiveFingerAction(std::vector<int>\ value)}
+\DoxyCodeLine{00388\ \ \ \ \ \{}
+\DoxyCodeLine{00389\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value.size()\ !=\ 6)}
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00391\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ size\ of\ value\ is\ not\ 6"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00393\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00394\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::THUMB\_ROT,\ value[0],\ 1);}
+\DoxyCodeLine{00395\ }
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::THUMB,\ value[1],\ 1);}
+\DoxyCodeLine{00397\ }
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::INDEX,\ value[2],\ 1);}
+\DoxyCodeLine{00399\ }
+\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::MIDDLE,\ value[3],\ 1);}
+\DoxyCodeLine{00401\ }
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::RING,\ value[4],\ 1);}
+\DoxyCodeLine{00403\ }
+\DoxyCodeLine{00404\ \ \ \ \ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::PINKY,\ value[5],\ 1);}
+\DoxyCodeLine{00405\ }
+\DoxyCodeLine{00406\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00407\ \ \ \ \ \}}
+\DoxyCodeLine{00408\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00409\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)brief\ \ 设置五指的速度}}
+\DoxyCodeLine{00410\ \textcolor{comment}{\ \ \ \ *\ \(\backslash\)param[in]\ value\ 五个手指的速度}}
+\DoxyCodeLine{00411\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00412\ \textcolor{keywordtype}{void}\ SetFiveFingerSpeed(std::vector<int>\ value)}
+\DoxyCodeLine{00413\ \{}
+\DoxyCodeLine{00414\ \ \ \ \ \textcolor{keywordflow}{if}\ (value.size()\ !=\ 6)}
+\DoxyCodeLine{00415\ \ \ \ \ \{}
+\DoxyCodeLine{00416\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ size\ of\ value\ is\ not\ 6"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00417\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00418\ \ \ \ \ \}}
+\DoxyCodeLine{00419\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ value.size();\ i++)}
+\DoxyCodeLine{00420\ \ \ \ \ \{}
+\DoxyCodeLine{00421\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value[i]\ <\ Inspire::MIN\_SPEED\ ||\ value[i]\ >\ Inspire::MAX\_SPEED)}
+\DoxyCodeLine{00422\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00423\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ value\ is\ out\ of\ range\ [0,\ 1000]"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00424\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00425\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00426\ \ \ \ \ \}}
+\DoxyCodeLine{00427\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::SPEED\_THUMB\_ROT,\ value[0],\ 1);}
+\DoxyCodeLine{00428\ }
+\DoxyCodeLine{00429\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::SPEED\_THUMB,\ value[1],\ 1);}
+\DoxyCodeLine{00430\ }
+\DoxyCodeLine{00431\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::SPEED\_INDEX,\ value[2],\ 1);}
+\DoxyCodeLine{00432\ }
+\DoxyCodeLine{00433\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::SPEED\_MIDDLE,\ value[3],\ 1);}
+\DoxyCodeLine{00434\ }
+\DoxyCodeLine{00435\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::SPEED\_RING,\ value[4],\ 1);}
+\DoxyCodeLine{00436\ }
+\DoxyCodeLine{00437\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::SPEED\_PINKY,\ value[5],\ 1);}
+\DoxyCodeLine{00438\ \}}
+\DoxyCodeLine{00439\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00440\ \textcolor{comment}{*\ \(\backslash\)brief\ \ 设置五指的力}}
+\DoxyCodeLine{00441\ \textcolor{comment}{*\ \(\backslash\)param[in]\ value\ 五个手指的力}}
+\DoxyCodeLine{00442\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00443\ \textcolor{keywordtype}{void}\ SetFiveFingerForce(std::vector<int>\ value)}
+\DoxyCodeLine{00444\ \{}
+\DoxyCodeLine{00445\ \ \ \ \ \textcolor{keywordflow}{if}\ (value.size()\ !=\ 6)}
+\DoxyCodeLine{00446\ \ \ \ \ \{}
+\DoxyCodeLine{00447\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ size\ of\ value\ is\ not\ 6"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00448\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00449\ \ \ \ \ \}}
+\DoxyCodeLine{00450\ \ \ \ \ \textcolor{comment}{//\ 检查value范围是否在0-\/1000}}
+\DoxyCodeLine{00451\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ value.size();\ i++)}
+\DoxyCodeLine{00452\ \ \ \ \ \{}
+\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value[i]\ <\ Inspire::MIN\_FORCE\ ||\ value[i]\ >\ Inspire::MAX\_FORCE)}
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00455\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ value\ is\ out\ of\ range\ [0,\ 1000]"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00456\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00457\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00458\ \ \ \ \ \}}
+\DoxyCodeLine{00459\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::FORCE\_THUMB\_ROT,\ value[0],\ 1);}
+\DoxyCodeLine{00460\ }
+\DoxyCodeLine{00461\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::FORCE\_THUMB,\ value[1],\ 1);}
+\DoxyCodeLine{00462\ }
+\DoxyCodeLine{00463\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::FORCE\_INDEX,\ value[2],\ 1);}
+\DoxyCodeLine{00464\ }
+\DoxyCodeLine{00465\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::FORCE\_MIDDLE,\ value[3],\ 1);}
+\DoxyCodeLine{00466\ }
+\DoxyCodeLine{00467\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::FORCE\_RING,\ value[4],\ 1);}
+\DoxyCodeLine{00468\ }
+\DoxyCodeLine{00469\ \ \ \ \ action\_canwriter-\/>WriteCan(Inspire::FORCE\_PINKY,\ value[5],\ 1);}
+\DoxyCodeLine{00470\ \}}
+\DoxyCodeLine{00471\ \ \ \ \ \string~InspireAction()\ \{\}}
+\DoxyCodeLine{00472\ }
+\DoxyCodeLine{00473\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00474\ \ \ \ \ CanWriter\ *action\_canwriter;}
+\DoxyCodeLine{00475\ \};}
+\DoxyCodeLine{00476\ }
+\DoxyCodeLine{00477\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

@@ -1,5 +1,5 @@
 \doxysection{EVMSG结构体 参考}
-\hypertarget{struct_e_v_m_s_g}{}\label{struct_e_v_m_s_g}\index{EVMSG@{EVMSG}}
+\label{struct_e_v_m_s_g}\index{EVMSG@{EVMSG}}
 
 
 {\ttfamily \#include $<$ECan\+Vci.\+h$>$}
@@ -7,68 +7,68 @@
 \doxysubsubsection*{Public 属性}
 \begin{DoxyCompactItemize}
 \item 
-int32\+\_\+t \mbox{\hyperlink{struct_e_v_m_s_g_ad5796bdc48e3dda85da9443718ec0cbe}{evid}}
+int32\+\_\+t \textbf{ evid}
 \item 
-uint8\+\_\+t \mbox{\hyperlink{struct_e_v_m_s_g_aa557132d2f78b1a1036120a1cd043ddf}{len}}
+uint8\+\_\+t \textbf{ len}
 \item 
-uint8\+\_\+t \mbox{\hyperlink{struct_e_v_m_s_g_a9a81987b279ebe2a8048bf24017f9eed}{reserved}} \mbox{[}3\mbox{]}
+uint8\+\_\+t \textbf{ reserved} [3]
 \item 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
 union \{\\
-\>uint8\_t \mbox{\hyperlink{struct_e_v_m_s_g_a570e0694aa01e4bdf4849846880e1ad1}{c}} \mbox{[}8\mbox{]}\\
-\>uint16\_t \mbox{\hyperlink{struct_e_v_m_s_g_a0164fdd175b6553edca72fd57b80284b}{s}} \mbox{[}4\mbox{]}\\
-\>uint32\_t \mbox{\hyperlink{struct_e_v_m_s_g_a132ebc4d6c56427448b05596b5af2a90}{l}} \mbox{[}2\mbox{]}\\
-\} \mbox{\hyperlink{struct_e_v_m_s_g_a9791f3fe55d37c85107cc6d6ae82b68f}{evdata}}\\
+\>uint8\_t \textbf{ c} [8]\\
+\>uint16\_t \textbf{ s} [4]\\
+\>uint32\_t \textbf{ l} [2]\\
+\} \textbf{ evdata}\\
 
 \end{tabbing}\end{DoxyCompactItemize}
 
 
 \doxysubsection{类成员变量说明}
-\Hypertarget{struct_e_v_m_s_g_a570e0694aa01e4bdf4849846880e1ad1}\index{EVMSG@{EVMSG}!c@{c}}
+\index{EVMSG@{EVMSG}!c@{c}}
 \index{c@{c}!EVMSG@{EVMSG}}
-\doxysubsubsection{\texorpdfstring{c}{c}}
+\doxysubsubsection{c}
 {\footnotesize\ttfamily \label{struct_e_v_m_s_g_a570e0694aa01e4bdf4849846880e1ad1} 
-uint8\+\_\+t EVMSG\+::c\mbox{[}8\mbox{]}}
+uint8\+\_\+t EVMSG\+::c[8]}
 
-\Hypertarget{struct_e_v_m_s_g_a9791f3fe55d37c85107cc6d6ae82b68f}\index{EVMSG@{EVMSG}!evdata@{evdata}}
+\index{EVMSG@{EVMSG}!evdata@{evdata}}
 \index{evdata@{evdata}!EVMSG@{EVMSG}}
-\doxysubsubsection{\texorpdfstring{[union]}{[union]}}
+\doxysubsubsection{[union]}
 {\footnotesize\ttfamily \label{struct_e_v_m_s_g_a9791f3fe55d37c85107cc6d6ae82b68f} 
 union  \{ ... \}  EVMSG\+::evdata}
 
-\Hypertarget{struct_e_v_m_s_g_ad5796bdc48e3dda85da9443718ec0cbe}\index{EVMSG@{EVMSG}!evid@{evid}}
+\index{EVMSG@{EVMSG}!evid@{evid}}
 \index{evid@{evid}!EVMSG@{EVMSG}}
-\doxysubsubsection{\texorpdfstring{evid}{evid}}
+\doxysubsubsection{evid}
 {\footnotesize\ttfamily \label{struct_e_v_m_s_g_ad5796bdc48e3dda85da9443718ec0cbe} 
 int32\+\_\+t EVMSG\+::evid}
 
-\Hypertarget{struct_e_v_m_s_g_a132ebc4d6c56427448b05596b5af2a90}\index{EVMSG@{EVMSG}!l@{l}}
+\index{EVMSG@{EVMSG}!l@{l}}
 \index{l@{l}!EVMSG@{EVMSG}}
-\doxysubsubsection{\texorpdfstring{l}{l}}
+\doxysubsubsection{l}
 {\footnotesize\ttfamily \label{struct_e_v_m_s_g_a132ebc4d6c56427448b05596b5af2a90} 
-uint32\+\_\+t EVMSG\+::l\mbox{[}2\mbox{]}}
+uint32\+\_\+t EVMSG\+::l[2]}
 
-\Hypertarget{struct_e_v_m_s_g_aa557132d2f78b1a1036120a1cd043ddf}\index{EVMSG@{EVMSG}!len@{len}}
+\index{EVMSG@{EVMSG}!len@{len}}
 \index{len@{len}!EVMSG@{EVMSG}}
-\doxysubsubsection{\texorpdfstring{len}{len}}
+\doxysubsubsection{len}
 {\footnotesize\ttfamily \label{struct_e_v_m_s_g_aa557132d2f78b1a1036120a1cd043ddf} 
 uint8\+\_\+t EVMSG\+::len}
 
-\Hypertarget{struct_e_v_m_s_g_a9a81987b279ebe2a8048bf24017f9eed}\index{EVMSG@{EVMSG}!reserved@{reserved}}
+\index{EVMSG@{EVMSG}!reserved@{reserved}}
 \index{reserved@{reserved}!EVMSG@{EVMSG}}
-\doxysubsubsection{\texorpdfstring{reserved}{reserved}}
+\doxysubsubsection{reserved}
 {\footnotesize\ttfamily \label{struct_e_v_m_s_g_a9a81987b279ebe2a8048bf24017f9eed} 
-uint8\+\_\+t EVMSG\+::reserved\mbox{[}3\mbox{]}}
+uint8\+\_\+t EVMSG\+::reserved[3]}
 
-\Hypertarget{struct_e_v_m_s_g_a0164fdd175b6553edca72fd57b80284b}\index{EVMSG@{EVMSG}!s@{s}}
+\index{EVMSG@{EVMSG}!s@{s}}
 \index{s@{s}!EVMSG@{EVMSG}}
-\doxysubsubsection{\texorpdfstring{s}{s}}
+\doxysubsubsection{s}
 {\footnotesize\ttfamily \label{struct_e_v_m_s_g_a0164fdd175b6553edca72fd57b80284b} 
-uint16\+\_\+t EVMSG\+::s\mbox{[}4\mbox{]}}
+uint16\+\_\+t EVMSG\+::s[4]}
 
 
 
 该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
 \item 
-src/\mbox{\hyperlink{_e_can_vci_8h}{ECan\+Vci.\+h}}\end{DoxyCompactItemize}
+src/\textbf{ ECan\+Vci.\+h}\end{DoxyCompactItemize}

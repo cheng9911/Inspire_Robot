@@ -4,96 +4,10 @@
 <param name="FrameName" value="right">
 </OBJECT>
 <UL>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="Inspire_Robot"><param name="Local" value="md__r_e_a_d_m_e.html"><param name="ImageNumber" value="11"></OBJECT>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="命名空间"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
-  <UL>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="命名空间列表"><param name="Local" value="namespaces.html#top"><param name="ImageNumber" value="1"></OBJECT>
-    <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="Hand_demo"><param name="Local" value="namespace_hand__demo.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="gen_CAN_id"><param name="Local" value="namespace_hand__demo.html#a96f0d36d6fc2f6a0122109d902fff61c"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="openSerial"><param name="Local" value="namespace_hand__demo.html#ad7470cae6300351356fca12e5cc73a7c"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="read6"><param name="Local" value="namespace_hand__demo.html#a0a675ea666e1e54620e8c3b0c5ba43b1"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="readRegister"><param name="Local" value="namespace_hand__demo.html#ae1b922d2ba6bd76c0dd9ea929e7621ac"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="write6"><param name="Local" value="namespace_hand__demo.html#a680cb2e5e04f3c87d0daa8511326612c"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="writeRegister"><param name="Local" value="namespace_hand__demo.html#a9c8c5f6cd9de41df4f86cd13473fd60b"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="CAN_id"><param name="Local" value="namespace_hand__demo.html#a2575d7e9267258b433fe100128765e31"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="regdict"><param name="Local" value="namespace_hand__demo.html#a7c9bec4ae302ed6c91fb17045183f449"><param name="ImageNumber" value="11"></OBJECT>
-      </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="Inspire"><param name="Local" value="namespace_inspire.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="Inspire"><param name="Local" value="class_inspire_1_1_inspire.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="__init__"><param name="Local" value="class_inspire_1_1_inspire.html#a960f2d9a32ef9dfeb7324fc1a954a96a"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="gen_Can_id"><param name="Local" value="class_inspire_1_1_inspire.html#aaa2d74525344b1cd0332c6cea7d526a1"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="writeRegister"><param name="Local" value="class_inspire_1_1_inspire.html#ac59e914084725d3936cf09f56c2fd7eb"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="sc_comm"><param name="Local" value="class_inspire_1_1_inspire.html#ae3c30e2369ad6d6ea512749cb59358b8"><param name="ImageNumber" value="11"></OBJECT>
-        </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="gen_Can_id"><param name="Local" value="namespace_inspire.html#a05f4629e192eb42312ae79db5a58c87d"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="writeRegister"><param name="Local" value="namespace_inspire.html#a97eedac315f0f9df50208c214d36ca0c"><param name="ImageNumber" value="11"></OBJECT>
-      </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="SerialCommunication"><param name="Local" value="namespace_serial_communication.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="SerialCommunication"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="__init__"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#ad0aae385eb3a164c47da035a71f4b28a"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="__enter__"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a7f3b22ef67f98cb1f0d6f25a75533584"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="__exit__"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a9c5f4005daa914b2292eb01bbd3e6da2"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="close"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a3b6e45d534d9a798a012437f68a26ec0"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="read"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a01055529d35950d5a184d339045adc92"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="send_and_receive"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a641341d8b1c31e0f03bf158290c508b7"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="write"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a288906c1e3179d4363c4a56a3f14597c"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="baudrate"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a1060743cf0655d9d1f316eecd89235a0"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="bytesize"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a16d08c1b1948bb640defaddae22e4fb6"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="parity"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#af4517a87ad136ac2bfc63acc54a7f57e"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="port"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#ae0f6cb027bafa33b7317d0d1218e8266"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="ser"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a29e1a9b7cd746fd4468d1d066837da3e"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="stopbits"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a822f0ce9565273c651c9388576b4345b"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="timeout"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a296aa8f44fce40e6f769ab97405d7e16"><param name="ImageNumber" value="11"></OBJECT>
-        </UL>
-      </UL>
-    </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="命名空间成员"><param name="Local" value="namespacemembers.html"><param name="ImageNumber" value="1"></OBJECT>
-    <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="全部"><param name="Local" value="namespacemembers.html#top"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="函数"><param name="Local" value="namespacemembers_func.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="变量"><param name="Local" value="namespacemembers_vars.html"><param name="ImageNumber" value="11"></OBJECT>
-    </UL>
-  </UL>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="类"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="类列表"><param name="Local" value="annotated.html#top"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="Inspire"><param name="Local" value="namespace_inspire.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="Inspire"><param name="Local" value="class_inspire_1_1_inspire.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="__init__"><param name="Local" value="class_inspire_1_1_inspire.html#a960f2d9a32ef9dfeb7324fc1a954a96a"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="gen_Can_id"><param name="Local" value="class_inspire_1_1_inspire.html#aaa2d74525344b1cd0332c6cea7d526a1"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="writeRegister"><param name="Local" value="class_inspire_1_1_inspire.html#ac59e914084725d3936cf09f56c2fd7eb"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="sc_comm"><param name="Local" value="class_inspire_1_1_inspire.html#ae3c30e2369ad6d6ea512749cb59358b8"><param name="ImageNumber" value="11"></OBJECT>
-        </UL>
-      </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="SerialCommunication"><param name="Local" value="namespace_serial_communication.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="SerialCommunication"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="__init__"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#ad0aae385eb3a164c47da035a71f4b28a"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="__enter__"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a7f3b22ef67f98cb1f0d6f25a75533584"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="__exit__"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a9c5f4005daa914b2292eb01bbd3e6da2"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="close"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a3b6e45d534d9a798a012437f68a26ec0"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="read"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a01055529d35950d5a184d339045adc92"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="send_and_receive"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a641341d8b1c31e0f03bf158290c508b7"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="write"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a288906c1e3179d4363c4a56a3f14597c"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="baudrate"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a1060743cf0655d9d1f316eecd89235a0"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="bytesize"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a16d08c1b1948bb640defaddae22e4fb6"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="parity"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#af4517a87ad136ac2bfc63acc54a7f57e"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="port"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#ae0f6cb027bafa33b7317d0d1218e8266"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="ser"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a29e1a9b7cd746fd4468d1d066837da3e"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="stopbits"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a822f0ce9565273c651c9388576b4345b"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="timeout"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a296aa8f44fce40e6f769ab97405d7e16"><param name="ImageNumber" value="11"></OBJECT>
-        </UL>
-      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_BOARD_INFO"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="can_Num"><param name="Local" value="struct___b_o_a_r_d___i_n_f_o.html#a8ceb9456799beed8106abbe75c337ea7"><param name="ImageNumber" value="11"></OBJECT>
@@ -196,7 +110,6 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="InitCan"><param name="Local" value="class_inspire.html#a1b0320ebe9e2c027883141339c761aff"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="InspireCloseDevice"><param name="Local" value="class_inspire.html#aee36ef89ab25c53e0c3bb6beb4335f26"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="WriteCan"><param name="Local" value="class_inspire.html#ad256c421e10abc35cd6ff8f48143b00f"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="canid"><param name="Local" value="class_inspire.html#ab4623d041d648370a73206564de10445"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="dwRel"><param name="Local" value="class_inspire.html#a0794616ed24d55dcec49da6cc160c7dd"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="FORCE_INDEX"><param name="Local" value="class_inspire.html#aad4311dc16d1d01ddb22668ea0427acc"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="FORCE_MIDDLE"><param name="Local" value="class_inspire.html#ac4a02eb82949f24fcaec29a99735ae7d"><param name="ImageNumber" value="11"></OBJECT>
@@ -262,10 +175,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="CMSG"><param name="Local" value="struct_c_m_s_g.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="CMSG_T"><param name="Local" value="struct_c_m_s_g___t.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="EVMSG"><param name="Local" value="struct_e_v_m_s_g.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="Inspire.Inspire"><param name="Local" value="class_inspire_1_1_inspire.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="InspireAction"><param name="Local" value="class_inspire_action.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="RX_CTX"><param name="Local" value="struct_r_x___c_t_x.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="SerialCommunication.SerialCommunication"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="类成员"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
@@ -278,52 +189,6 @@
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="文件列表"><param name="Local" value="files.html#top"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="script"><param name="Local" value="dir_6549bedf82156dc06df95cefb015444e.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="Hand_demo.py"><param name="Local" value="_hand__demo_8py.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="gen_CAN_id"><param name="Local" value="_hand__demo_8py.html#a96f0d36d6fc2f6a0122109d902fff61c"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="openSerial"><param name="Local" value="_hand__demo_8py.html#ad7470cae6300351356fca12e5cc73a7c"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="read6"><param name="Local" value="_hand__demo_8py.html#a0a675ea666e1e54620e8c3b0c5ba43b1"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="readRegister"><param name="Local" value="_hand__demo_8py.html#ae1b922d2ba6bd76c0dd9ea929e7621ac"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="write6"><param name="Local" value="_hand__demo_8py.html#a680cb2e5e04f3c87d0daa8511326612c"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="writeRegister"><param name="Local" value="_hand__demo_8py.html#a9c8c5f6cd9de41df4f86cd13473fd60b"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="CAN_id"><param name="Local" value="_hand__demo_8py.html#a2575d7e9267258b433fe100128765e31"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="regdict"><param name="Local" value="_hand__demo_8py.html#a7c9bec4ae302ed6c91fb17045183f449"><param name="ImageNumber" value="11"></OBJECT>
-        </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="Inspire.py"><param name="Local" value="_inspire_8py.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="Inspire.Inspire"><param name="Local" value="class_inspire_1_1_inspire.html"><param name="ImageNumber" value="1"></OBJECT>
-          <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="__init__"><param name="Local" value="class_inspire_1_1_inspire.html#a960f2d9a32ef9dfeb7324fc1a954a96a"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="gen_Can_id"><param name="Local" value="class_inspire_1_1_inspire.html#aaa2d74525344b1cd0332c6cea7d526a1"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="writeRegister"><param name="Local" value="class_inspire_1_1_inspire.html#ac59e914084725d3936cf09f56c2fd7eb"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="sc_comm"><param name="Local" value="class_inspire_1_1_inspire.html#ae3c30e2369ad6d6ea512749cb59358b8"><param name="ImageNumber" value="11"></OBJECT>
-          </UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="gen_Can_id"><param name="Local" value="_inspire_8py.html#a05f4629e192eb42312ae79db5a58c87d"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="writeRegister"><param name="Local" value="_inspire_8py.html#a97eedac315f0f9df50208c214d36ca0c"><param name="ImageNumber" value="11"></OBJECT>
-        </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="SerialCommunication.py"><param name="Local" value="_serial_communication_8py.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SerialCommunication.SerialCommunication"><param name="Local" value="class_serial_communication_1_1_serial_communication.html"><param name="ImageNumber" value="1"></OBJECT>
-          <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="__init__"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#ad0aae385eb3a164c47da035a71f4b28a"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="__enter__"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a7f3b22ef67f98cb1f0d6f25a75533584"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="__exit__"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a9c5f4005daa914b2292eb01bbd3e6da2"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="close"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a3b6e45d534d9a798a012437f68a26ec0"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="read"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a01055529d35950d5a184d339045adc92"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="send_and_receive"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a641341d8b1c31e0f03bf158290c508b7"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="write"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a288906c1e3179d4363c4a56a3f14597c"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="baudrate"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a1060743cf0655d9d1f316eecd89235a0"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="bytesize"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a16d08c1b1948bb640defaddae22e4fb6"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="parity"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#af4517a87ad136ac2bfc63acc54a7f57e"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="port"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#ae0f6cb027bafa33b7317d0d1218e8266"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="ser"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a29e1a9b7cd746fd4468d1d066837da3e"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="stopbits"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a822f0ce9565273c651c9388576b4345b"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="timeout"><param name="Local" value="class_serial_communication_1_1_serial_communication.html#a296aa8f44fce40e6f769ab97405d7e16"><param name="ImageNumber" value="11"></OBJECT>
-          </UL>
-        </UL>
-      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="src"><param name="Local" value="dir_68267d1309a1af8e8297ef4c3efbcdba.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="ECanVci.h"><param name="Local" value="_e_can_vci_8h.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -509,7 +374,6 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="InitCan"><param name="Local" value="class_inspire.html#a1b0320ebe9e2c027883141339c761aff"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="InspireCloseDevice"><param name="Local" value="class_inspire.html#aee36ef89ab25c53e0c3bb6beb4335f26"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="WriteCan"><param name="Local" value="class_inspire.html#ad256c421e10abc35cd6ff8f48143b00f"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="canid"><param name="Local" value="class_inspire.html#ab4623d041d648370a73206564de10445"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="dwRel"><param name="Local" value="class_inspire.html#a0794616ed24d55dcec49da6cc160c7dd"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="FORCE_INDEX"><param name="Local" value="class_inspire.html#aad4311dc16d1d01ddb22668ea0427acc"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="FORCE_MIDDLE"><param name="Local" value="class_inspire.html#ac4a02eb82949f24fcaec29a99735ae7d"><param name="ImageNumber" value="11"></OBJECT>

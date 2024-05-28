@@ -37,8 +37,6 @@ $(function() { codefold.init(0); });
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
-      <li><a href="pages.html"><span>相关页面</span></a></li>
-      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
     </ul>
@@ -61,13 +59,15 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
 <a href="#pub-static-attribs">静态 Public 属性</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="class_inspire-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Inspire类 参考</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>控制因时手运动的类，实现了基于CAN总线的通信  
+ <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_inspire_8hpp_source.html">Inspire.hpp</a>&gt;</code></p>
 <div class="dynheader">
@@ -84,79 +84,105 @@ Inspire 的协作图:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a0e49c924f27bf27c04ae0a668ea25b51" id="r_a0e49c924f27bf27c04ae0a668ea25b51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e49c924f27bf27c04ae0a668ea25b51">Inspire</a> ()</td></tr>
+<tr class="memdesc:a0e49c924f27bf27c04ae0a668ea25b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">小指的力对应的寄存器数值  <br /></td></tr>
 <tr class="separator:a0e49c924f27bf27c04ae0a668ea25b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be6f1f8d731fae7b667a4f0d71ced30" id="r_a0be6f1f8d731fae7b667a4f0d71ced30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0be6f1f8d731fae7b667a4f0d71ced30">~Inspire</a> ()</td></tr>
 <tr class="separator:a0be6f1f8d731fae7b667a4f0d71ced30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b0320ebe9e2c027883141339c761aff" id="r_a1b0320ebe9e2c027883141339c761aff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b0320ebe9e2c027883141339c761aff">InitCan</a> ()</td></tr>
+<tr class="memdesc:a1b0320ebe9e2c027883141339c761aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化CAN通信  <br /></td></tr>
 <tr class="separator:a1b0320ebe9e2c027883141339c761aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad256c421e10abc35cd6ff8f48143b00f" id="r_ad256c421e10abc35cd6ff8f48143b00f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad256c421e10abc35cd6ff8f48143b00f">WriteCan</a> (int address, int value, int handid)</td></tr>
+<tr class="memdesc:ad256c421e10abc35cd6ff8f48143b00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">重载CanWriter的WriteCan函数，实现写入CAN总线  <br /></td></tr>
 <tr class="separator:ad256c421e10abc35cd6ff8f48143b00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e6bc517c81ca1612d130966b9ca1f4e" id="r_a4e6bc517c81ca1612d130966b9ca1f4e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e6bc517c81ca1612d130966b9ca1f4e">GetAddressId</a> (int address)</td></tr>
+<tr class="memdesc:a4e6bc517c81ca1612d130966b9ca1f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取地址ID的二进制字符串表示  <br /></td></tr>
 <tr class="separator:a4e6bc517c81ca1612d130966b9ca1f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3648a2e634bc3e9ba24603bdcdec34ff" id="r_a3648a2e634bc3e9ba24603bdcdec34ff"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3648a2e634bc3e9ba24603bdcdec34ff">GetHandId</a> (int handid)</td></tr>
+<tr class="memdesc:a3648a2e634bc3e9ba24603bdcdec34ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取手ID的二进制字符串表示  <br /></td></tr>
 <tr class="separator:a3648a2e634bc3e9ba24603bdcdec34ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab99caa974bbb3232a69b6970acc03d6a" id="r_ab99caa974bbb3232a69b6970acc03d6a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab99caa974bbb3232a69b6970acc03d6a">GetFlageWriteRead</a> (int flag_write_read)</td></tr>
+<tr class="memdesc:ab99caa974bbb3232a69b6970acc03d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取写读标志的二进制字符串表示  <br /></td></tr>
 <tr class="separator:ab99caa974bbb3232a69b6970acc03d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f20f1644ac1c4095091fd9d543d64f0" id="r_a4f20f1644ac1c4095091fd9d543d64f0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f20f1644ac1c4095091fd9d543d64f0">GetCanId</a> (int Address, int HandId, int flag_write_read)</td></tr>
+<tr class="memdesc:a4f20f1644ac1c4095091fd9d543d64f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取CAN ID的二进制字符串表示  <br /></td></tr>
 <tr class="separator:a4f20f1644ac1c4095091fd9d543d64f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee50591238bbf691bc9ea3ac23b2ae01" id="r_aee50591238bbf691bc9ea3ac23b2ae01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee50591238bbf691bc9ea3ac23b2ae01">ConvertValueToHex</a> (int value, <a class="el" href="_inspire_8hpp.html#a7ae8f3766c8853286755f4ec0903c6f0">Byte</a> data[2])</td></tr>
+<tr class="memdesc:aee50591238bbf691bc9ea3ac23b2ae01"><td class="mdescLeft">&#160;</td><td class="mdescRight">将数值转换为16进制字节数组  <br /></td></tr>
 <tr class="separator:aee50591238bbf691bc9ea3ac23b2ae01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee36ef89ab25c53e0c3bb6beb4335f26" id="r_aee36ef89ab25c53e0c3bb6beb4335f26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee36ef89ab25c53e0c3bb6beb4335f26">InspireCloseDevice</a> ()</td></tr>
+<tr class="memdesc:aee36ef89ab25c53e0c3bb6beb4335f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭CAN设备  <br /></td></tr>
 <tr class="separator:aee36ef89ab25c53e0c3bb6beb4335f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_can_writer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_can_writer')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_can_writer.html">CanWriter</a></td></tr>
 <tr class="memitem:ab830e1f5632bac4afdcf1e40a6409fb5 inherit pub_methods_class_can_writer" id="r_ab830e1f5632bac4afdcf1e40a6409fb5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can_writer.html#ab830e1f5632bac4afdcf1e40a6409fb5">~CanWriter</a> ()=default</td></tr>
 <tr class="separator:ab830e1f5632bac4afdcf1e40a6409fb5 inherit pub_methods_class_can_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public 属性</h2></td></tr>
-<tr class="memitem:ab4623d041d648370a73206564de10445" id="r_ab4623d041d648370a73206564de10445"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4623d041d648370a73206564de10445">canid</a> = <a class="el" href="namespace_inspire.html#a05f4629e192eb42312ae79db5a58c87d">gen_Can_id</a>(0x01, 0x05D4, 1)</td></tr>
-<tr class="separator:ab4623d041d648370a73206564de10445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 静态 Public 属性</h2></td></tr>
 <tr class="memitem:aa90a22d171948f10e4bcadda299abfd1" id="r_aa90a22d171948f10e4bcadda299abfd1"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa90a22d171948f10e4bcadda299abfd1">THUMB_ROT</a> = 1496</td></tr>
+<tr class="memdesc:aa90a22d171948f10e4bcadda299abfd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN帧对象  <br /></td></tr>
 <tr class="separator:aa90a22d171948f10e4bcadda299abfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4112d6cf9bc2529af9f279f2c7845d8" id="r_ac4112d6cf9bc2529af9f279f2c7845d8"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4112d6cf9bc2529af9f279f2c7845d8">THUMB</a> = 1494</td></tr>
+<tr class="memdesc:ac4112d6cf9bc2529af9f279f2c7845d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">拇指旋转  <br /></td></tr>
 <tr class="separator:ac4112d6cf9bc2529af9f279f2c7845d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47b56b70916fbc368d521a1ef504309b" id="r_a47b56b70916fbc368d521a1ef504309b"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47b56b70916fbc368d521a1ef504309b">INDEX</a> = 1492</td></tr>
+<tr class="memdesc:a47b56b70916fbc368d521a1ef504309b"><td class="mdescLeft">&#160;</td><td class="mdescRight">拇指  <br /></td></tr>
 <tr class="separator:a47b56b70916fbc368d521a1ef504309b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad12424f5daceddd9feb6b5d0d6669c3d" id="r_ad12424f5daceddd9feb6b5d0d6669c3d"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad12424f5daceddd9feb6b5d0d6669c3d">MIDDLE</a> = 1490</td></tr>
+<tr class="memdesc:ad12424f5daceddd9feb6b5d0d6669c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">食指  <br /></td></tr>
 <tr class="separator:ad12424f5daceddd9feb6b5d0d6669c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04fb5f5ef72b3dd5fa8e14f0ced43573" id="r_a04fb5f5ef72b3dd5fa8e14f0ced43573"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04fb5f5ef72b3dd5fa8e14f0ced43573">RING</a> = 1488</td></tr>
+<tr class="memdesc:a04fb5f5ef72b3dd5fa8e14f0ced43573"><td class="mdescLeft">&#160;</td><td class="mdescRight">中指  <br /></td></tr>
 <tr class="separator:a04fb5f5ef72b3dd5fa8e14f0ced43573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa982dc804f7dbae1f9546bdddaf78a89" id="r_aa982dc804f7dbae1f9546bdddaf78a89"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa982dc804f7dbae1f9546bdddaf78a89">PINKY</a> = 1486</td></tr>
+<tr class="memdesc:aa982dc804f7dbae1f9546bdddaf78a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">无名指  <br /></td></tr>
 <tr class="separator:aa982dc804f7dbae1f9546bdddaf78a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad78cd5c3643a61707462e44d3c8de345" id="r_ad78cd5c3643a61707462e44d3c8de345"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad78cd5c3643a61707462e44d3c8de345">MAX_SPEED</a> = 1000</td></tr>
+<tr class="memdesc:ad78cd5c3643a61707462e44d3c8de345"><td class="mdescLeft">&#160;</td><td class="mdescRight">小指  <br /></td></tr>
 <tr class="separator:ad78cd5c3643a61707462e44d3c8de345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c7c06ec63c78c7533eec0c08f436fc" id="r_a90c7c06ec63c78c7533eec0c08f436fc"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90c7c06ec63c78c7533eec0c08f436fc">MIN_SPEED</a> = 0</td></tr>
+<tr class="memdesc:a90c7c06ec63c78c7533eec0c08f436fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">各个手指的最大速度限制  <br /></td></tr>
 <tr class="separator:a90c7c06ec63c78c7533eec0c08f436fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8c3a7b007d7b4bfb97b6441aa2722b5" id="r_af8c3a7b007d7b4bfb97b6441aa2722b5"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8c3a7b007d7b4bfb97b6441aa2722b5">MAX_FORCE</a> = 1000</td></tr>
+<tr class="memdesc:af8c3a7b007d7b4bfb97b6441aa2722b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">各个手指的最小速度限制  <br /></td></tr>
 <tr class="separator:af8c3a7b007d7b4bfb97b6441aa2722b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6a4a482fe57c9fb2d9617b34be7e0bc" id="r_ab6a4a482fe57c9fb2d9617b34be7e0bc"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6a4a482fe57c9fb2d9617b34be7e0bc">MIN_FORCE</a> = 0</td></tr>
+<tr class="memdesc:ab6a4a482fe57c9fb2d9617b34be7e0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">各个手指的最大力限制  <br /></td></tr>
 <tr class="separator:ab6a4a482fe57c9fb2d9617b34be7e0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b56e692e416927bb609cae8783eab4" id="r_a01b56e692e416927bb609cae8783eab4"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01b56e692e416927bb609cae8783eab4">SPEED_THUMB_ROT</a> = 1532</td></tr>
+<tr class="memdesc:a01b56e692e416927bb609cae8783eab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">各个手指的最小力限制  <br /></td></tr>
 <tr class="separator:a01b56e692e416927bb609cae8783eab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02725c0be942d6a663db7a38019c7f4e" id="r_a02725c0be942d6a663db7a38019c7f4e"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02725c0be942d6a663db7a38019c7f4e">SPEED_THUMB</a> = 1530</td></tr>
+<tr class="memdesc:a02725c0be942d6a663db7a38019c7f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">拇指旋转的速度对应的寄存器数值  <br /></td></tr>
 <tr class="separator:a02725c0be942d6a663db7a38019c7f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10d5f9244d20f48cb836a3e70010dd3c" id="r_a10d5f9244d20f48cb836a3e70010dd3c"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10d5f9244d20f48cb836a3e70010dd3c">SPEED_INDEX</a> = 1528</td></tr>
+<tr class="memdesc:a10d5f9244d20f48cb836a3e70010dd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">拇指的速度对应的寄存器数值  <br /></td></tr>
 <tr class="separator:a10d5f9244d20f48cb836a3e70010dd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8806fff20936baf41ee3deb7e7895f" id="r_a7c8806fff20936baf41ee3deb7e7895f"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c8806fff20936baf41ee3deb7e7895f">SPEED_MIDDLE</a> = 1526</td></tr>
+<tr class="memdesc:a7c8806fff20936baf41ee3deb7e7895f"><td class="mdescLeft">&#160;</td><td class="mdescRight">食指的速度对应的寄存器数值  <br /></td></tr>
 <tr class="separator:a7c8806fff20936baf41ee3deb7e7895f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65e27ccd89571b12c3316a4717eddbf9" id="r_a65e27ccd89571b12c3316a4717eddbf9"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65e27ccd89571b12c3316a4717eddbf9">SPEED_RING</a> = 1524</td></tr>
+<tr class="memdesc:a65e27ccd89571b12c3316a4717eddbf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">中指的速度对应的寄存器数值  <br /></td></tr>
 <tr class="separator:a65e27ccd89571b12c3316a4717eddbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae470035250fcd5f3a46fa34a2e22773b" id="r_ae470035250fcd5f3a46fa34a2e22773b"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae470035250fcd5f3a46fa34a2e22773b">SPEED_PINKY</a> = 1522</td></tr>
+<tr class="memdesc:ae470035250fcd5f3a46fa34a2e22773b"><td class="mdescLeft">&#160;</td><td class="mdescRight">无名指的速度对应的寄存器数值  <br /></td></tr>
 <tr class="separator:ae470035250fcd5f3a46fa34a2e22773b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecdbc31afc8a4d8e74b90ec77680c09c" id="r_aecdbc31afc8a4d8e74b90ec77680c09c"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecdbc31afc8a4d8e74b90ec77680c09c">FORCE_THUMB_ROT</a> = 1508</td></tr>
+<tr class="memdesc:aecdbc31afc8a4d8e74b90ec77680c09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">小指的速度对应的寄存器数值  <br /></td></tr>
 <tr class="separator:aecdbc31afc8a4d8e74b90ec77680c09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d4b2dd80fe4236c162f1bd66bc9a80" id="r_ac8d4b2dd80fe4236c162f1bd66bc9a80"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8d4b2dd80fe4236c162f1bd66bc9a80">FORCE_THUMB</a> = 1506</td></tr>
+<tr class="memdesc:ac8d4b2dd80fe4236c162f1bd66bc9a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">拇指旋转的力对应的寄存器数值  <br /></td></tr>
 <tr class="separator:ac8d4b2dd80fe4236c162f1bd66bc9a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad4311dc16d1d01ddb22668ea0427acc" id="r_aad4311dc16d1d01ddb22668ea0427acc"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad4311dc16d1d01ddb22668ea0427acc">FORCE_INDEX</a> = 1504</td></tr>
+<tr class="memdesc:aad4311dc16d1d01ddb22668ea0427acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">拇指的力对应的寄存器数值  <br /></td></tr>
 <tr class="separator:aad4311dc16d1d01ddb22668ea0427acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4a02eb82949f24fcaec29a99735ae7d" id="r_ac4a02eb82949f24fcaec29a99735ae7d"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4a02eb82949f24fcaec29a99735ae7d">FORCE_MIDDLE</a> = 1502</td></tr>
+<tr class="memdesc:ac4a02eb82949f24fcaec29a99735ae7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">食指的力对应的寄存器数值  <br /></td></tr>
 <tr class="separator:ac4a02eb82949f24fcaec29a99735ae7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e0886f77b56821222eec1033e7f5565" id="r_a7e0886f77b56821222eec1033e7f5565"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e0886f77b56821222eec1033e7f5565">FORCE_RING</a> = 1500</td></tr>
+<tr class="memdesc:a7e0886f77b56821222eec1033e7f5565"><td class="mdescLeft">&#160;</td><td class="mdescRight">中指的力对应的寄存器数值  <br /></td></tr>
 <tr class="separator:a7e0886f77b56821222eec1033e7f5565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97ec345e59478bc88a236ec2c3e923ef" id="r_a97ec345e59478bc88a236ec2c3e923ef"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97ec345e59478bc88a236ec2c3e923ef">FORCE_PINKY</a> = 1498</td></tr>
+<tr class="memdesc:a97ec345e59478bc88a236ec2c3e923ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">无名指的力对应的寄存器数值  <br /></td></tr>
 <tr class="separator:a97ec345e59478bc88a236ec2c3e923ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -164,11 +190,16 @@ Private 属性</h2></td></tr>
 <tr class="memitem:a0794616ed24d55dcec49da6cc160c7dd" id="r_a0794616ed24d55dcec49da6cc160c7dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_can_vci_8h.html#aa39b39d94407451a6ec0226479db68cf">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0794616ed24d55dcec49da6cc160c7dd">dwRel</a></td></tr>
 <tr class="separator:a0794616ed24d55dcec49da6cc160c7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8332d5b0b3e09cab64902d11311c30e" id="r_ad8332d5b0b3e09cab64902d11311c30e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_can_vci_8h.html#a97d5dab778fb21834da32140b5bb8996">INIT_CONFIG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8332d5b0b3e09cab64902d11311c30e">init_config</a></td></tr>
+<tr class="memdesc:ad8332d5b0b3e09cab64902d11311c30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回值  <br /></td></tr>
 <tr class="separator:ad8332d5b0b3e09cab64902d11311c30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfa6a401c500b3eaae3765125017a3f6" id="r_acfa6a401c500b3eaae3765125017a3f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_can_vci_8h.html#a1297583dce0f039cad8e7da69cee9ab6">CAN_OBJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfa6a401c500b3eaae3765125017a3f6">frame</a></td></tr>
+<tr class="memdesc:acfa6a401c500b3eaae3765125017a3f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN初始化配置  <br /></td></tr>
 <tr class="separator:acfa6a401c500b3eaae3765125017a3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">构造及析构函数说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>控制因时手运动的类，实现了基于CAN总线的通信 </p>
+<p>此类继承自CanWriter，提供了初始化CAN通信、发送数据以及对手指运动的控制功能。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="a0e49c924f27bf27c04ae0a668ea25b51" name="a0e49c924f27bf27c04ae0a668ea25b51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e49c924f27bf27c04ae0a668ea25b51">&#9670;&#160;</a></span>Inspire()</h2>
 
@@ -176,13 +207,15 @@ Private 属性</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_inspire_1_1_inspire.html">Inspire::Inspire</a> </td>
+          <td class="memname">Inspire::Inspire </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>小指的力对应的寄存器数值 </p>
 
 </div>
 </div>
@@ -223,6 +256,15 @@ Private 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>将数值转换为16进制字节数组 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>要转换的数值 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>转换后的字节数组 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4e6bc517c81ca1612d130966b9ca1f4e" name="a4e6bc517c81ca1612d130966b9ca1f4e"></a>
@@ -239,6 +281,15 @@ Private 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>获取地址ID的二进制字符串表示 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>目标地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>地址ID的二进制字符串，如果地址不在范围内则返回空字符串 </dd></dl>
 
 </div>
 </div>
@@ -266,6 +317,17 @@ Private 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>获取CAN ID的二进制字符串表示 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Address</td><td>寄存器地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">HandId</td><td>手指编号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flag_write_read</td><td>写读标志 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>CAN ID的二进制字符串，如果参数不在范围内则返回空字符串 </dd></dl>
+
 </div>
 </div>
 <a id="ab99caa974bbb3232a69b6970acc03d6a" name="ab99caa974bbb3232a69b6970acc03d6a"></a>
@@ -282,6 +344,15 @@ Private 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>获取写读标志的二进制字符串表示 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flag_write_read</td><td>写读标志 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>标志的二进制字符串，如果标志不在范围内则返回空字符串 </dd></dl>
 
 </div>
 </div>
@@ -300,6 +371,15 @@ Private 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>获取手ID的二进制字符串表示 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handid</td><td>手指编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>手ID的二进制字符串，如果手ID不在范围内则返回空字符串 </dd></dl>
+
 </div>
 </div>
 <a id="a1b0320ebe9e2c027883141339c761aff" name="a1b0320ebe9e2c027883141339c761aff"></a>
@@ -317,6 +397,9 @@ Private 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>初始化CAN通信 </p>
+<dl class="section return"><dt>返回</dt><dd>成功返回0，失败返回-1 </dd></dl>
+
 </div>
 </div>
 <a id="aee36ef89ab25c53e0c3bb6beb4335f26" name="aee36ef89ab25c53e0c3bb6beb4335f26"></a>
@@ -333,6 +416,8 @@ Private 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>关闭CAN设备 </p>
 
 </div>
 </div>
@@ -368,25 +453,22 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>重载CanWriter的WriteCan函数，实现写入CAN总线 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>寄存器地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>写入的数值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handid</td><td>手指编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功写入返回0，失败返回-1 </dd></dl>
+
 <p>实现了 <a class="el" href="class_can_writer.html#a32d89e15b9752e98489d3fec84f38ae0">CanWriter</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">类成员变量说明</h2>
-<a id="ab4623d041d648370a73206564de10445" name="ab4623d041d648370a73206564de10445"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4623d041d648370a73206564de10445">&#9670;&#160;</a></span>canid</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Inspire.canid = <a class="el" href="namespace_inspire.html#a05f4629e192eb42312ae79db5a58c87d">gen_Can_id</a>(0x01, 0x05D4, 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a0794616ed24d55dcec49da6cc160c7dd" name="a0794616ed24d55dcec49da6cc160c7dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0794616ed24d55dcec49da6cc160c7dd">&#9670;&#160;</a></span>dwRel</h2>
 
@@ -429,6 +511,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>拇指的力对应的寄存器数值 </p>
+
 </div>
 </div>
 <a id="ac4a02eb82949f24fcaec29a99735ae7d" name="ac4a02eb82949f24fcaec29a99735ae7d"></a>
@@ -450,6 +534,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>食指的力对应的寄存器数值 </p>
 
 </div>
 </div>
@@ -473,6 +559,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>无名指的力对应的寄存器数值 </p>
+
 </div>
 </div>
 <a id="a7e0886f77b56821222eec1033e7f5565" name="a7e0886f77b56821222eec1033e7f5565"></a>
@@ -494,6 +582,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>中指的力对应的寄存器数值 </p>
 
 </div>
 </div>
@@ -517,6 +607,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>拇指旋转的力对应的寄存器数值 </p>
+
 </div>
 </div>
 <a id="aecdbc31afc8a4d8e74b90ec77680c09c" name="aecdbc31afc8a4d8e74b90ec77680c09c"></a>
@@ -538,6 +630,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>小指的速度对应的寄存器数值 </p>
 
 </div>
 </div>
@@ -561,6 +655,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>CAN初始化配置 </p>
+
 </div>
 </div>
 <a id="a47b56b70916fbc368d521a1ef504309b" name="a47b56b70916fbc368d521a1ef504309b"></a>
@@ -582,6 +678,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>拇指 </p>
 
 </div>
 </div>
@@ -605,6 +703,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>返回值 </p>
+
 </div>
 </div>
 <a id="af8c3a7b007d7b4bfb97b6441aa2722b5" name="af8c3a7b007d7b4bfb97b6441aa2722b5"></a>
@@ -626,6 +726,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>各个手指的最小速度限制 </p>
 
 </div>
 </div>
@@ -649,6 +751,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>小指 </p>
+
 </div>
 </div>
 <a id="ad12424f5daceddd9feb6b5d0d6669c3d" name="ad12424f5daceddd9feb6b5d0d6669c3d"></a>
@@ -670,6 +774,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>食指 </p>
 
 </div>
 </div>
@@ -693,6 +799,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>各个手指的最大力限制 </p>
+
 </div>
 </div>
 <a id="a90c7c06ec63c78c7533eec0c08f436fc" name="a90c7c06ec63c78c7533eec0c08f436fc"></a>
@@ -714,6 +822,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>各个手指的最大速度限制 </p>
 
 </div>
 </div>
@@ -737,6 +847,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>无名指 </p>
+
 </div>
 </div>
 <a id="a04fb5f5ef72b3dd5fa8e14f0ced43573" name="a04fb5f5ef72b3dd5fa8e14f0ced43573"></a>
@@ -758,6 +870,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>中指 </p>
 
 </div>
 </div>
@@ -781,6 +895,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>拇指的速度对应的寄存器数值 </p>
+
 </div>
 </div>
 <a id="a7c8806fff20936baf41ee3deb7e7895f" name="a7c8806fff20936baf41ee3deb7e7895f"></a>
@@ -802,6 +918,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>食指的速度对应的寄存器数值 </p>
 
 </div>
 </div>
@@ -825,6 +943,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>无名指的速度对应的寄存器数值 </p>
+
 </div>
 </div>
 <a id="a65e27ccd89571b12c3316a4717eddbf9" name="a65e27ccd89571b12c3316a4717eddbf9"></a>
@@ -846,6 +966,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>中指的速度对应的寄存器数值 </p>
 
 </div>
 </div>
@@ -869,6 +991,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>拇指旋转的速度对应的寄存器数值 </p>
+
 </div>
 </div>
 <a id="a01b56e692e416927bb609cae8783eab4" name="a01b56e692e416927bb609cae8783eab4"></a>
@@ -890,6 +1014,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>各个手指的最小力限制 </p>
 
 </div>
 </div>
@@ -913,6 +1039,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>拇指旋转 </p>
+
 </div>
 </div>
 <a id="aa90a22d171948f10e4bcadda299abfd1" name="aa90a22d171948f10e4bcadda299abfd1"></a>
@@ -934,13 +1062,14 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>CAN帧对象 </p>
 <p>定义手部各个手指的静态常量 这些常量用于识别和表示人类手部的五个手指：拇指、食指、中指、无名指和小指。 通过分配唯一的整数值来代表每个手指，使得在程序中可以方便地引用和识别它们。 </p>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>src/<a class="el" href="_inspire_8hpp_source.html">Inspire.hpp</a></li>
-<li>script/<a class="el" href="_inspire_8py.html">Inspire.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
