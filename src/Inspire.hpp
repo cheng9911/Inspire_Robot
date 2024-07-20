@@ -143,7 +143,7 @@ Inspire::Inspire(/* args */)
     init_config.AccMask = 0xffffffff; // 不滤波
     init_config.Filter = 0;
     init_config.Timing0 = 0;
-    init_config.Timing1 = 0x1c; // 500k
+    init_config.Timing1 = 0x14; // 500k
     init_config.Mode = 0;
     memset(&frame, 0, sizeof(frame));
     frame.DataLen = 2;
@@ -326,10 +326,12 @@ void Inspire::InspireCloseDevice()
 class InspireAction
 {
 public:
+
+    int handid;
     /**
      * \brief 构造函数
     */
-    InspireAction(CanWriter *canwriter) : action_canwriter(canwriter) {}
+    InspireAction(CanWriter *canwriter, int id) : action_canwriter(canwriter), handid(id) {}
     /*
     * \brief  拇指旋转
     * \param[in] value 旋转角度
@@ -337,7 +339,7 @@ public:
     */
     void ThumbRotAction(int value)
     {
-        action_canwriter->WriteCan(Inspire::THUMB_ROT, value, 1);
+        action_canwriter->WriteCan(Inspire::THUMB_ROT, value, handid);
     }
     /*
     * \brief  拇指运动
@@ -345,7 +347,7 @@ public:
     */
     void ThumbAction(int value)
     {
-        action_canwriter->WriteCan(Inspire::THUMB, value, 1);
+        action_canwriter->WriteCan(Inspire::THUMB, value, handid);
     }
     /*
     * \brief  食指运动
@@ -353,7 +355,7 @@ public:
     */
     void IndexAction(int value)
     {
-        action_canwriter->WriteCan(Inspire::INDEX, value, 1);
+        action_canwriter->WriteCan(Inspire::INDEX, value, handid);
     }
     /*
     * \brief  中指运动
@@ -361,7 +363,7 @@ public:
     */
     void MiddleAction(int value)
     {
-        action_canwriter->WriteCan(Inspire::MIDDLE, value, 1);
+        action_canwriter->WriteCan(Inspire::MIDDLE, value, handid);
     }
     /*
     * \brief  无名指运动
@@ -369,7 +371,7 @@ public:
     */
     void RingAction(int value)
     {
-        action_canwriter->WriteCan(Inspire::RING, value, 1);
+        action_canwriter->WriteCan(Inspire::RING, value, handid);
     }
     /*
     * \brief  小指运动
@@ -377,7 +379,7 @@ public:
     */
     void PinkyAction(int value)
     {
-        action_canwriter->WriteCan(Inspire::PINKY, value, 1);
+        action_canwriter->WriteCan(Inspire::PINKY, value, handid);
     }
     /*
     * \brief  五指同时运动
@@ -391,17 +393,17 @@ public:
             std::cout << "The size of value is not 6" << std::endl;
             return -1;
         }
-        action_canwriter->WriteCan(Inspire::THUMB_ROT, value[0], 1);
+        action_canwriter->WriteCan(Inspire::THUMB_ROT, value[0], handid);
 
-        action_canwriter->WriteCan(Inspire::THUMB, value[1], 1);
+        action_canwriter->WriteCan(Inspire::THUMB, value[1], handid);
 
-        action_canwriter->WriteCan(Inspire::INDEX, value[2], 1);
+        action_canwriter->WriteCan(Inspire::INDEX, value[2], handid);
 
-        action_canwriter->WriteCan(Inspire::MIDDLE, value[3], 1);
+        action_canwriter->WriteCan(Inspire::MIDDLE, value[3], handid);
 
-        action_canwriter->WriteCan(Inspire::RING, value[4], 1);
+        action_canwriter->WriteCan(Inspire::RING, value[4], handid);
 
-        action_canwriter->WriteCan(Inspire::PINKY, value[5], 1);
+        action_canwriter->WriteCan(Inspire::PINKY, value[5], handid);
 
         return 0;
     }
@@ -424,17 +426,17 @@ void SetFiveFingerSpeed(std::vector<int> value)
             return;
         }
     }
-    action_canwriter->WriteCan(Inspire::SPEED_THUMB_ROT, value[0], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_THUMB_ROT, value[0], handid);
 
-    action_canwriter->WriteCan(Inspire::SPEED_THUMB, value[1], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_THUMB, value[1], handid);
 
-    action_canwriter->WriteCan(Inspire::SPEED_INDEX, value[2], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_INDEX, value[2], handid);
 
-    action_canwriter->WriteCan(Inspire::SPEED_MIDDLE, value[3], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_MIDDLE, value[3], handid);
 
-    action_canwriter->WriteCan(Inspire::SPEED_RING, value[4], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_RING, value[4], handid);
 
-    action_canwriter->WriteCan(Inspire::SPEED_PINKY, value[5], 1);
+    action_canwriter->WriteCan(Inspire::SPEED_PINKY, value[5], handid);
 }
 /*
 * \brief  设置五指的力
@@ -456,17 +458,17 @@ void SetFiveFingerForce(std::vector<int> value)
             return;
         }
     }
-    action_canwriter->WriteCan(Inspire::FORCE_THUMB_ROT, value[0], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_THUMB_ROT, value[0], handid);
 
-    action_canwriter->WriteCan(Inspire::FORCE_THUMB, value[1], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_THUMB, value[1], handid);
 
-    action_canwriter->WriteCan(Inspire::FORCE_INDEX, value[2], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_INDEX, value[2], handid);
 
-    action_canwriter->WriteCan(Inspire::FORCE_MIDDLE, value[3], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_MIDDLE, value[3], handid);
 
-    action_canwriter->WriteCan(Inspire::FORCE_RING, value[4], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_RING, value[4], handid);
 
-    action_canwriter->WriteCan(Inspire::FORCE_PINKY, value[5], 1);
+    action_canwriter->WriteCan(Inspire::FORCE_PINKY, value[5], handid);
 }
     ~InspireAction() {}
 

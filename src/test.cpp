@@ -20,7 +20,92 @@ void signalHandler(int signo)
         exit(0);
     }
 }
+void PerformOpenGesture(InspireAction *inspireAction, InspireAction *inspireAction1)
+{
+    // Openhand手势的角度
+    inspireAction->ThumbRotAction(1000);  // 大拇指旋转
+    inspireAction->ThumbAction(1000);     // 大拇指弯曲
+    inspireAction->IndexAction(1000);     // 食指弯曲
+    inspireAction->MiddleAction(1000);    // 中指弯曲
+    inspireAction->RingAction(1000);      // 无名指弯曲
+    inspireAction->PinkyAction(1000);     // 小指弯曲
 
+    inspireAction1->ThumbRotAction(1000);  // 大拇指旋转
+    inspireAction1->ThumbAction(1000);     // 大拇指弯曲
+    inspireAction1->IndexAction(1000);     // 食指弯曲
+    inspireAction1->MiddleAction(1000);    // 中指弯曲
+    inspireAction1->RingAction(1000);      // 无名指弯曲
+    inspireAction1->PinkyAction(1000);     // 小指弯曲
+}
+
+
+void PerformOKGesture(InspireAction *inspireAction, InspireAction *inspireAction1)
+{
+    // 示例手势OK的角度
+    inspireAction->ThumbRotAction(1000);  // 大拇指旋转
+    inspireAction->ThumbAction(500);     // 大拇指弯曲
+    inspireAction->IndexAction(500);     // 食指弯曲
+    inspireAction->MiddleAction(1000);    // 中指弯曲
+    inspireAction->RingAction(1000);      // 无名指弯曲
+    inspireAction->PinkyAction(1000);     // 小指弯曲
+
+    inspireAction1->ThumbRotAction(1000);  // 大拇指旋转
+    inspireAction1->ThumbAction(500);     // 大拇指弯曲
+    inspireAction1->IndexAction(500);     // 食指弯曲
+    inspireAction1->MiddleAction(1000);    // 中指弯曲
+    inspireAction1->RingAction(1000);      // 无名指弯曲
+    inspireAction1->PinkyAction(1000);     // 小指弯曲
+}
+
+
+void PerformBallGesture(InspireAction *inspireAction, InspireAction *inspireAction1)
+{
+    // 示例手势Ball的角度
+    inspireAction->ThumbRotAction(620);  // 大拇指旋转
+    inspireAction->ThumbAction(260);     // 大拇指弯曲
+    inspireAction->IndexAction(600);     // 食指弯曲
+    inspireAction->MiddleAction(600);    // 中指弯曲
+    inspireAction->RingAction(600);      // 无名指弯曲
+    inspireAction->PinkyAction(600);     // 小指弯曲
+
+    inspireAction1->ThumbRotAction(620);  // 大拇指旋转
+    inspireAction1->ThumbAction(260);     // 大拇指弯曲
+    inspireAction1->IndexAction(600);     // 食指弯曲
+    inspireAction1->MiddleAction(600);    // 中指弯曲
+    inspireAction1->RingAction(600);      // 无名指弯曲
+    inspireAction1->PinkyAction(600);     // 小指弯曲
+}
+
+
+void PerformOpenBallGesture(InspireAction *inspireAction, InspireAction *inspireAction1)
+{
+    // 示例手势OpenBall的角度
+    inspireAction->ThumbRotAction(620);  // 大拇指旋转
+    inspireAction->ThumbAction(260);     // 大拇指弯曲
+    inspireAction->IndexAction(1000);     // 食指弯曲
+    inspireAction->MiddleAction(1000);    // 中指弯曲
+    inspireAction->RingAction(1000);      // 无名指弯曲
+    inspireAction->PinkyAction(1000);     // 小指弯曲
+
+    inspireAction1->ThumbRotAction(620);  // 大拇指旋转
+    inspireAction1->ThumbAction(260);     // 大拇指弯曲
+    inspireAction1->IndexAction(1000);     // 食指弯曲
+    inspireAction1->MiddleAction(1000);    // 中指弯曲
+    inspireAction1->RingAction(1000);      // 无名指弯曲
+    inspireAction1->PinkyAction(1000);     // 小指弯曲
+}
+
+
+void DisplayMenu()
+{
+    std::cout << "Please select a gesture to perform:" << std::endl;
+    std::cout << "1. Open Gesture" << std::endl;
+    std::cout << "2. OK Gesture" << std::endl;
+    std::cout << "3. Ball Gesture" << std::endl;
+    std::cout << "4. OpenBall Gesture" << std::endl;
+   
+    std::cout << "6. Exit" << std::endl;
+}
 int main(int argc, char const *argv[])
 {
     if (signal(SIGINT, signalHandler) == SIG_ERR)
@@ -39,60 +124,52 @@ int main(int argc, char const *argv[])
 
 
     usleep(1000000);
-    InspireAction *inspireAction=new InspireAction(&inspire);
+    int handid0 = 1;
+    int handid1 = 2;
+
+    InspireAction *inspireAction = new InspireAction(&inspire, handid0);
+    InspireAction *inspireAction1 = new InspireAction(&inspire, handid1);
+  
     int single_value_speed=Inspire::MAX_SPEED;
     int single_value=1000;
     std::vector<int> five_finger_speed={single_value_speed,single_value_speed,single_value_speed,single_value_speed,single_value_speed,single_value_speed};
     // 设置五指的速度
     inspireAction->SetFiveFingerSpeed(five_finger_speed);
+    inspireAction1->SetFiveFingerSpeed(five_finger_speed);
     usleep(10000);
-    inspireAction->ThumbAction(single_value);
+    while (Isrunning)
+    {
+        DisplayMenu();
+        int choice;
+        std::cin >> choice;
 
-    inspireAction->IndexAction(single_value);
+        switch (choice)
+        {
+            case 1:
+                PerformOpenGesture(inspireAction,inspireAction1);
+                break;
+            case 2:
+                PerformOKGesture(inspireAction,inspireAction1);
+                break;
+            case 3:
+                PerformBallGesture(inspireAction,inspireAction1);
+                break;
+            case 4:
+                PerformOpenBallGesture(inspireAction,inspireAction1);
+                break;
+            
+            case 6:
+                Isrunning = false;
+                break;
+            default:
+                std::cout << "Invalid choice, please select again." << std::endl;
+        }
 
-    inspireAction->MiddleAction(single_value);
+        usleep(200000);
+    }
 
-    inspireAction->RingAction(single_value);
-
-    inspireAction->PinkyAction(single_value);
-    usleep(200000);
-    std::vector<int> value={1000,100,100,100,100,100};
-    inspireAction->FiveFingerAction(value);
-    usleep(10000);
     inspire.InspireCloseDevice();
 
-
-
-
-    // YAML::Node config = YAML::LoadFile("config/inspire.yaml");
-
-    // Read the values from the YAML file
-    // int i = 0;
-    // int j;
-    // while (Isrunning)
-    // {
-    //     for(int i=0;i<10;i++)
-    //     {
-    //         if (inspire.WriteCan(1486 + i*2, 100, 1) != 0)
-    //         {
-    //             std::cout << "It is error when write" << std::endl;
-    //         }
-    //         usleep(100000);
-    //     }
-    //     for(int i=0;i<10;i++)
-    //     {
-    //         if (inspire.WriteCan(1486 + i*2, 1000, 1) != 0)
-    //         {
-    //             std::cout << "It is error when write" << std::endl;
-    //         }
-    //         usleep(100000);
-    //     }
-            
-
-        
-    // }
-
-    // usleep(1000000);
-    // inspire.InspireCloseDevice();
+    std::cout << "ok" << std::endl;
     return 0;
 }
