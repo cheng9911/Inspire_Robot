@@ -137,36 +137,56 @@ int main(int argc, char const *argv[])
     inspireAction->SetFiveFingerSpeed(five_finger_speed);
     inspireAction1->SetFiveFingerSpeed(five_finger_speed);
     usleep(10000);
-    while (Isrunning)
-    {
-        DisplayMenu();
-        int choice;
-        std::cin >> choice;
+    std::vector<int> five_finger_value={1000,1000,0,0,0,0};
+    std::vector<int> five_finger_value_r={1000,1000,1000,1000,1000,1000};
+    // inspireAction->FiveFingerAction(five_finger_value_r);
 
-        switch (choice)
-        {
-            case 1:
-                PerformOpenGesture(inspireAction,inspireAction1);
-                break;
-            case 2:
-                PerformOKGesture(inspireAction,inspireAction1);
-                break;
-            case 3:
-                PerformBallGesture(inspireAction,inspireAction1);
-                break;
-            case 4:
-                PerformOpenBallGesture(inspireAction,inspireAction1);
-                break;
+
+    // // inspireAction1->FiveFingerAction(five_finger_value_r);
+    inspireAction->FiveFingerAction(five_finger_value);
+    std::vector<int> steps_0 = {1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000,1000, 1000, 1000, 1000, 1000, 1000, 300};
+    std::vector<int> steps_1 = {1000, 1000, 1000, 1000, 1000, 1000, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 300};
+    
+    inspireAction->setActionSequenceData(4,2,steps_0,steps_1);
+    // // sleep(1);
+    inspireAction1->RunActionSequence(3);//闭合握拳left
+    sleep(1);
+    inspireAction1->RunActionSequence(4);//张开left
+
+    inspireAction->RunActionSequence(4);//张开right
+
+
+
+    // while (Isrunning)
+    // {
+    //     DisplayMenu();
+    //     int choice;
+    //     std::cin >> choice;
+
+    //     switch (choice)
+    //     {
+    //         case 1:
+    //             PerformOpenGesture(inspireAction,inspireAction1);
+    //             break;
+    //         case 2:
+    //             PerformOKGesture(inspireAction,inspireAction1);
+    //             break;
+    //         case 3:
+    //             PerformBallGesture(inspireAction,inspireAction1);
+    //             break;
+    //         case 4:
+    //             PerformOpenBallGesture(inspireAction,inspireAction1);
+    //             break;
             
-            case 6:
-                Isrunning = false;
-                break;
-            default:
-                std::cout << "Invalid choice, please select again." << std::endl;
-        }
+    //         case 6:
+    //             Isrunning = false;
+    //             break;
+    //         default:
+    //             std::cout << "Invalid choice, please select again." << std::endl;
+    //     }
 
-        usleep(200000);
-    }
+    //     usleep(200000);
+    // }
 
     inspire.InspireCloseDevice();
 

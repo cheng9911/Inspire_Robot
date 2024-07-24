@@ -22,6 +22,7 @@ class CanWriter
 {
 public:
     virtual int WriteCan(int address, int value, int handid) = 0;
+    // virtual void ConvertValueToHex(int value, Byte data[2]);
     virtual ~CanWriter() = default;
 };
 /**
@@ -33,9 +34,9 @@ public:
 class Inspire : public CanWriter
 {
 private:
-    DWORD dwRel;///返回值
-    INIT_CONFIG init_config;///CAN初始化配置
-    CAN_OBJ frame;///CAN帧对象
+    DWORD dwRel;             /// 返回值
+    INIT_CONFIG init_config; /// CAN初始化配置
+    CAN_OBJ frame;           /// CAN帧对象
 
 public:
     /**
@@ -49,30 +50,45 @@ public:
     static const int MIDDLE = 1490;    /// 中指
     static const int RING = 1488;      /// 无名指
     static const int PINKY = 1486;     /// 小指
-    
-    static const int MAX_SPEED = 1000;///各个手指的最大速度限制
-    static const int MIN_SPEED = 0;///各个手指的最小速度限制
-    static const int MAX_FORCE = 1000;///各个手指的最大力限制
-    static const int MIN_FORCE = 0;///各个手指的最小力限制
+
+    static const int MAX_SPEED = 1000; /// 各个手指的最大速度限制
+    static const int MIN_SPEED = 0;    /// 各个手指的最小速度限制
+    static const int MAX_FORCE = 1000; /// 各个手指的最大力限制
+    static const int MIN_FORCE = 0;    /// 各个手指的最小力限制
     // 手指速度对应的寄存器数值
-    static const int SPEED_THUMB_ROT = 1532;///拇指旋转的速度对应的寄存器数值
-    static const int SPEED_THUMB = 1530;///拇指的速度对应的寄存器数值
-    static const int SPEED_INDEX = 1528;///食指的速度对应的寄存器数值
-    static const int SPEED_MIDDLE = 1526;///中指的速度对应的寄存器数值
-    static const int SPEED_RING = 1524;///无名指的速度对应的寄存器数值
-    static const int SPEED_PINKY = 1522;///小指的速度对应的寄存器数值
+    static const int SPEED_THUMB_ROT = 1532; /// 拇指旋转的速度对应的寄存器数值
+    static const int SPEED_THUMB = 1530;     /// 拇指的速度对应的寄存器数值
+    static const int SPEED_INDEX = 1528;     /// 食指的速度对应的寄存器数值
+    static const int SPEED_MIDDLE = 1526;    /// 中指的速度对应的寄存器数值
+    static const int SPEED_RING = 1524;      /// 无名指的速度对应的寄存器数值
+    static const int SPEED_PINKY = 1522;     /// 小指的速度对应的寄存器数值
     // 手指力对应的寄存器数值
-    static const int FORCE_THUMB_ROT = 1508;///拇指旋转的力对应的寄存器数值
-    static const int FORCE_THUMB = 1506;///拇指的力对应的寄存器数值
-    static const int FORCE_INDEX = 1504;///食指的力对应的寄存器数值
-    static const int FORCE_MIDDLE = 1502;///中指的力对应的寄存器数值
-    static const int FORCE_RING = 1500;///无名指的力对应的寄存器数值
-    static const int FORCE_PINKY = 1498;///小指的力对应的寄存器数值
+    static const int FORCE_THUMB_ROT = 1508; /// 拇指旋转的力对应的寄存器数值
+    static const int FORCE_THUMB = 1506;     /// 拇指的力对应的寄存器数值
+    static const int FORCE_INDEX = 1504;     /// 食指的力对应的寄存器数值
+    static const int FORCE_MIDDLE = 1502;    /// 中指的力对应的寄存器数值
+    static const int FORCE_RING = 1500;      /// 无名指的力对应的寄存器数值
+    static const int FORCE_PINKY = 1498;     /// 小指的力对应的寄存器数值
+    // 动作序列对应的寄存器数值
+    static const int ACTION_SEQ_CHECKDATA1 = 2000; /// 动作序列的校验数据1
+    static const int ACTION_SEQ_CHECKDATA2 = 2001; /// 动作序列的校验数据2
+    static const int ACTION_SEQ_STEPNUM = 2002;    /// 当前动作序列的步骤数
+    static const int ACTION_SEQ_STEP0 = 2016;      /// 动作序列的第0步
+    static const int ACTION_SEQ_STEP1 = 2054;      /// 动作序列的第1步
+    static const int ACTION_SEQ_STEP2 = 2092;      /// 动作序列的第2步
+    static const int ACTION_SEQ_STEP3 = 2130;      /// 动作序列的第3步
+    static const int ACTION_SEQ_STEP4 = 2168;      /// 动作序列的第4步
+    static const int ACTION_SEQ_STEP5 = 2206;      /// 动作序列的第5步
+    static const int ACTION_SEQ_STEP6 = 2244;      /// 动作序列的第6步
+    static const int ACTION_SEQ_STEP7 = 2282;      /// 动作序列的第7步
+    static const int ACTION_SEQ_INDEX = 2320;      /// 当前动作序列的索引号
+    static const int SAVE_ACTION_SEQ = 2321;       /// 开始执行动作序列
+    static const int ACTION_SEQ_RUN = 2322;        /// 运行执行动作序列
 
     Inspire(/* args */);
 
     ~Inspire();
-    
+
     /**
      * \brief 初始化CAN通信
      *
@@ -184,7 +200,7 @@ int Inspire::InitCan()
 std::string Inspire::GetAddressId(int address)
 {
     // 检查 address 是否在范围内
-    if (address >= 1486 && address < 1534)
+    if (address >= 1486 && address < 1534||address >= 2000 && address <= 2322)
     {
         // 将 address 转换为二进制字符串
         std::bitset<12> binary(address); // 使用 32 位存储二进制表示
@@ -262,7 +278,7 @@ std::string Inspire::GetCanId(int Address, int handid, int flag)
 void Inspire::ConvertValueToHex(int value, Byte data[2])
 {
     // 检查 value 是否在范围内
-    if (value < 0 || value > 1000)
+    if (value < -1 || value > 1000)
     {
         std::cerr << "Error: Value out of range [0, 1000]" << std::endl;
         return;
@@ -282,6 +298,9 @@ void Inspire::ConvertValueToHex(int value, Byte data[2])
     // 交换高低字节
     data[0] = std::stoi(hexString.substr(2, 2), nullptr, 16); // 高字节
     data[1] = std::stoi(hexString.substr(0, 2), nullptr, 16); // 低字节
+   // 打印数据
+    // std::cout << "data[0]: 0x" << std::hex << static_cast<int>(data[0]) << std::endl;
+    // std::cout << "data[1]: 0x" << std::hex << static_cast<int>(data[1]) << std::endl;
 }
 int Inspire::WriteCan(int address, int value, int handid)
 {
@@ -307,7 +326,7 @@ int Inspire::WriteCan(int address, int value, int handid)
         CloseDevice(USBCAN2, DeviceInd);
         return -1;
     }
-    usleep(1000);
+    usleep(300000);
     return 0;
 }
 void Inspire::InspireCloseDevice()
@@ -321,71 +340,70 @@ void Inspire::InspireCloseDevice()
     * \brief 控制因时手运动的类，实现了基于CAN总线的通信
     *
     * 此类继承自CanWriter，提供了初始化CAN通信、发送数据以及对手指运动的控制功能。
-    
+
 */
 class InspireAction
 {
 public:
-
     int handid;
     /**
      * \brief 构造函数
-    */
+     */
     InspireAction(CanWriter *canwriter, int id) : action_canwriter(canwriter), handid(id) {}
     /*
-    * \brief  拇指旋转
-    * \param[in] value 旋转角度
-    * \return 无
-    */
+     * \brief  拇指旋转
+     * \param[in] value 旋转角度
+     * \return 无
+     */
     void ThumbRotAction(int value)
     {
         action_canwriter->WriteCan(Inspire::THUMB_ROT, value, handid);
     }
     /*
-    * \brief  拇指运动
-    * \param[in] value 旋转角度
-    */
+     * \brief  拇指运动
+     * \param[in] value 旋转角度
+     */
     void ThumbAction(int value)
     {
         action_canwriter->WriteCan(Inspire::THUMB, value, handid);
     }
     /*
-    * \brief  食指运动
-    * \param[in] value 旋转角度
-    */
+     * \brief  食指运动
+     * \param[in] value 旋转角度
+     */
     void IndexAction(int value)
     {
         action_canwriter->WriteCan(Inspire::INDEX, value, handid);
     }
     /*
-    * \brief  中指运动
-    * \param[in] value 旋转角度
-    */
+     * \brief  中指运动
+     * \param[in] value 旋转角度
+     */
     void MiddleAction(int value)
     {
         action_canwriter->WriteCan(Inspire::MIDDLE, value, handid);
     }
     /*
-    * \brief  无名指运动
-    * \param[in] value 旋转角度
-    */
+     * \brief  无名指运动
+     * \param[in] value 旋转角度
+     */
     void RingAction(int value)
     {
         action_canwriter->WriteCan(Inspire::RING, value, handid);
     }
     /*
-    * \brief  小指运动
-    * \param[in] value 旋转角度
-    */
+     * \brief  小指运动
+     * \param[in] value 旋转角度
+     */
     void PinkyAction(int value)
     {
         action_canwriter->WriteCan(Inspire::PINKY, value, handid);
     }
     /*
-    * \brief  五指同时运动
-    * \param[in] value 五个手指的旋转角度
-    * \return 无
-   */
+     * \brief  五指同时运动
+     * \param[in] value 五个手指的旋转角度
+     * \return 无
+     */
     int FiveFingerAction(std::vector<int> value)
     {
         if (value.size() != 6)
@@ -408,68 +426,103 @@ public:
         return 0;
     }
     /*
-    * \brief  设置五指的速度
-    * \param[in] value 五个手指的速度
-    */
-void SetFiveFingerSpeed(std::vector<int> value)
-{
-    if (value.size() != 6)
+     * \brief  设置五指的速度
+     * \param[in] value 五个手指的速度
+     */
+    void SetFiveFingerSpeed(std::vector<int> value)
     {
-        std::cout << "The size of value is not 6" << std::endl;
-        return;
-    }
-    for (int i = 0; i < value.size(); i++)
-    {
-        if (value[i] < Inspire::MIN_SPEED || value[i] > Inspire::MAX_SPEED)
+        if (value.size() != 6)
         {
-            std::cout << "The value is out of range [0, 1000]" << std::endl;
+            std::cout << "The size of value is not 6" << std::endl;
             return;
         }
-    }
-    action_canwriter->WriteCan(Inspire::SPEED_THUMB_ROT, value[0], handid);
-
-    action_canwriter->WriteCan(Inspire::SPEED_THUMB, value[1], handid);
-
-    action_canwriter->WriteCan(Inspire::SPEED_INDEX, value[2], handid);
-
-    action_canwriter->WriteCan(Inspire::SPEED_MIDDLE, value[3], handid);
-
-    action_canwriter->WriteCan(Inspire::SPEED_RING, value[4], handid);
-
-    action_canwriter->WriteCan(Inspire::SPEED_PINKY, value[5], handid);
-}
-/*
-* \brief  设置五指的力
-* \param[in] value 五个手指的力
-*/
-void SetFiveFingerForce(std::vector<int> value)
-{
-    if (value.size() != 6)
-    {
-        std::cout << "The size of value is not 6" << std::endl;
-        return;
-    }
-    // 检查value范围是否在0-1000
-    for (int i = 0; i < value.size(); i++)
-    {
-        if (value[i] < Inspire::MIN_FORCE || value[i] > Inspire::MAX_FORCE)
+        for (int i = 0; i < value.size(); i++)
         {
-            std::cout << "The value is out of range [0, 1000]" << std::endl;
+            if (value[i] < Inspire::MIN_SPEED || value[i] > Inspire::MAX_SPEED)
+            {
+                std::cout << "The value is out of range [0, 1000]" << std::endl;
+                return;
+            }
+        }
+        action_canwriter->WriteCan(Inspire::SPEED_THUMB_ROT, value[0], handid);
+
+        action_canwriter->WriteCan(Inspire::SPEED_THUMB, value[1], handid);
+
+        action_canwriter->WriteCan(Inspire::SPEED_INDEX, value[2], handid);
+
+        action_canwriter->WriteCan(Inspire::SPEED_MIDDLE, value[3], handid);
+
+        action_canwriter->WriteCan(Inspire::SPEED_RING, value[4], handid);
+
+        action_canwriter->WriteCan(Inspire::SPEED_PINKY, value[5], handid);
+    }
+    /*
+     * \brief  设置五指的力
+     * \param[in] value 五个手指的力
+     */
+    void SetFiveFingerForce(std::vector<int> value)
+    {
+        if (value.size() != 6)
+        {
+            std::cout << "The size of value is not 6" << std::endl;
             return;
         }
+        // 检查value范围是否在0-1000
+        for (int i = 0; i < value.size(); i++)
+        {
+            if (value[i] < Inspire::MIN_FORCE || value[i] > Inspire::MAX_FORCE)
+            {
+                std::cout << "The value is out of range [0, 1000]" << std::endl;
+                return;
+            }
+        }
+        action_canwriter->WriteCan(Inspire::FORCE_THUMB_ROT, value[0], handid);
+
+        action_canwriter->WriteCan(Inspire::FORCE_THUMB, value[1], handid);
+
+        action_canwriter->WriteCan(Inspire::FORCE_INDEX, value[2], handid);
+
+        action_canwriter->WriteCan(Inspire::FORCE_MIDDLE, value[3], handid);
+
+        action_canwriter->WriteCan(Inspire::FORCE_RING, value[4], handid);
+
+        action_canwriter->WriteCan(Inspire::FORCE_PINKY, value[5], handid);
     }
-    action_canwriter->WriteCan(Inspire::FORCE_THUMB_ROT, value[0], handid);
+    /// @brief
+    /// 先简单实现握拳，假设stepNum=2,第一步不动，第二步闭合手指
+    /// @param index
+    /// @param stepNum
+    /// @param steps
+    void setActionSequenceData(int index, int stepNum, const std::vector<int> &steps,const std::vector<int> &steps1)
+    {
+        action_canwriter->WriteCan(Inspire::ACTION_SEQ_INDEX, index, handid);
+        action_canwriter->WriteCan(Inspire::ACTION_SEQ_STEPNUM, stepNum, handid);
+        std::vector<int> steps_0 = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 400};
+        for (int j = 0; j < steps_0.size(); j++)
+        {
+            action_canwriter->WriteCan(Inspire::ACTION_SEQ_STEP0 + j * 2, steps_0[j], handid);
+        }
+        for(int i=0;i<steps.size();i++)
+        {
+            action_canwriter->WriteCan(Inspire::ACTION_SEQ_STEP0 + i * 2, steps[i], handid);
+        }
+        for(int i=0;i<steps1.size();i++)
+        {
+            action_canwriter->WriteCan(Inspire::ACTION_SEQ_STEP0 + i * 2, steps1[i], handid);
+        }
+            // 4. 将0x90和0xEB写入到ACTION_SEQ_CHECKDATA1和ACTION_SEQ_CHECKDATA2
+            action_canwriter->WriteCan(Inspire::ACTION_SEQ_CHECKDATA1, 144, handid);//0x90
+            action_canwriter->WriteCan(Inspire::ACTION_SEQ_CHECKDATA2, 235, handid);//0xEB
 
-    action_canwriter->WriteCan(Inspire::FORCE_THUMB, value[1], handid);
+            // 5. 设置动作序列库保存寄存器
+            action_canwriter->WriteCan(Inspire::SAVE_ACTION_SEQ, 1, handid);
+    }
+    void RunActionSequence(int index)
+    {
+        action_canwriter->WriteCan(Inspire::ACTION_SEQ_INDEX, index, handid);
+        action_canwriter->WriteCan(Inspire::ACTION_SEQ_RUN, 1, handid);
+    }
 
-    action_canwriter->WriteCan(Inspire::FORCE_INDEX, value[2], handid);
-
-    action_canwriter->WriteCan(Inspire::FORCE_MIDDLE, value[3], handid);
-
-    action_canwriter->WriteCan(Inspire::FORCE_RING, value[4], handid);
-
-    action_canwriter->WriteCan(Inspire::FORCE_PINKY, value[5], handid);
-}
     ~InspireAction() {}
 
 private:
